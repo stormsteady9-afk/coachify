@@ -1,6 +1,6 @@
 const NODE_ENV = process.env.NODE_ENV
 
-console.info(`🐻 Bearmentor is running on: ${NODE_ENV}\n`)
+console.info(`Coachify is running on: ${NODE_ENV}\n`)
 
 /** @type {import('@remix-run/dev').AppConfig} */
 module.exports = {

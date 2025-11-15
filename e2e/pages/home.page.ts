@@ -12,10 +12,10 @@ export class HomePage {
     this.mentorsButton = page.getByRole("link", { name: /discover mentors/i })
     this.signinButton = page.getByRole("link", { name: /sign in to continue/i })
     this.availableMentorsSection = page.getByRole("heading", {
-      name: /available mentors/i,
+      name: /available Coach/i,
     })
     this.featuredMenteesSection = page.getByRole("heading", {
-      name: /featured mentees/i,
+      name: /featured Coachee/i,
     })
   }
 

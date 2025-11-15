@@ -31,7 +31,7 @@ export default function Route() {
             <FormLabel>Delete Personal Account</FormLabel>
             <FormDescription className="text-base">
               Permanently remove your Personal Account and all of its contents
-              from Bearmentor. This action is not reversible, so please continue
+              from Coachify. This action is not reversible, so please continue
               with caution.
             </FormDescription>
 

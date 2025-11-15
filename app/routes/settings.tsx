@@ -1,7 +1,6 @@
 import type { ActionArgs, LoaderArgs, V2_MetaFunction } from "@remix-run/node"
+import { redirect } from "@remix-run/node"
 import { Link, NavLink, Outlet } from "@remix-run/react"
-
-import { authenticator } from "~/services"
 import { cn, delay, formatTitle } from "~/utils"
 import { buttonVariants, Layout } from "~/components"
 
@@ -28,7 +27,7 @@ export const settingsNavItems = [
 ]
 
 export const loader = async ({ request }: LoaderArgs) => {
-  await authenticator.isAuthenticated(request, { failureRedirect: "/signin" })
+  // TODO: Implement authentication
   return null
 }
 
@@ -63,7 +62,7 @@ interface SidebarNavProps extends React.HTMLAttributes<HTMLElement> {
   }[]
 }
 
-export function SidebarNav({ className, items, ...props }: SidebarNavProps) {
+export function SidebarNav({ className, items, ...props }: Readonly<SidebarNavProps>) {
   return (
     <nav
       className={cn("flex w-full gap-2 overflow-auto sm:flex-col", className)}
@@ -92,6 +91,6 @@ export function SidebarNav({ className, items, ...props }: SidebarNavProps) {
 
 export const action = async ({ request }: ActionArgs) => {
   await delay()
-  await authenticator.isAuthenticated(request, { failureRedirect: "/signin" })
+  // TODO: Implement authentication
   return null
 }

@@ -12,7 +12,7 @@ export const meta: V2_MetaFunction<typeof loader> = ({ data }) => {
   if (!query) {
     return [
       { title: formatTitle(`All mentees`) },
-      { name: "description", content: `All mentees in Bearmentee.` },
+      { name: "description", content: `All mentees in Coachify.` },
     ]
   }
 
@@ -52,7 +52,7 @@ export const loader = async ({ request }: LoaderArgs) => {
   const mentees = await prisma.user.findMany({
     where: {
       isPublic: true,
-      tags: { some: { symbol: "MENTEE" } },
+      tags: { some: { symbol: "COACHEE" } },
       OR: [
         { name: { contains: query } },
         { username: { contains: query } },
@@ -81,8 +81,8 @@ export default function Route() {
           <span>Mentees</span>
         </h1>
         <p className="text-muted-foreground">
-          Mentee is a person who is mentored, advised, trained, counseled, or
-          taught by a mentor. Like a student or trainee.
+          Coachee is a person who is mentored, advised, trained, counseled, or
+          taught by a Coach. Like a student or trainee.
         </p>
         <SearchForm action="/mentees" placeholder="Search for mentees" />
       </header>

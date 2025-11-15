@@ -158,3 +158,19 @@
 .nprogress-custom-parent #nprogress .bar {
   @apply absolute z-50;
 }
+
+:root {
+  --background: #fff;
+  --text: #222;
+}
+
+.dark {
+  --background: #1c1917;
+  --text: #fff;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  transition: background 0.2s, color 0.2s;
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" width="200" height="120" role="img" aria-label="Dolphin logo">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#3dd0ff"/>
+      <stop offset="100%" stop-color="#0ea5a4"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path d="M10 70c18-20 45-30 80-30 35 0 60 8 80 28 0 0-6-18-28-26 0 0 6-4 12-14 0 0-24 6-44 6-20 0-44-6-64 12-20 18-36 46-36 46s4-14 8-22z" fill="url(#g)"/>
+    <path d="M140 44c6-2 18-6 30-8 0 0-4 12-14 18-10 6-22 6-22 6s4-10 6-16z" fill="#0284c7"/>
+    <circle cx="96" cy="60" r="3" fill="#00303f"/>
+    <path d="M24 82c12-6 26-8 40-6" stroke="#0369a1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

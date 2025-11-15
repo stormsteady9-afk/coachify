@@ -82,22 +82,20 @@ async function seedUsers() {
   const COLLABORATOR = tags.find(tag => tag.symbol === "COLLABORATOR")
   const MENTOR = tags.find(tag => tag.symbol === "MENTOR")
   const MENTEE = tags.find(tag => tag.symbol === "MENTEE")
-  const DEVELOPER = tags.find(tag => tag.symbol === "DEVELOPER")
-  const DESIGNER = tags.find(tag => tag.symbol === "DESIGNER")
   const FOUNDER = tags.find(tag => tag.symbol === "FOUNDER")
   const WRITER = tags.find(tag => tag.symbol === "WRITER")
   const ARTIST = tags.find(tag => tag.symbol === "ARTIST")
-  const UNKNOWN = tags.find(tag => tag.symbol === "UNKNOWN")
+  const COACH = tags.find(tag => tag.symbol === "COACH")
+  const LEADER = tags.find(tag => tag.symbol === "LEADER")
   if (
     !COLLABORATOR ||
     !MENTOR ||
     !MENTEE ||
-    !DEVELOPER ||
-    !DESIGNER ||
     !FOUNDER ||
     !WRITER ||
     !ARTIST ||
-    !UNKNOWN
+    !COACH ||
+    !LEADER
   )
     return null
 
@@ -107,12 +105,12 @@ async function seedUsers() {
       if (tag === "COLLABORATOR") return { id: COLLABORATOR.id }
       if (tag === "MENTOR") return { id: MENTOR.id }
       if (tag === "MENTEE") return { id: MENTEE.id }
-      if (tag === "DEVELOPER") return { id: DEVELOPER.id }
-      if (tag === "DESIGNER") return { id: DESIGNER.id }
       if (tag === "FOUNDER") return { id: FOUNDER.id }
       if (tag === "WRITER") return { id: WRITER.id }
       if (tag === "ARTIST") return { id: ARTIST.id }
-      return { id: UNKNOWN.id }
+      if (tag === "COACH") return { id: COACH.id }
+      if (tag === "LEADER") return { id: LEADER.id }
+      return { id: MENTOR.id } // Default to MENTOR if tag not found
     })
 
     const isCollaborator = user.tags?.find(tag => tag === "COLLABORATOR")
@@ -138,26 +136,36 @@ async function seedUsers() {
       return cred.username === user.username
     })
 
-    const hash = bcrypt.hashSync(newCred?.password ?? "", 10)
+    if (!newCred) {
+      console.error(`❌ No credentials found for user ${user.username}`)
+      return null
+    }
+
+    const hash = bcrypt.hashSync(newCred.password, 10)
+    console.info(`✅ Creating user ${user.username} with email ${newCred.email}`)
 
     const newUser = {
       ...user,
-      email: newCred?.email,
+      email: newCred.email,
       password: { create: { hash } },
     }
 
     return newUser
-  })
+  }).filter(Boolean)
 
   // Upsert (update or insert/create if new) the users with complete fields
   for (const user of dataUsersWithCredentials) {
-    const upsertedUser = await prisma.user.upsert({
-      where: { username: user.username },
-      update: user,
-      create: user,
-    })
-
-    console.info(`✅ User "${upsertedUser.username}" upserted`)
+    if (!user) continue;  // Skip null users
+    try {
+      const upsertedUser = await prisma.user.upsert({
+        where: { username: user.username },
+        update: user,
+        create: user,
+      })
+      console.info(`✅ User "${upsertedUser.username}" upserted with email: ${upsertedUser.email}`)
+    } catch (error) {
+      console.error(`❌ Failed to upsert user ${user.username}:`, error)
+    }
   }
 }
 

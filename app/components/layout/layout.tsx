@@ -1,5 +1,5 @@
 import { cn } from "~/utils"
-import { Anchor, Footer, HeaderNavigation } from "~/components"
+import { Footer, HeaderNavigation } from "~/components"
 
 interface Props {
   className?: string
@@ -17,14 +17,14 @@ export function Layout({
   const showBanner = true
 
   return (
-    <div className={cn("flex min-h-screen flex-col")}>
+    <div className={cn("flex min-h-screen flex-col")}> 
       <HeaderNavigation />
 
       {showBanner && <BannerInfo />}
 
       <main
         className={cn(
-          "flex-[1] lg:ml-16",
+          "flex-[1] pb-16 lg:ml-16", // always add bottom padding for nav bar, left margin for desktop
           withPadding && "p-4 sm:p-8",
           className,
         )}
@@ -38,15 +38,8 @@ export function Layout({
 
 function BannerInfo() {
   return (
-    <div className="flex w-full justify-center bg-stone-900 p-1">
-      <p className="flex flex-wrap justify-center gap-1 text-center text-sm sm:gap-2">
-        <span>
-          Bearmentor is still{" "}
-          <Anchor href="https://github.com/bearmentor">work in progress</Anchor>
-        </span>
-        <span>🚧</span>
-        <span>Please wait until it's ready or explore what's available</span>
-      </p>
+    <div className="flex w-full justify-center bg-white text-stone-900 dark:bg-stone-900 dark:text-stone-50 border-b border-stone-200 dark:border-stone-800 p-1">
+      <h2 className="text-sm font-medium">Coachify</h2>
     </div>
   )
 }

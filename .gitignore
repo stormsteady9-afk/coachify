@@ -5,6 +5,7 @@ node_modules
 .cache
 .env
 .env.production
+.env.local
 .vercel
 .output
 .DS_Store
@@ -15,9 +16,25 @@ node_modules
 /api
 /api/index.js
 /api/index.js.map
+/logs/
 /prisma/migrations
 /app/data/*.json
 /test-results/
 /playwright-report/
 /playwright/.cache/
 /tests-examples/
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+
+# Package managers
+pnpm-error.log
+npm-debug.log*
+yarn-error.log*

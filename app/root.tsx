@@ -1,10 +1,12 @@
 import { useEffect } from "react"
+import type { ReactNode } from "react"
+import type { UserData, UserSession } from "~/services/types"
+import ThemeSwitcher from "./components/ThemeSwitcher"
 import type {
   LinksFunction,
-  LoaderArgs,
   V2_MetaFunction,
 } from "@remix-run/node"
-import { json, redirect } from "@remix-run/node"
+import { json } from "@remix-run/node"
 import {
   isRouteErrorResponse,
   Links,
@@ -23,17 +25,13 @@ import sansFontStyles from "@fontsource/pt-sans/index.css"
 import { Analytics } from "@vercel/analytics/react"
 import NProgress from "nprogress"
 
-import { authenticator } from "~/services"
-import { createCacheHeaders } from "~/utils"
-import { model } from "~/models"
-
 import { Layout, Toaster } from "./components"
 import styles from "./globals.css"
 
 export const links: LinksFunction = () => [
   {
     rel: "shortcut icon",
-    href: "https://fav.farm/🐻",
+    href: "https://fav.farm/",
   },
   {
     rel: "shortcut icon",
@@ -64,7 +62,7 @@ export const links: LinksFunction = () => [
 
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: "Bearmentor" },
+    { title: "Coachify" },
     {
       name: "description",
       content: "Brilliant mentoring platform for people and organization.",
@@ -72,26 +70,23 @@ export const meta: V2_MetaFunction = () => {
   ]
 }
 
-export const loader = async ({ request }: LoaderArgs) => {
-  const nodeEnv = process.env.NODE_ENV
-  const userSession = await authenticator.isAuthenticated(request)
-  const userData = await model.user.query.getForSession({
-    id: String(userSession?.id),
-  })
-
-  // If there is an authenticated user, but the user doesn't exist anymore
-  if (userSession && !userData) {
-    return redirect(`/signout`)
-  }
-
-  return json(
-    { nodeEnv, userSession, userData },
-    { headers: createCacheHeaders(request, 5) },
-  )
+interface LoaderData {
+  nodeEnv: string | undefined;
+  userSession: UserSession | null;
+  userData: UserData | null;
 }
 
-export default function App() {
-  const { nodeEnv } = useLoaderData<typeof loader>()
+export const loader = () => {
+  const nodeEnv = process.env.NODE_ENV;
+  return json<LoaderData>({ 
+    nodeEnv,
+    userSession: null,
+    userData: null
+  });
+}
+
+function App() {
+  const { nodeEnv } = useLoaderData<LoaderData>()
   const navigation = useNavigation()
 
   useEffect(() => {
@@ -119,7 +114,9 @@ export default function App() {
   )
 }
 
-export function AppBoundary({ children }: { children: React.ReactNode }) {
+export default App
+
+export function AppBoundary({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en" className="dark">
       <head>
@@ -129,6 +126,7 @@ export function AppBoundary({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body className="bg-stone-50 text-stone-950 dark:bg-stone-950 dark:text-stone-50">
+        <ThemeSwitcher />
         <Layout className="p-4">{children}</Layout>
         <ScrollRestoration />
         <Scripts />

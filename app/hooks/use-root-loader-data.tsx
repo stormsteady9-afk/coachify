@@ -1,7 +1,7 @@
 import { useMemo } from "react"
 import { useMatches } from "@remix-run/react"
 
-import type { UserData, UserSession } from "~/services"
+import type { UserData, UserSession } from "~/services/types"
 
 export type RootLoaderData = {
   nodeEnv: string | "development" | "production"
@@ -24,8 +24,8 @@ export function useRootLoaderData() {
   const data = useMatchesData("root") as RootLoaderData
 
   return {
-    nodeEnv: data?.nodeEnv,
-    userSession: data?.userSession,
-    userData: data?.userData,
-  }
+    nodeEnv: data?.nodeEnv || "development",
+    userSession: data?.userSession || null,
+    userData: data?.userData || null,
+  } as const
 }

@@ -1,5 +1,4 @@
 import { Link } from "@remix-run/react"
-
 import { cn } from "~/utils"
 import { Anchor } from "~/components"
 
@@ -20,12 +19,18 @@ export function Footer({ className }: Props) {
       className={cn("flex justify-center pb-20 pt-40 lg:pb-10", className)}
     >
       <div className="flex flex-col flex-wrap items-center justify-center gap-4 text-muted-foreground sm:flex-row sm:gap-8">
-        <p>
-          <span>&copy; {today.getFullYear()} </span>
-          <Anchor href="https://github.com/bearmentor">🐻 Bearmentor</Anchor>
-        </p>
+
+        {/* Branding Block */}
+        <div className="flex flex-col items-center gap-1">
+          <h2 className="text-xl font-bold text-foreground">Coachify</h2>
+          <p className="text-sm text-muted-foreground">Powered by MindGram Intelligence</p>
+          <p className="text-xs text-muted-foreground">
+            © {today.getFullYear()} FelixTheGreat. All rights reserved.
+          </p>
+        </div>
 
         {/* <FooterNavigation /> */}
+
       </div>
     </footer>
   )

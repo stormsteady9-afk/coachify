@@ -10,8 +10,8 @@ export type DataUserTagSymbol =
   | "ARTIST"
   | "COLLABORATOR"
   | "COMPANY"
-  | "DESIGNER"
-  | "DEVELOPER"
+  | "COACH"
+  | "LEADER"
   | "FOUNDER"
   | "MARKETER"
   | "MENTEE"
@@ -25,7 +25,7 @@ export const dataUserTags: DataUserTag[] = [
     symbol: "COLLABORATOR",
     name: "Collaborator",
     sequence: 1,
-    description: "Core Bearmentor team members.",
+    description: "Core Coachify team members.",
   },
   {
     symbol: "MENTOR",
@@ -39,7 +39,7 @@ export const dataUserTags: DataUserTag[] = [
     sequence: 3,
     description: "Someone who want to be mentored by the mentors",
   },
-  { symbol: "DEVELOPER", name: "Developer" },
+  { symbol: "COACH", name: "COACH" },
   { symbol: "DESIGNER", name: "Designer" },
   { symbol: "WRITER", name: "Writer" },
   { symbol: "MARKETER", name: "Marketer" },

@@ -1,336 +1,166 @@
-# 🐻 Bearmentor
+# 🧠 Coachify
 
-> Brilliant mentoring
+> Intelligent Life Coaching Platform - Connect with AI and Human Coaches for Personal Growth
 
-> 🚧 This app is still in early and active development
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node.js](https://img.shields.io/badge/Node.js-v18+-green)](https://nodejs.org/)
 
-The open mentoring platform for people and organization. Open source, free to
-use, with premium options. 🐻 Bearmentor is a place for tech and creating
-professionals to mentor each others.
+## 📋 Quick Links
 
-Check out:
+- 🌐 **Website:** https://coachify.com
+- 📦 **GitHub:** https://github.com/bearmentor/coachify
+- 📊 **Project Board:** https://github.com/orgs/bearmentor/projects/1
 
-- Web: <https://bearmentor.com>
-- Repo: <https://github.com/bearmentor>
-- Progress: <https://github.com/orgs/bearmentor/projects/2>
+## ✨ Features
 
-![Bearmentor](public/images/bearmentor.png)
+### Core Platform
+- 🤖 **AI Life Coach (FelixGPT)** - Empathetic AI-powered coaching with reflective questioning
+- 👥 **Coach Discovery** - Find and connect with verified professional coaches and mentors
+- 💬 **Smart Messaging** - Direct communication between coaches and clients
+- 🎯 **Goal Tracking** - Set, track, and achieve meaningful growth milestones
+- 📱 **Mobile First** - Fully responsive design for all devices
+- 🌙 **Dark/Light Mode** - Beautiful theme switching support
 
-## Concept
+### User Features
+- 🔐 Secure authentication and profile management
+- 💳 Flexible session pricing and payment
+- 📊 Progress tracking with measurable insights
+- 🤝 Community connections and peer support
+- 📈 Long-term growth analytics
 
-> men·tor·ship (noun): the guidance provided by a mentor, especially an
-> experienced person in a company or educational institution.
+## 🛠️ Tech Stack
 
-A true mentorship should enable to teach, guide, and share that can be for long
-term growth.
+### Frontend
+- React 18 + Remix (Full-stack framework)
+- TypeScript (Type safety)
+- Tailwind CSS (Styling)
+- Tabler Icons (UI Icons)
 
-🐻 Bearmentor allow to:
+### Backend
+- Node.js Runtime
+- Remix Server
+- Prisma ORM (Database queries)
+- Groq & OpenAI APIs (AI Coach)
 
-- [x] Discover people, respective mentors and mentees
-- [ ] Link social profiles, portfolios, projects, products for credibility
-- [ ] Explore various learning programs or services by the mentors
-- [ ] Filter out for serious commitment through initial discussion
-- [ ] Set custom mentorship experience and achievable goals
-- [ ] Get paid to mentor people with self-compensation rate, public or private
-- [ ] Prefer between live/sync or recorded/async communication
-- [ ] Long term tracking for mentor-mentee relation
+### Database & DevOps
+- PostgreSQL / SQLite
+- Docker & Docker Compose
+- Playwright (E2E Testing)
+- pnpm (Package management)
 
-[Read more about the features]()
+## 🚀 Getting Started
 
-## Getting Started
+### Prerequisites
+- Node.js 18+
+- pnpm (`npm i -g pnpm`)
+- PostgreSQL or SQLite
 
-1. Read the [Remix Docs](https://remix.run/docs) to understand about Remix.
-2. If new, focus on Remix basics, don't use the Stacks yet. Read
-   [Super Simple Start to Remix](https://kentcdodds.com/blog/super-simple-start-to-remix).
-3. If experienced, use various integration such as Prisma ORM and database like
-   MySQL. Read
-   [Blog Tutorial (short)](http://remix.run/docs/en/main/tutorials/blog) and
-   [App Tutorial (long)](http://remix.run/docs/en/main/tutorials/jokes).
+### Installation
 
-## Tech Stack
+```bash
+# Clone repository
+git clone https://github.com/bearmentor/coachify.git
+cd coachify
 
-1. [TypeScript](https://typescriptlang.org): Typed language
-   - Related to JavaScript, HTML, CSS
-2. [React](https://react.dev): UI library
-3. [Remix](https://remix.run): Web framework
-   - [React Router](https://reactrouter.com)
-4. [Tailwind CSS](https://tailwindcss.com): Styling
-5. [Radix UI](https://radix-ui.com): Interactive components
-   - [shadcn UI](https://ui.shadcn.com): Styled interactive components
-   - [Tabler Icons](https://tabler-icons.io): Icon set
-6. [Prisma](https://prisma.io): Database ORM
-7. [PlanetScale](https://planetscale.com): MySQL-compatible serverless database
-   platform
-   - [MySQL](https://mysql.com): Database management system
-8. [Vercel](https://vercel.com): App deployment
-
-## Setup
-
-### Environment Variables
-
-Create the `.env` file from the example `.env` file.
-
-```sh
-cp -i .env.example .env
-```
-
-> This .env file is only for local development, not production
-
-Let's configure the required environment variables in the `.env` file if local,
-otherwise in the project settings, for:
-
-- `DATABASE_URL`
-- `SESSION_SECRET`
-
-Create a [PlanetScale](https://planetscale.com) account to have a MySQL instance
-for development. After the database has been created, "Get the connection
-string" and select "Prisma", then copy the full `DATABASE_URL`.
-
-> Keep in mind the free plan only allow for 1 database. So either later keep it,
-> delete it when unused, or upgrade the plan.
-
-Generate a random string for the `SESSION_SECRET` using
-`openssl rand -base64 32` on the terminal or put any long random text.
-
-```sh
-DATABASE_URL="mysql://username:password@aws.connect.psdb.cloud/bearmentor?sslaccept=strict"
-SESSION_SECRET="random_secret_text"
-```
-
-### Code Editor
-
-When using VS Code, there are several recommended extensions that can be
-installed to improve the workflow. It's nice to accept the recommendations that
-listed in [`.vscode/extensions.json`](./.vscode/extensions.json).
-
-Especially (in alphabetical order):
-
-- ESLint
-- Inline Fold for CSS
-- Markdown All in One
-- Prettier
-- Prisma
-- Remix Forge
-- Stylelint
-- Tailwind CSS
-
-## Development
-
-### Dependencies
-
-Use [pnpm](https://pnpm.io) to improve productivity and replace npm, so make
-sure [pnpm is installed](https://pnpm.io/installation#using-npm):
-
-```sh
-npm i -g pnpm
-```
-
-To run the app locally, make sure the project's local dependencies are
-installed:
-
-```sh
+# Install dependencies
 pnpm install
-```
 
-### Code
+# Setup environment
+cp .env.example .env
 
-Format, lint, and build to check if the setup is fine:
+# Setup database
+pnpm run db:migrate
 
-```sh
-pnpm check
-# run: format lint stylelint build typecheck
-
-pnpm check:fix # to fix most cases if there's an issue
-# run: format:fix lint:fix stylelint:fix
-```
-
-> Note: Ignore non-critical warning about ESLint and TypeScript
-
-### Database
-
-Prisma ORM is used to communicate with the database easily. Since this app is
-primarily using PlanetScale, the migration files are not needed. Therefore, push
-the schema directly there, then the migration will be handled through the
-[deploy requests](https://planetscale.com/docs/concepts/deploy-requests).
-
-Also read:
-
-- [Prisma with PlanetScale](https://prisma.io/docs/guides/database/planetscale)
-- [PlanetScale with Prisma](https://planetscale.com/docs/prisma/prisma-quickstart)
-
-If prefer using Docker and Docker Compose for local development,
-[follow this guide](docs/database/README.md).
-
-#### Schema to Push
-
-Sync between Prisma schema and the database directly, by making schema changes
-with `prisma db push`, which can be done regularly while updating the models:
-
-```sh
-pnpm db:push
-# prisma db push
-```
-
-Even with local development without PlanetScale, this is still okay when
-[prototyping the schema](https://prisma.io/docs/concepts/components/prisma-migrate/db-push).
-After a success push, then it will automatically run `prisma generate`.
-
-#### Data for Credentials
-
-Create [`users-credentials.json`] in [`app/data`](./app/data/) folder with the
-format below. You can focus on certain users who want to be able to sign in in
-development, so it doesn't have to be everyone. For example, only create for
-`admin`, `test`, or `yourname` which also available in
-[`app/data/users.ts`](./app/data/users.ts)
-
-```json
-[
-  {
-    "username": "username",
-    "email": "user1@example.com",
-    "password": "set_the_password_1"
-  },
-  {
-    "username": "username2",
-    "email": "user2@example.com",
-    "password": "set_the_password_2"
-  }
-  // ...
-]
-```
-
-#### Data for Seed
-
-Then seed the initial data when needed:
-
-```sh
-pnpm db:seed
-# prisma db seed
-```
-
-Check if the data is fine:
-
-```sh
-pnpm db:check
-# tsx prisma/check.ts
-```
-
-### Build
-
-Check if the build is fine:
-
-```sh
-pnpm build
-# remix build
-```
-
-> This will also run `prisma generate` too before the build
-
-### Develop Locally
-
-If everything works fine, start the Remix development server like so:
-
-```sh
+# Start development server
 pnpm dev
-# remix dev
 ```
 
-Open up [http://localhost:3000](http://localhost:3000) and it should be ready to
-go!
+Visit http://localhost:3000
 
-The `vercel dev` command provided by [Vercel CLI](https://vercel.com/cli) can
-also be used when necessary.
+## ⚙️ Environment Variables
 
-Regularly, either push or generate the schema when changing the database fields.
+Create `.env` file:
 
-```sh
-pnpm db:push
-# prisma db push
+```env
+# Database
+DATABASE_URL="postgresql://user:password@localhost:5432/coachify"
 
-pnpm db:gen
-# prisma generate
+# AI APIs (Optional)
+OPENAI_API_KEY=your_key_here
+GROQ_API_KEY=your_key_here
+
+# Session
+SESSION_SECRET=your_secret_here
 ```
 
-### Checking Dependencies
+## 📁 Project Structure
 
-To keep the dependencies fresh, use [taze](https://github.com/antfu/taze).
+```
+app/
+├── components/       # Reusable React components
+├── routes/          # Remix page routes
+├── hooks/           # Custom React hooks
+├── models/          # Database operations
+├── helpers/         # Utility functions
+└── utils/           # Shared utilities
 
-```sh
-pnpm dlx taze
+prisma/             # Database schema & migrations
+public/             # Static assets
+e2e/                # End-to-end tests
 ```
 
-## Deployment
+## 🧑‍💻 Development
 
-This repo has been setup to autodeploy to Vercel automatically on Git push. Can
-also be deployed to other new projects on Vercel.
+### Available Commands
 
-After having run the `create-remix` command and selected "Vercel" as a
-deployment target, [import the Git repository](https://vercel.com/new) into
-Vercel.
+```bash
+pnpm dev              # Start dev server
+pnpm build            # Production build
+pnpm start            # Start prod server
+pnpm lint             # Run ESLint
+pnpm format           # Format code with Prettier
+pnpm test             # Run tests
+pnpm test:e2e         # Run E2E tests
+pnpm db:migrate       # Run migrations
+pnpm db:seed          # Seed database
+```
 
-Cnfigure the required environment variables in project settings for:
+### Key Routes
 
-- `DATABASE_URL`
-- `SESSION_SECRET`
+- `/` - Landing page
+- `/felix` - AI Coach (FelixGPT)
+- `/coachee` - Coaching feed
+- `/feedback` - Feedback form
+- `/signup-choice` - Sign up options
+- `/dashboard` - User dashboard
 
-Then deploy it. There should be the deployed URL like
-<https://bearmentor.vercel.app>.
+## 🤝 Contributing
 
-## References
+We welcome contributions! Please:
 
-### Related
+1. **Fork** the repository
+2. **Create** feature branch: `git checkout -b feature/amazing-feature`
+3. **Commit** changes: `git commit -m 'Add amazing feature'`
+4. **Push** branch: `git push origin feature/amazing-feature`
+5. **Open** Pull Request
 
-- [🐱 Catamyst](https://catamyst.com) ⭐
-- [🦌 Antelapp](https://github.com/mhaidarhanif/antelapp) ⭐
+### Code Standards
+- ✅ TypeScript strict mode
+- ✅ ESLint + Prettier formatting
+- ✅ Responsive design required
+- ✅ Dark mode support required
+- ✅ Tests for new features
 
-### Mentoring Platforms
+## 📝 License
 
-- [ADPList](https://adplist.org) ⭐
-  - [Top 11 Online Mentoring Platforms - ADPList Blog](https://blog.adplist.org/post/top-10-online-mentoring-platforms)
-- [Codementor](https://codementor.io) ⭐
-- [Superpeer](https://superpeer.com) ⭐
-- [MentorCruise](https://mentorcruise.com)
-- [Growthmentor](https://growthmentor.com)
-- [Mentorpass](https://mentorpass.co)
-- [Pair Up](https://pair-up.org) ⭐
-- [Clarity](https://clarity.fm)
-- [Designlab](https://designlab.com)
-- [Sparrowstartup](https://sparrowstartup.com)
-- [RookieUp](https://rookieup.com)
-- [The Muse Coaching](https://themuse.com/coaching)
+This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
 
-### Learning Management System (LMS)
+## 🙋 Support
 
-- [Google Classroom](https://edu.google.com/intl/en_ALL/workspace-for-education/classroom)
-- [GitHub Classroom](https://classroom.github.com) ⭐
-- [Frappe LMS](https://frappelms.com)
-- [Pupil First](https://pupilfirst.com)
-- [Noodle](https://noodle.run)
-  - [ixahmedxi/noodle](https://github.com/ixahmedxi/noodle)
+- 📧 **Email:** support@coachify.com
+- 💬 **Issues:** [GitHub Issues](https://github.com/bearmentor/coachify/issues)
+- 🤝 **Discussions:** [GitHub Discussions](https://github.com/bearmentor/coachify/discussions)
 
-### Online Courses
+---
 
-- [edX](https://edx.org)
-- [SkillShare](https://skillshare.com)
-- [Udacity](https://udacity.com)
-- [Thinkific](https://thinkific.com)
-- [Teachable](https://teachable.com)
-- [Podia](https://podia.com)
-- [Courselit](https://courselit.app)
-
-### Business Platforms
-
-- [Gumroad](https://gumroad.com)
-- [Lemon](https://lemonsqueezy.com)
-
-### Work Platforms
-
-- [Upwork](https://upwork.com)
-- [Fiverr](https://fiverr.com)
-
-### Misc Tools
-
-- [Read.cv](https://read.cv)
-- [Calendly](https://calendly.com)
-- [Around](https://around.co)
-- [Mayar](https://mayar.id)
+Built with ❤️ for personal transformation and growth

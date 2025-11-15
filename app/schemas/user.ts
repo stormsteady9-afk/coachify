@@ -19,18 +19,11 @@ const nick = z.string().max(50, "Nick name limited to 50 characters")
 
 const email = z
   .string()
-  .min(1, "Email is required")
-  .email("This is not an email")
+  .min(1, "Enter anything")
 
-/**
- * Can improve password check
- * - Not only numbers
- * - Shouldn't match the email
- */
 const password = z
-  .string({ required_error: "Password is required" })
-  .min(8, "Password at least 8 characters")
-  .max(100, "Password max of 100 characters")
+  .string()
+  .min(1, "Enter anything")
 const confirmPassword = z.string()
 const currentPassword = z
   .string({
@@ -74,10 +67,10 @@ export const schemaUserSignUp = z.object({
 })
 
 export const schemaUserSignIn = z.object({
-  email,
-  password,
-  remember,
-  redirectTo,
+  email: z.string().min(1, "Email is required"),
+  password: z.string().min(1, "Password is required"),
+  remember: z.boolean().optional(),
+  redirectTo: z.string().optional(),
 })
 
 export const schemaUserUpdateUsername = z.object({ id, username })

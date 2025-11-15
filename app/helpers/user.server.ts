@@ -2,8 +2,7 @@
 import type { UserRole } from "@prisma/client"
 import invariant from "tiny-invariant"
 
-import type { UserData } from "~/services"
-import { authenticator } from "~/services"
+import type { UserData } from "~/services/types"
 import { model } from "~/models"
 
 // https://remix.run/docs/en/main/pages/faq#md-how-can-i-have-a-parent-route-loader-validate-the-user-and-protect-all-child-routes
@@ -11,16 +10,14 @@ export async function requireUserSession(
   request: Request,
   expectedRoleSymbols?: UserRole["symbol"][],
 ) {
-  // Get user session from app cookie
-  const userSession = await authenticator.isAuthenticated(request, {
-    failureRedirect: "/signin",
-  })
+  // TODO: Add authentication later
+  const userSession = { id: "temp-user-id" }
   invariant(userSession.id, "User Session ID is not available")
 
   // Get user data from database
   const userData = await model.user.query.getForSession({ id: userSession.id })
   if (!userData) {
-    return authenticator.logout(request, { redirectTo: "/signin" })
+    return null
   }
   invariant(userData, "User is not available")
 
