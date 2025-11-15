@@ -270,6 +270,10 @@ importers:
       typescript:
         specifier: ^5.1.6
         version: 5.9.3
+    optionalDependencies:
+      nodemailer:
+        specifier: ^6.9.4
+        version: 6.10.1
 
 packages:
 
@@ -5107,6 +5111,10 @@ packages:
 
   node-releases@2.0.27:
     resolution: {integrity: sha512-nmh3lCkYZ3grZvqcCH+fjmQ7X+H0OeZgP40OierEaAptX4XofMh5kwNbWh7lBduUzCcV/8kZ+NDLCwm2iorIlA==}
+
+  nodemailer@6.10.1:
+    resolution: {integrity: sha512-Z+iLaBGVaSjbIzQ4pX6XV41HrooLsQ10ZWPUehGmuantvzWoDVBnmsdUcOIDM1t+yPor5pDhVlDESgOMEGxhHA==}
+    engines: {node: '>=6.0.0'}
 
   nopt@6.0.0:
     resolution: {integrity: sha512-ZwLpbTgdhuZUnZzjd7nb1ZV+4DoiC6/sfiVKok72ym/4Tlf+DFdlHYmT2JPmcNNWV6Pi3SDf1kT+A4r9RTuT9g==}
@@ -12343,6 +12351,9 @@ snapshots:
       - supports-color
 
   node-releases@2.0.27: {}
+
+  nodemailer@6.10.1:
+    optional: true
 
   nopt@6.0.0:
     dependencies:
