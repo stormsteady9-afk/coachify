@@ -38,3 +38,5 @@ Thumbs.db
 pnpm-error.log
 npm-debug.log*
 yarn-error.log*
+# Local Netlify folder
+.netlify
