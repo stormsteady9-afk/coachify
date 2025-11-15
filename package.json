@@ -25,8 +25,9 @@
     "test:e2e": "playwright test",
     "reveal": "remix reveal",
     "clean": "rm -rf build public/build",
-    "prebuild": "prisma db push",
-    "postinstall": "prisma generate"
+    "prebuild": "if [ \"$NODE_ENV\" != \"production\" ]; then prisma db push; fi",
+    "postinstall": "prisma generate",
+    "start": "remix-serve ./build/index.js"
   },
   "dependencies": {
     "@ariakit/react": "0.2.15",
