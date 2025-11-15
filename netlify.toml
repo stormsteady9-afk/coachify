@@ -1,7 +1,7 @@
 [build]
   command = "pnpm install && pnpm run build"
   functions = "netlify/functions"
-  publish = "dist"
+  publish = "public"
 
 [dev]
   command = "pnpm dev"
@@ -9,10 +9,8 @@
 
 # Route all requests to the Remix server function
 [[redirects]]
-  # Temporary SPA fallback: serve index.html for unknown routes so the site
-  # doesn't return 404 while we fix the serverless function deployment.
-  # TODO: replace with server function route once SSR is fixed.
+  # Route all requests to the Remix server function (SSR)
   from = "/*"
-  to = "/index.html"
+  to = "/.netlify/functions/server"
   status = 200
   force = true
