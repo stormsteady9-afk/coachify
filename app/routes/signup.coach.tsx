@@ -8,7 +8,6 @@ import {
   IconArrowRight,
   IconMessage,
   IconLogout,
-  IconSearch,
 } from "@tabler/icons-react"
 import type { ReactNode } from "react"
 import ThemeSwitcher from "../components/ThemeSwitcher"
@@ -399,11 +398,6 @@ function HeaderNavigation() {
       to: "/felix", 
       text: "Chat with AI Coach", 
       icon: <IconRobot className="icon" /> 
-    },
-    { 
-      to: "/search", 
-      text: "Search", 
-      icon: <IconSearch className="icon" /> 
     },
     { 
       to: "/signup-choice", 

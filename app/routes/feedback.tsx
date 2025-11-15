@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { json } from "@remix-run/node"
 import type { ActionArgs } from "@remix-run/node"
-import { Form, useActionData, useNavigation, Link } from "@remix-run/react"
+import { Form, useActionData, useNavigation, Link, useNavigate } from "@remix-run/react"
 import ThemeSwitcher from "../components/ThemeSwitcher"
 import {
   IconMail,
@@ -10,7 +10,16 @@ import {
   IconCheck,
   IconArrowLeft,
   IconBrandWhatsapp,
+  IconDashboard,
+  IconRobot,
+  IconArrowRight,
+  IconMessage,
+  IconLogout,
 } from "@tabler/icons-react"
+import type { ReactNode } from "react"
+import { cn } from "~/utils"
+import { useScreenLarge } from "~/hooks"
+import { TooltipAuto, TooltipProvider } from "~/components"
 
 type ActionData = { ok: boolean; error?: string; message?: string }
 
@@ -102,6 +111,7 @@ export default function FeedbackPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-emerald-50/30 dark:from-slate-900 dark:via-blue-900/10 dark:to-emerald-900/10">
+      <HeaderNavigation />
       {/* Header */}
       <header className="border-b border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
@@ -347,6 +357,127 @@ export default function FeedbackPage() {
           </div>
         </div>
       </div>
+    </div>
+  )
+}
+
+// Navigation menu component
+type NavItem = {
+  to: string
+  text: string
+  icon: ReactNode
+  action?: () => void
+}
+
+function HeaderNavigation() {
+  const navigate = useNavigate()
+  const isScreenLarge = useScreenLarge()
+
+  const handleFeedback = () => {
+    console.log("Feedback clicked")
+  }
+
+  const handleQuit = () => {
+    navigate("/")
+  }
+
+  const navMainItems: NavItem[] = [
+    { 
+      to: "/", 
+      text: "Dashboard", 
+      icon: <IconDashboard className="icon" /> 
+    },
+    { 
+      to: "/felix", 
+      text: "Chat with AI Coach", 
+      icon: <IconRobot className="icon" /> 
+    },
+    { 
+      to: "/signup-choice", 
+      text: "Continue to Coachify Platform", 
+      icon: <IconArrowRight className="icon" /> 
+    },
+  ]
+
+  const actionItems: NavItem[] = [
+    {
+      to: "#",
+      text: "Feedback",
+      icon: <IconMessage className="icon" />,
+      action: handleFeedback
+    },
+    {
+      to: "#",
+      text: "Quit",
+      icon: <IconLogout className="icon" />,
+      action: handleQuit
+    }
+  ]
+
+  return (
+    <header
+      className={cn(
+        "z-10 select-none",
+        "border-stone-200 bg-stone-50 dark:border-stone-800 dark:bg-stone-950",
+        "fixed bottom-0 left-0 flex w-full items-center justify-center border-t-2",
+        "lg:top-0 lg:h-screen lg:w-16 lg:border-r-2 lg:border-t-0",
+      )}
+    >
+      <nav className="w-full max-w-sm">
+        <TooltipProvider delayDuration={500}>
+          <ul className="flex justify-between gap-0 p-2 sm:gap-2 lg:flex-col">
+            <NavigationList navItems={navMainItems} isScreenLarge={isScreenLarge} />
+            <NavigationList navItems={actionItems} isScreenLarge={isScreenLarge} />
+          </ul>
+        </TooltipProvider>
+      </nav>
+    </header>
+  )
+}
+
+function NavigationList({ navItems, isScreenLarge }: { navItems: NavItem[]; isScreenLarge: boolean }) {
+
+  return (
+    <div className="flex lg:flex-col gap-0 sm:gap-2">
+      {navItems.map(navItem => {
+        const classes = cn(
+          "inline-flex lg:flex items-center justify-center lg:justify-start",
+          "gap-0 lg:gap-3 px-2 sm:px-4 lg:px-4 py-2 sm:py-3 lg:py-3",
+          "rounded-lg text-xs sm:text-sm font-medium",
+          "text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800",
+          "transition-all duration-200",
+        )
+
+        if (navItem.action) {
+          return (
+            <li key={navItem.text}>
+              <TooltipAuto text={navItem.text} side={isScreenLarge ? "right" : "top"}>
+                <button
+                  onClick={navItem.action}
+                  className={classes}
+                >
+                  {navItem.icon}
+                  <span className="hidden lg:inline">{navItem.text}</span>
+                </button>
+              </TooltipAuto>
+            </li>
+          )
+        }
+
+        return (
+          <li key={navItem.text}>
+            <TooltipAuto text={navItem.text} side={isScreenLarge ? "right" : "top"}>
+              <Link
+                to={navItem.to}
+                className={classes}
+              >
+                {navItem.icon}
+                <span className="hidden lg:inline">{navItem.text}</span>
+              </Link>
+            </TooltipAuto>
+          </li>
+        )
+      })}
     </div>
   )
 }
