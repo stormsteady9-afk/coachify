@@ -9,7 +9,10 @@
 
 # Route all requests to the Remix server function
 [[redirects]]
+  # Temporary SPA fallback: serve index.html for unknown routes so the site
+  # doesn't return 404 while we fix the serverless function deployment.
+  # TODO: replace with server function route once SSR is fixed.
   from = "/*"
-  to = "/.netlify/functions/server"
+  to = "/index.html"
   status = 200
   force = true
