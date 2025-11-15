@@ -8,7 +8,9 @@ import {
 } from "@remix-run/react"
 import { conform, parse, useForm } from "@conform-to/react"
 import { parse as parseZod } from "@conform-to/zod"
-import type { User } from "@prisma/client"
+// Import the User type from the local model to avoid a runtime/dev dependency
+// on `@prisma/client` (we provide a runtime stub for prisma during builds).
+import type { User } from "~/models/user.server"
 import { badRequest, forbidden } from "remix-utils"
 import type * as z from "zod"
 
@@ -114,7 +116,9 @@ export function UserEmailForm({ user }: { user: Pick<User, "id" | "email"> }) {
 export async function action({ request }: ActionArgs) {
   await delay()
   // TODO: Add authentication later
-  return null
+  // Temporary user session for testing (remove when auth is added)
+  const userSession = { id: "temp-user-id" }
+  if (!userSession?.id) return redirect("/signout")
 
   const formData = await request.formData()
   const parsed = parse(formData)

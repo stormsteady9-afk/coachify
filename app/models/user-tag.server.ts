@@ -1,5 +1,3 @@
-import type { UserTag } from "@prisma/client"
-
 import { prisma } from "~/libs"
 
 export const fields = {
@@ -22,7 +20,7 @@ export const query = {
     })
   },
 
-  getBySymbol({ symbol }: { symbol: UserTag["symbol"] }) {
+  getBySymbol({ symbol }: { symbol: string }) {
     return prisma.userTag.findFirst({
       where: { symbol },
     })

@@ -134,7 +134,6 @@ export default function CoachSignup({ onClose }: { onClose?: () => void } = {}) 
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-blue-50/30 to-emerald-50/30 dark:from-slate-900 dark:via-blue-900/10 dark:to-emerald-900/10 py-8 px-4 sm:px-6 lg:px-8">
-      <HeaderNavigation />
       <div className="w-full max-w-2xl">
         <div className="bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm rounded-3xl shadow-2xl border border-slate-200/50 dark:border-slate-700/50 p-6 sm:p-8 lg:p-10 relative overflow-hidden">
           {/* Background decoration */}

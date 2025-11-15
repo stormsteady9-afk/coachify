@@ -1,5 +1,4 @@
-import { Prisma } from "@prisma/client"
-import type { User } from "@prisma/client"
+import type { Prisma, User } from "@prisma/client"
 import bcrypt from "bcryptjs"
 import invariant from "tiny-invariant"
 import type { z } from "zod"
@@ -238,10 +237,12 @@ export const mutation = {
       })
       return { user, error: null }
     } catch (error) {
-      if (
-        error instanceof Prisma.PrismaClientKnownRequestError &&
-        error.code === "P2002"
-      ) {
+      // Prisma is removed at runtime; errors from a DB client will still
+      // include a `code` property (e.g. P2002 for unique constraint).
+      // Use a runtime-safe check instead of `instanceof` which requires
+      // bringing in @prisma/client at runtime.
+      const code = (error as any)?.code
+      if (code === "P2002") {
         return { error: { username: `Username ${username} is taken` } }
       }
       return { error: { username: "Username failed to update" } }
@@ -285,10 +286,8 @@ export const mutation = {
       const user = await prisma.user.update({ where: { id }, data: { email } })
       return { user, error: null }
     } catch (error) {
-      if (
-        error instanceof Prisma.PrismaClientKnownRequestError &&
-        error.code === "P2002"
-      ) {
+      const code = (error as any)?.code
+      if (code === "P2002") {
         return { error: { email: `Email ${email} might already used` } }
       }
       return { error: { username: "Email failed to update" } }
