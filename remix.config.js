@@ -7,12 +7,9 @@ module.exports = {
   serverModuleFormat: "cjs",
   ignoredRouteFiles: ["**/.*"],
 
-  // When running locally in development mode, we use the built-in remix
-  // server. This does not understand the vercel lambda module format,
-  // so we default back to the standard build output.
-  server: NODE_ENV === "development" ? undefined : "./server.ts",
-  // Write server build to `dist/index.js` so we can commit a distributable build
-  serverBuildPath: "dist/index.js",
+  // Use Remix default server (built-in)
+  // server: NODE_ENV === "development" ? undefined : "./server.ts",
+  // serverBuildPath: "dist/index.js",
   // appDirectory: "app",
   // assetsBuildDirectory: "public/build",
   // publicPath: "/build/",
