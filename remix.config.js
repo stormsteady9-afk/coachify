@@ -11,7 +11,8 @@ module.exports = {
   // server. This does not understand the vercel lambda module format,
   // so we default back to the standard build output.
   server: NODE_ENV === "development" ? undefined : "./server.ts",
-  serverBuildPath: "api/index.js",
+  // Write server build to `dist/index.js` so we can commit a distributable build
+  serverBuildPath: "dist/index.js",
   // appDirectory: "app",
   // assetsBuildDirectory: "public/build",
   // publicPath: "/build/",
