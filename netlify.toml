@@ -1,12 +1,15 @@
 [build]
   command = "pnpm install && pnpm run build"
-  publish = "public"
+  functions = "netlify/functions"
+  publish = "public/build"
 
 [dev]
   command = "pnpm dev"
   port = 3000
 
+# Route all requests to the Remix server function
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/.netlify/functions/server"
   status = 200
+  force = true
