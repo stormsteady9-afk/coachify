@@ -8,8 +8,7 @@ import {
   IconRobot, 
   IconArrowRight, 
   IconMessage, 
-  IconLogout,
-  IconSearch 
+  IconLogout
 } from "@tabler/icons-react"
 import Groq from "groq-sdk"
 import ThemeSwitcher from "../components/ThemeSwitcher"
@@ -381,7 +380,6 @@ export default function Felix() {
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
           <div className="flex items-center gap-4">
-            <BackButton />
             <div className="flex items-center gap-3">
               <div className="relative">
                 <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-2xl flex items-center justify-center shadow-lg">
@@ -617,23 +615,6 @@ export default function Felix() {
   )
 }
 
-function BackButton() {
-  const navigate = useNavigate()
-  return (
-    <button
-      onClick={() => navigate(-1)}
-      className="group inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm border border-slate-200/50 dark:border-slate-700/50 shadow-sm hover:shadow-md hover:bg-slate-50 dark:hover:bg-slate-700/80 transition-all duration-200 text-slate-700 dark:text-slate-200"
-      title="Go back"
-      aria-label="Go back"
-    >
-      <svg className="w-4 h-4 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-6 7-6" />
-      </svg>
-      <span className="text-sm font-medium">Back</span>
-    </button>
-  )
-}
-
 // Navigation menu component (from header-navigation.tsx)
 type NavItem = {
   to: string
@@ -667,11 +648,6 @@ function HeaderNavigation() {
       to: "/felix", 
       text: "Chat with AI Coach", 
       icon: <IconRobot className="icon" /> 
-    },
-    { 
-      to: "/search", 
-      text: "Search", 
-      icon: <IconSearch className="icon" /> 
     },
     { 
       to: "/signup-choice", 

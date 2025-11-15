@@ -31,28 +31,24 @@ import styles from "./globals.css"
 export const links: LinksFunction = () => [
   {
     rel: "shortcut icon",
-    href: "https://fav.farm/",
-  },
-  {
-    rel: "shortcut icon",
-    href: "/favicon.ico",
+    href: "/images/dolphin.png",
   },
   {
     rel: "icon",
     type: "image/png",
     sizes: "32x32",
-    href: "/favicon-32x32.png",
+    href: "/images/dolphin.png",
   },
   {
     rel: "icon",
     type: "image/png",
     sizes: "16x16",
-    href: "/favicon-16x16.png",
+    href: "/images/dolphin.png",
   },
   {
     rel: "apple-touch-icon",
     sizes: "180x180",
-    href: "/apple-touch-icon-precomposed.png",
+    href: "/images/dolphin.png",
   },
   { rel: "stylesheet", href: brandFontStyles },
   { rel: "stylesheet", href: sansFontStyles },
