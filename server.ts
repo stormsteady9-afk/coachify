@@ -5,7 +5,7 @@ import http from "node:http"
 
 installGlobals()
 
-const handler = createRequestHandler({ build, mode: process.env.NODE_ENV })
+const handler = createRequestHandler(build, process.env.NODE_ENV || "production")
 
 const PORT = process.env.PORT || 3000
 

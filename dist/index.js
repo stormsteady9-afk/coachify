@@ -1771,7 +1771,7 @@ function useToast() {
 }
 
 // app/globals.css
-var globals_default = "/build/_assets/globals-HCUJUQ6A.css";
+var globals_default = "/build/_assets/globals-XBMQE3IO.css";
 
 // app/root.tsx
 var import_jsx_runtime28 = require("react/jsx-runtime"), links3 = () => [
@@ -5413,28 +5413,8 @@ function NavigationList2({ navItems }) {
   ) }, navItem.text)) });
 }
 
-// app/routes/_page.privacy.tsx
-var page_privacy_exports = {};
-__export(page_privacy_exports, {
-  default: () => Route13,
-  meta: () => meta3
-});
-var import_jsx_runtime47 = require("react/jsx-runtime"), meta3 = () => [
-  { title: formatTitle("Privacy Policy") },
-  {
-    name: "description",
-    content: "Privacy Policy of \u{1F43B} Bearmentor."
-  }
-];
-function Route13() {
-  return /* @__PURE__ */ (0, import_jsx_runtime47.jsx)(Layout, { withPadding: !0, children: /* @__PURE__ */ (0, import_jsx_runtime47.jsxs)("header", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime47.jsx)("h1", { children: "Privacy Policy" }),
-    /* @__PURE__ */ (0, import_jsx_runtime47.jsx)("p", { children: "(Work in Progress)" })
-  ] }) });
-}
-
 // server-entry-module:@remix-run/dev/server-build
-var route21 = __toESM(require_api_coaching());
+var route20 = __toESM(require_api_coaching());
 
 // app/routes/healthcheck.tsx
 var healthcheck_exports = {};
@@ -5464,34 +5444,14 @@ async function loader15({ request }) {
   }
 }
 
-// app/routes/_page.terms.tsx
-var page_terms_exports = {};
-__export(page_terms_exports, {
-  default: () => Route14,
-  meta: () => meta4
-});
-var import_jsx_runtime48 = require("react/jsx-runtime"), meta4 = () => [
-  { title: formatTitle("Terms of Service") },
-  {
-    name: "description",
-    content: "Terms of Service of \u{1F43B} Bearmentor."
-  }
-];
-function Route14() {
-  return /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(Layout, { withPadding: !0, children: /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("header", { children: [
-    /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("h1", { children: "Terms of Service" }),
-    /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("p", { children: "(Work in Progress)" })
-  ] }) });
-}
-
 // app/routes/broadcasts.tsx
 var broadcasts_exports = {};
 __export(broadcasts_exports, {
-  default: () => Route15
+  default: () => Route13
 });
-var import_react46 = require("@remix-run/react"), import_jsx_runtime49 = require("react/jsx-runtime");
-function Route15() {
-  return /* @__PURE__ */ (0, import_jsx_runtime49.jsx)(import_react46.Outlet, {});
+var import_react46 = require("@remix-run/react"), import_jsx_runtime47 = require("react/jsx-runtime");
+function Route13() {
+  return /* @__PURE__ */ (0, import_jsx_runtime47.jsx)(import_react46.Outlet, {});
 }
 
 // app/routes/api.users.tsx
@@ -5524,7 +5484,7 @@ __export(feedback_exports, {
 });
 var import_react47 = require("react"), import_node21 = require("@remix-run/node"), import_react48 = require("@remix-run/react");
 var import_icons_react9 = require("@tabler/icons-react");
-var import_jsx_runtime50 = require("react/jsx-runtime");
+var import_jsx_runtime48 = require("react/jsx-runtime");
 async function action12({ request }) {
   if (request.method !== "POST")
     return (0, import_node21.json)({ ok: !1, error: "Method not allowed" }, { status: 405 });
@@ -5565,46 +5525,46 @@ function FeedbackPage() {
   }, handleSubmit = (e) => {
     submitting && e.preventDefault();
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-emerald-50/30 dark:from-slate-900 dark:via-blue-900/10 dark:to-emerald-900/10", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(HeaderNavigation3, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("header", { className: "border-b border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-20", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)(
+  return /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { className: "min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-emerald-50/30 dark:from-slate-900 dark:via-blue-900/10 dark:to-emerald-900/10", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(HeaderNavigation3, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("header", { className: "border-b border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-20", children: /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { className: "max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)(
         import_react48.Link,
         {
           to: "/",
           className: "inline-flex items-center gap-2 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors",
           children: [
-            /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(import_icons_react9.IconArrowLeft, { className: "w-5 h-5" }),
-            /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("span", { className: "text-sm font-medium", children: "Back" })
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(import_icons_react9.IconArrowLeft, { className: "w-5 h-5" }),
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("span", { className: "text-sm font-medium", children: "Back" })
           ]
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(ThemeSwitcher, {})
+      /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(ThemeSwitcher, {})
     ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "grid grid-cols-1 lg:grid-cols-3 gap-8", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "lg:col-span-1 space-y-6", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-6 border border-slate-200 dark:border-slate-700", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "mb-4", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("h1", { className: "text-2xl font-bold bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent", children: "Get in Touch" }),
-          /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("p", { className: "text-slate-600 dark:text-slate-400 text-sm mt-2", children: "We'd love to hear from you. Send us a message and we'll respond as soon as possible." })
+    /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("div", { className: "max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12", children: /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { className: "grid grid-cols-1 lg:grid-cols-3 gap-8", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { className: "lg:col-span-1 space-y-6", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("div", { className: "bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-6 border border-slate-200 dark:border-slate-700", children: /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { className: "mb-4", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("h1", { className: "text-2xl font-bold bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent", children: "Get in Touch" }),
+          /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("p", { className: "text-slate-600 dark:text-slate-400 text-sm mt-2", children: "We'd love to hear from you. Send us a message and we'll respond as soon as possible." })
         ] }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "bg-gradient-to-br from-emerald-50 to-blue-50 dark:from-emerald-900/10 dark:to-blue-900/10 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-800", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("h3", { className: "font-semibold text-slate-900 dark:text-slate-100 mb-4", children: "Contact Methods" }),
-          /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "space-y-4", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)(
+        /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { className: "bg-gradient-to-br from-emerald-50 to-blue-50 dark:from-emerald-900/10 dark:to-blue-900/10 rounded-2xl p-6 border border-emerald-200 dark:border-emerald-800", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("h3", { className: "font-semibold text-slate-900 dark:text-slate-100 mb-4", children: "Contact Methods" }),
+          /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { className: "space-y-4", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)(
               "a",
               {
                 href: "mailto:kwitondafelix6@gmail.com",
                 className: "group flex items-start gap-3 p-3 rounded-lg hover:bg-white dark:hover:bg-slate-800 transition-colors",
                 children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-200 dark:group-hover:bg-blue-900/50 transition-colors", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(import_icons_react9.IconMail, { className: "w-5 h-5 text-blue-600 dark:text-blue-400" }) }),
-                  /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { children: [
-                    /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("p", { className: "text-sm font-medium text-slate-900 dark:text-slate-100", children: "Email" }),
-                    /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("p", { className: "text-xs text-slate-600 dark:text-slate-400 break-all group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors", children: "kwitondafelix6@gmail.com" })
+                  /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("div", { className: "w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-200 dark:group-hover:bg-blue-900/50 transition-colors", children: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(import_icons_react9.IconMail, { className: "w-5 h-5 text-blue-600 dark:text-blue-400" }) }),
+                  /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { children: [
+                    /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("p", { className: "text-sm font-medium text-slate-900 dark:text-slate-100", children: "Email" }),
+                    /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("p", { className: "text-xs text-slate-600 dark:text-slate-400 break-all group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors", children: "kwitondafelix6@gmail.com" })
                   ] })
                 ]
               }
             ),
-            /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)(
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)(
               "a",
               {
                 href: "https://wa.me/821021597173?text=Hi%20Felix%2C%20I%20have%20feedback%20for%20you...",
@@ -5612,23 +5572,23 @@ function FeedbackPage() {
                 rel: "noopener noreferrer",
                 className: "group flex items-start gap-3 p-3 rounded-lg hover:bg-white dark:hover:bg-slate-800 transition-colors",
                 children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-green-200 dark:group-hover:bg-green-900/50 transition-colors", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(import_icons_react9.IconBrandWhatsapp, { className: "w-5 h-5 text-green-600 dark:text-green-400" }) }),
-                  /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { children: [
-                    /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("p", { className: "text-sm font-medium text-slate-900 dark:text-slate-100", children: "WhatsApp" }),
-                    /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("p", { className: "text-xs text-slate-600 dark:text-slate-400 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors", children: "+82 10 2159 7173" })
+                  /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("div", { className: "w-10 h-10 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-green-200 dark:group-hover:bg-green-900/50 transition-colors", children: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(import_icons_react9.IconBrandWhatsapp, { className: "w-5 h-5 text-green-600 dark:text-green-400" }) }),
+                  /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { children: [
+                    /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("p", { className: "text-sm font-medium text-slate-900 dark:text-slate-100", children: "WhatsApp" }),
+                    /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("p", { className: "text-xs text-slate-600 dark:text-slate-400 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors", children: "+82 10 2159 7173" })
                   ] })
                 ]
               }
             ),
-            /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex items-start gap-3 p-3 rounded-lg bg-white/50 dark:bg-slate-800/50", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-10 h-10 bg-amber-100 dark:bg-amber-900/30 rounded-lg flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { className: "flex items-start gap-3 p-3 rounded-lg bg-white/50 dark:bg-slate-800/50", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("div", { className: "w-10 h-10 bg-amber-100 dark:bg-amber-900/30 rounded-lg flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
                 "svg",
                 {
                   className: "w-5 h-5 text-amber-600 dark:text-amber-400",
                   fill: "none",
                   stroke: "currentColor",
                   viewBox: "0 0 24 24",
-                  children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
+                  children: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
                     "path",
                     {
                       strokeLinecap: "round",
@@ -5639,37 +5599,37 @@ function FeedbackPage() {
                   )
                 }
               ) }),
-              /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { children: [
-                /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("p", { className: "text-sm font-medium text-slate-900 dark:text-slate-100", children: "Response Time" }),
-                /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("p", { className: "text-xs text-slate-600 dark:text-slate-400", children: "Usually within 24 hours" })
+              /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { children: [
+                /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("p", { className: "text-sm font-medium text-slate-900 dark:text-slate-100", children: "Response Time" }),
+                /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("p", { className: "text-xs text-slate-600 dark:text-slate-400", children: "Usually within 24 hours" })
               ] })
             ] })
           ] })
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "lg:col-span-2", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-8 border border-slate-200 dark:border-slate-700", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("h2", { className: "text-xl font-bold text-slate-900 dark:text-slate-100 mb-6", children: "Send us Your Feedback" }),
-        (data == null ? void 0 : data.ok) && data.message && /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "mb-6 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl flex items-start gap-3 animate-in fade-in slide-in-from-top", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(import_icons_react9.IconCheck, { className: "w-4 h-4 text-white" }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("p", { className: "font-medium text-green-800 dark:text-green-200", children: "Feedback Sent!" }),
-            /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("p", { className: "text-sm text-green-700 dark:text-green-300 mt-1", children: data.message })
+      /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("div", { className: "lg:col-span-2", children: /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { className: "bg-white dark:bg-slate-800 rounded-2xl shadow-lg p-8 border border-slate-200 dark:border-slate-700", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("h2", { className: "text-xl font-bold text-slate-900 dark:text-slate-100 mb-6", children: "Send us Your Feedback" }),
+        (data == null ? void 0 : data.ok) && data.message && /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { className: "mb-6 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-xl flex items-start gap-3 animate-in fade-in slide-in-from-top", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("div", { className: "w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5", children: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(import_icons_react9.IconCheck, { className: "w-4 h-4 text-white" }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("p", { className: "font-medium text-green-800 dark:text-green-200", children: "Feedback Sent!" }),
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("p", { className: "text-sm text-green-700 dark:text-green-300 mt-1", children: data.message })
           ] })
         ] }),
-        (data == null ? void 0 : data.error) && /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl flex items-start gap-3", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(import_icons_react9.IconX, { className: "w-4 h-4 text-white" }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("p", { className: "font-medium text-red-800 dark:text-red-200", children: "Error" }),
-            /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("p", { className: "text-sm text-red-700 dark:text-red-300 mt-1", children: data.error })
+        (data == null ? void 0 : data.error) && /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { className: "mb-6 p-4 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl flex items-start gap-3", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("div", { className: "w-6 h-6 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5", children: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(import_icons_react9.IconX, { className: "w-4 h-4 text-white" }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("p", { className: "font-medium text-red-800 dark:text-red-200", children: "Error" }),
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("p", { className: "text-sm text-red-700 dark:text-red-300 mt-1", children: data.error })
           ] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)(import_react48.Form, { method: "post", className: "space-y-5", onSubmit: handleSubmit, children: [
-          /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("label", { htmlFor: "name", className: "block text-sm font-medium text-slate-900 dark:text-slate-100 mb-2", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)(import_react48.Form, { method: "post", className: "space-y-5", onSubmit: handleSubmit, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("label", { htmlFor: "name", className: "block text-sm font-medium text-slate-900 dark:text-slate-100 mb-2", children: [
               "Your Name ",
-              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("span", { className: "text-red-500", children: "*" })
+              /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("span", { className: "text-red-500", children: "*" })
             ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
               "input",
               {
                 type: "text",
@@ -5683,12 +5643,12 @@ function FeedbackPage() {
               }
             )
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("label", { htmlFor: "email", className: "block text-sm font-medium text-slate-900 dark:text-slate-100 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("label", { htmlFor: "email", className: "block text-sm font-medium text-slate-900 dark:text-slate-100 mb-2", children: [
               "Your Email ",
-              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("span", { className: "text-red-500", children: "*" })
+              /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("span", { className: "text-red-500", children: "*" })
             ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
               "input",
               {
                 type: "email",
@@ -5702,12 +5662,12 @@ function FeedbackPage() {
               }
             )
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("label", { htmlFor: "subject", className: "block text-sm font-medium text-slate-900 dark:text-slate-100 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("label", { htmlFor: "subject", className: "block text-sm font-medium text-slate-900 dark:text-slate-100 mb-2", children: [
               "Subject ",
-              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("span", { className: "text-red-500", children: "*" })
+              /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("span", { className: "text-red-500", children: "*" })
             ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
               "input",
               {
                 type: "text",
@@ -5721,12 +5681,12 @@ function FeedbackPage() {
               }
             )
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("label", { htmlFor: "message", className: "block text-sm font-medium text-slate-900 dark:text-slate-100 mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("label", { htmlFor: "message", className: "block text-sm font-medium text-slate-900 dark:text-slate-100 mb-2", children: [
               "Message ",
-              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("span", { className: "text-red-500", children: "*" })
+              /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("span", { className: "text-red-500", children: "*" })
             ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
+            /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
               "textarea",
               {
                 id: "message",
@@ -5740,22 +5700,22 @@ function FeedbackPage() {
               }
             )
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "pt-2", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("div", { className: "pt-2", children: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
             "button",
             {
               type: "submit",
               disabled: submitting,
               className: "w-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 disabled:from-slate-400 disabled:to-slate-500 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-[1.02] active:scale-95 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2",
-              children: submitting ? /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)(import_jsx_runtime50.Fragment, { children: [
-                /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" }),
+              children: submitting ? /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)(import_jsx_runtime48.Fragment, { children: [
+                /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("div", { className: "w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" }),
                 "Sending..."
-              ] }) : /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)(import_jsx_runtime50.Fragment, { children: [
-                /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(import_icons_react9.IconMail, { className: "w-5 h-5" }),
+              ] }) : /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)(import_jsx_runtime48.Fragment, { children: [
+                /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(import_icons_react9.IconMail, { className: "w-5 h-5" }),
                 "Send Feedback"
               ] })
             }
           ) }),
-          /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("p", { className: "text-xs text-slate-500 dark:text-slate-400 text-center", children: "We respect your privacy. Your feedback helps us improve our service." })
+          /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("p", { className: "text-xs text-slate-500 dark:text-slate-400 text-center", children: "We respect your privacy. Your feedback helps us improve our service." })
         ] })
       ] }) })
     ] }) })
@@ -5770,33 +5730,33 @@ function HeaderNavigation3() {
     {
       to: "/",
       text: "Dashboard",
-      icon: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(import_icons_react9.IconDashboard, { className: "icon" })
+      icon: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(import_icons_react9.IconDashboard, { className: "icon" })
     },
     {
       to: "/felix",
       text: "Chat with AI Coach",
-      icon: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(import_icons_react9.IconRobot, { className: "icon" })
+      icon: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(import_icons_react9.IconRobot, { className: "icon" })
     },
     {
       to: "/signup-choice",
       text: "Continue to Coachify Platform",
-      icon: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(import_icons_react9.IconArrowRight, { className: "icon" })
+      icon: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(import_icons_react9.IconArrowRight, { className: "icon" })
     }
   ], actionItems = [
     {
       to: "#",
       text: "Feedback",
-      icon: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(import_icons_react9.IconMessage, { className: "icon" }),
+      icon: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(import_icons_react9.IconMessage, { className: "icon" }),
       action: handleFeedback
     },
     {
       to: "#",
       text: "Quit",
-      icon: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(import_icons_react9.IconLogout, { className: "icon" }),
+      icon: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(import_icons_react9.IconLogout, { className: "icon" }),
       action: handleQuit
     }
   ];
-  return /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(
     "header",
     {
       className: cn(
@@ -5805,15 +5765,15 @@ function HeaderNavigation3() {
         "fixed bottom-0 left-0 flex w-full items-center justify-center border-t-2",
         "lg:top-0 lg:h-screen lg:w-16 lg:border-r-2 lg:border-t-0"
       ),
-      children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("nav", { className: "w-full max-w-sm", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(TooltipProvider, { delayDuration: 500, children: /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("ul", { className: "flex justify-between gap-0 p-2 sm:gap-2 lg:flex-col", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(NavigationList3, { navItems: navMainItems2, isScreenLarge }),
-        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(NavigationList3, { navItems: actionItems, isScreenLarge })
+      children: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("nav", { className: "w-full max-w-sm", children: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(TooltipProvider, { delayDuration: 500, children: /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)("ul", { className: "flex justify-between gap-0 p-2 sm:gap-2 lg:flex-col", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(NavigationList3, { navItems: navMainItems2, isScreenLarge }),
+        /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(NavigationList3, { navItems: actionItems, isScreenLarge })
       ] }) }) })
     }
   );
 }
 function NavigationList3({ navItems, isScreenLarge }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "flex lg:flex-col gap-0 sm:gap-2", children: navItems.map((navItem) => {
+  return /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("div", { className: "flex lg:flex-col gap-0 sm:gap-2", children: navItems.map((navItem) => {
     let classes = cn(
       "inline-flex lg:flex items-center justify-center lg:justify-start",
       "gap-0 lg:gap-3 px-2 sm:px-4 lg:px-4 py-2 sm:py-3 lg:py-3",
@@ -5821,24 +5781,24 @@ function NavigationList3({ navItems, isScreenLarge }) {
       "text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 hover:bg-stone-100 dark:hover:bg-stone-800",
       "transition-all duration-200"
     );
-    return navItem.action ? /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(TooltipAuto, { text: navItem.text, side: isScreenLarge ? "right" : "top", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)(
+    return navItem.action ? /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(TooltipAuto, { text: navItem.text, side: isScreenLarge ? "right" : "top", children: /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)(
       "button",
       {
         onClick: navItem.action,
         className: classes,
         children: [
           navItem.icon,
-          /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("span", { className: "hidden lg:inline", children: navItem.text })
+          /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("span", { className: "hidden lg:inline", children: navItem.text })
         ]
       }
-    ) }) }, navItem.text) : /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(TooltipAuto, { text: navItem.text, side: isScreenLarge ? "right" : "top", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)(
+    ) }) }, navItem.text) : /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime48.jsx)(TooltipAuto, { text: navItem.text, side: isScreenLarge ? "right" : "top", children: /* @__PURE__ */ (0, import_jsx_runtime48.jsxs)(
       import_react48.Link,
       {
         to: navItem.to,
         className: classes,
         children: [
           navItem.icon,
-          /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("span", { className: "hidden lg:inline", children: navItem.text })
+          /* @__PURE__ */ (0, import_jsx_runtime48.jsx)("span", { className: "hidden lg:inline", children: navItem.text })
         ]
       }
     ) }) }, navItem.text);
@@ -5850,13 +5810,13 @@ var settings_exports = {};
 __export(settings_exports, {
   SidebarNav: () => SidebarNav,
   action: () => action13,
-  default: () => Route16,
+  default: () => Route14,
   loader: () => loader17,
-  meta: () => meta5,
+  meta: () => meta3,
   settingsNavItems: () => settingsNavItems
 });
 var import_react49 = require("@remix-run/react");
-var import_jsx_runtime51 = require("react/jsx-runtime"), meta5 = () => [
+var import_jsx_runtime49 = require("react/jsx-runtime"), meta3 = () => [
   { title: formatTitle("User Settings") },
   {
     name: "description",
@@ -5873,25 +5833,25 @@ var import_jsx_runtime51 = require("react/jsx-runtime"), meta5 = () => [
   // { title: "Appearance", to: "/settings/appearance" },
   // { title: "Notifications", to: "/settings/notifications" },
 ], loader17 = async ({ request }) => null;
-function Route16() {
-  return /* @__PURE__ */ (0, import_jsx_runtime51.jsxs)(Layout, { className: "px-4 sm:px-8", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime51.jsxs)("header", { className: "py-10", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(import_react49.Link, { to: "/settings", children: /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("h1", { className: "hover-opacity text-brand", children: "Settings" }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("p", { className: "text-muted-foreground", children: "Manage your account settings and set e-mail preferences." })
+function Route14() {
+  return /* @__PURE__ */ (0, import_jsx_runtime49.jsxs)(Layout, { className: "px-4 sm:px-8", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime49.jsxs)("header", { className: "py-10", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime49.jsx)(import_react49.Link, { to: "/settings", children: /* @__PURE__ */ (0, import_jsx_runtime49.jsx)("h1", { className: "hover-opacity text-brand", children: "Settings" }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime49.jsx)("p", { className: "text-muted-foreground", children: "Manage your account settings and set e-mail preferences." })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime51.jsxs)("div", { className: "flex max-w-4xl flex-col gap-8 sm:-mx-4 sm:flex-row", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("aside", { className: "w-full overflow-visible sm:block sm:max-w-[240px]", children: /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(SidebarNav, { items: settingsNavItems }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(import_react49.Outlet, {})
+    /* @__PURE__ */ (0, import_jsx_runtime49.jsxs)("div", { className: "flex max-w-4xl flex-col gap-8 sm:-mx-4 sm:flex-row", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime49.jsx)("aside", { className: "w-full overflow-visible sm:block sm:max-w-[240px]", children: /* @__PURE__ */ (0, import_jsx_runtime49.jsx)(SidebarNav, { items: settingsNavItems }) }),
+      /* @__PURE__ */ (0, import_jsx_runtime49.jsx)(import_react49.Outlet, {})
     ] })
   ] });
 }
 function SidebarNav({ className, items, ...props }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime49.jsx)(
     "nav",
     {
       className: cn("flex w-full gap-2 overflow-auto sm:flex-col", className),
       ...props,
-      children: items.map((item) => /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(
+      children: items.map((item) => /* @__PURE__ */ (0, import_jsx_runtime49.jsx)(
         import_react49.NavLink,
         {
           to: item.to,
@@ -5914,7 +5874,7 @@ var coachee_exports = {};
 __export(coachee_exports, {
   default: () => CoacheeFeed
 });
-var import_react50 = require("react"), import_react51 = require("@remix-run/react"), import_jsx_runtime52 = require("react/jsx-runtime"), MOTIVATIONAL_QUOTES = [
+var import_react50 = require("react"), import_react51 = require("@remix-run/react"), import_jsx_runtime50 = require("react/jsx-runtime"), MOTIVATIONAL_QUOTES = [
   "The only way to do great work is to love what you do. - Steve Jobs",
   "Your time is limited, don't waste it living someone else's life.",
   "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt",
@@ -5993,15 +5953,15 @@ function CoacheeFeed() {
       (post) => post.id === postId ? { ...post, isBookmarked: !post.isBookmarked } : post
     ));
   };
-  return /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-50", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("header", { className: "sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "max-w-2xl mx-auto px-4 py-3 flex items-center justify-between", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "flex items-center gap-3", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "w-8 h-8 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("span", { className: "text-white font-bold text-sm", children: "C" }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("h1", { className: "font-bold text-xl bg-gradient-to-r from-slate-900 to-blue-900 dark:from-slate-100 dark:to-blue-100 bg-clip-text text-transparent", children: "Coachify Feed" })
+  return /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-50", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("header", { className: "sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "max-w-2xl mx-auto px-4 py-3 flex items-center justify-between", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex items-center gap-3", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-8 h-8 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("span", { className: "text-white font-bold text-sm", children: "C" }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("h1", { className: "font-bold text-xl bg-gradient-to-r from-slate-900 to-blue-900 dark:from-slate-100 dark:to-blue-100 bg-clip-text text-transparent", children: "Coachify Feed" })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "flex items-center gap-3", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(import_react51.Link, { to: "/search", className: "p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("svg", { className: "w-5 h-5 text-slate-600 dark:text-slate-400", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" }) }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex items-center gap-3", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(import_react51.Link, { to: "/search", className: "p-2 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("svg", { className: "w-5 h-5 text-slate-600 dark:text-slate-400", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" }) }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
           import_react51.Link,
           {
             to: "/create",
@@ -6011,23 +5971,23 @@ function CoacheeFeed() {
         )
       ] })
     ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("main", { className: "max-w-2xl mx-auto pb-20", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("section", { className: "border-b border-slate-200 dark:border-slate-800 pb-4 px-4", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "flex items-center justify-between mb-3", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("h2", { className: "text-sm font-semibold text-slate-700 dark:text-slate-300", children: "Stories" }),
-          /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("span", { className: "text-xs text-slate-500 dark:text-slate-400", children: "Watch all" })
+    /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("main", { className: "max-w-2xl mx-auto pb-20", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("section", { className: "border-b border-slate-200 dark:border-slate-800 pb-4 px-4", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex items-center justify-between mb-3", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("h2", { className: "text-sm font-semibold text-slate-700 dark:text-slate-300", children: "Stories" }),
+          /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("span", { className: "text-xs text-slate-500 dark:text-slate-400", children: "Watch all" })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "flex gap-4 overflow-x-auto pb-2 scrollbar-hide", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "flex-shrink-0 w-20 text-center", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "relative", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "w-16 h-16 rounded-full bg-gradient-to-br from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-600 flex items-center justify-center mx-auto border-2 border-dashed border-slate-300 dark:border-slate-600", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("svg", { className: "w-6 h-6 text-slate-500 dark:text-slate-400", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 6v6m0 0v6m0-6h6m-6 0H6" }) }) }),
-              /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "absolute -bottom-1 -right-1 w-6 h-6 bg-white dark:bg-slate-900 rounded-full border-2 border-white dark:border-slate-900", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "w-full h-full bg-emerald-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("svg", { className: "w-3 h-3 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 6v6m0 0v6m0-6h6m-6 0H6" }) }) }) })
+        /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex gap-4 overflow-x-auto pb-2 scrollbar-hide", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex-shrink-0 w-20 text-center", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "relative", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-16 h-16 rounded-full bg-gradient-to-br from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-600 flex items-center justify-center mx-auto border-2 border-dashed border-slate-300 dark:border-slate-600", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("svg", { className: "w-6 h-6 text-slate-500 dark:text-slate-400", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 6v6m0 0v6m0-6h6m-6 0H6" }) }) }),
+              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "absolute -bottom-1 -right-1 w-6 h-6 bg-white dark:bg-slate-900 rounded-full border-2 border-white dark:border-slate-900", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-full h-full bg-emerald-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("svg", { className: "w-3 h-3 text-white", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 6v6m0 0v6m0-6h6m-6 0H6" }) }) }) })
             ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("p", { className: "text-xs text-slate-600 dark:text-slate-400 mt-1 truncate", children: "Your story" })
+            /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("p", { className: "text-xs text-slate-600 dark:text-slate-400 mt-1 truncate", children: "Your story" })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "flex-shrink-0 w-20 text-center", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "relative", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "w-16 h-16 rounded-full p-0.5 mx-auto bg-gradient-to-tr from-blue-500 to-emerald-500 border-2 border-blue-400", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "w-full h-full rounded-full bg-white dark:bg-slate-900 p-0.5 flex items-center justify-center overflow-hidden", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(
+          /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex-shrink-0 w-20 text-center", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "relative", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-16 h-16 rounded-full p-0.5 mx-auto bg-gradient-to-tr from-blue-500 to-emerald-500 border-2 border-blue-400", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-full h-full rounded-full bg-white dark:bg-slate-900 p-0.5 flex items-center justify-center overflow-hidden", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
                 "img",
                 {
                   src: "/dolphin.png",
@@ -6041,13 +6001,13 @@ function CoacheeFeed() {
                   }
                 }
               ) }) }),
-              /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "absolute -top-1 -right-1 w-4 h-4 bg-blue-500 rounded-full border-2 border-white dark:border-slate-900", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "w-full h-full rounded-full bg-blue-500 animate-pulse" }) })
+              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "absolute -top-1 -right-1 w-4 h-4 bg-blue-500 rounded-full border-2 border-white dark:border-slate-900", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-full h-full rounded-full bg-blue-500 animate-pulse" }) })
             ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("p", { className: "text-xs text-slate-600 dark:text-slate-400 mt-1 truncate font-semibold", children: "Coachify" })
+            /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("p", { className: "text-xs text-slate-600 dark:text-slate-400 mt-1 truncate font-semibold", children: "Coachify" })
           ] }),
-          stories.map((story) => /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "flex-shrink-0 w-20 text-center", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "relative", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: `w-16 h-16 rounded-full p-0.5 mx-auto ${story.hasNewStory ? "bg-gradient-to-tr from-purple-500 to-pink-500" : "bg-gradient-to-tr from-slate-300 to-slate-400 dark:from-slate-600 dark:to-slate-500"}`, children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "w-full h-full rounded-full bg-white dark:bg-slate-900 p-0.5", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(
+          stories.map((story) => /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex-shrink-0 w-20 text-center", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "relative", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: `w-16 h-16 rounded-full p-0.5 mx-auto ${story.hasNewStory ? "bg-gradient-to-tr from-purple-500 to-pink-500" : "bg-gradient-to-tr from-slate-300 to-slate-400 dark:from-slate-600 dark:to-slate-500"}`, children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-full h-full rounded-full bg-white dark:bg-slate-900 p-0.5", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
                 "img",
                 {
                   src: story.avatar,
@@ -6055,16 +6015,16 @@ function CoacheeFeed() {
                   className: "w-full h-full rounded-full object-cover"
                 }
               ) }) }),
-              story.isLive && /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-white dark:border-slate-900", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "w-full h-full rounded-full bg-red-500 animate-pulse" }) })
+              story.isLive && /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-white dark:border-slate-900", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-full h-full rounded-full bg-red-500 animate-pulse" }) })
             ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("p", { className: "text-xs text-slate-600 dark:text-slate-400 mt-1 truncate", children: story.displayName })
+            /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("p", { className: "text-xs text-slate-600 dark:text-slate-400 mt-1 truncate", children: story.displayName })
           ] }, story.id))
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("section", { className: "border-b border-slate-200 dark:border-slate-800 px-4 py-4", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-4 backdrop-blur-sm", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "flex items-center gap-3 mb-3", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "w-10 h-10 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("span", { className: "text-white font-bold text-sm", children: "Y" }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("section", { className: "border-b border-slate-200 dark:border-slate-800 px-4 py-4", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-4 backdrop-blur-sm", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex items-center gap-3 mb-3", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-10 h-10 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("span", { className: "text-white font-bold text-sm", children: "Y" }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
             "input",
             {
               placeholder: "Share your growth journey or ask for guidance...",
@@ -6072,27 +6032,27 @@ function CoacheeFeed() {
             }
           )
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "flex items-center justify-between text-sm", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "flex items-center gap-4 text-slate-500 dark:text-slate-400", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("button", { className: "flex items-center gap-1 hover:text-blue-600 transition-colors", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("svg", { className: "w-5 h-5", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" }) }),
-              /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("span", { children: "Photo" })
+        /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex items-center justify-between text-sm", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex items-center gap-4 text-slate-500 dark:text-slate-400", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("button", { className: "flex items-center gap-1 hover:text-blue-600 transition-colors", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("svg", { className: "w-5 h-5", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" }) }),
+              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("span", { children: "Photo" })
             ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("button", { className: "flex items-center gap-1 hover:text-emerald-600 transition-colors", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("svg", { className: "w-5 h-5", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" }),
-                /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M21 12a9 9 0 11-18 0 9 9 0 0118 0z" })
+            /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("button", { className: "flex items-center gap-1 hover:text-emerald-600 transition-colors", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("svg", { className: "w-5 h-5", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" }),
+                /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M21 12a9 9 0 11-18 0 9 9 0 0118 0z" })
               ] }),
-              /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("span", { children: "Video" })
+              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("span", { children: "Video" })
             ] })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("button", { className: "px-4 py-2 bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 text-white rounded-lg font-medium text-sm shadow-lg hover:shadow-xl transition-all duration-200", children: "Share" })
+          /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("button", { className: "px-4 py-2 bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 text-white rounded-lg font-medium text-sm shadow-lg hover:shadow-xl transition-all duration-200", children: "Share" })
         ] })
       ] }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("section", { className: "space-y-6 py-4", children: posts.map((post, index) => /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("article", { className: "bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "flex items-center justify-between p-4", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "flex items-center gap-3", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-emerald-500 p-0.5", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("section", { className: "space-y-6 py-4", children: posts.map((post, index) => /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("article", { className: "bg-white dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex items-center justify-between p-4", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex items-center gap-3", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-emerald-500 p-0.5", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
               "img",
               {
                 src: post.avatar,
@@ -6100,14 +6060,14 @@ function CoacheeFeed() {
                 className: "w-full h-full rounded-full object-cover"
               }
             ) }),
-            /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { children: [
-              /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "font-semibold text-sm", children: post.authorName }),
-              /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "text-xs text-slate-500 dark:text-slate-400", children: post.timeAgo })
+            /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { children: [
+              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "font-semibold text-sm", children: post.authorName }),
+              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "text-xs text-slate-500 dark:text-slate-400", children: post.timeAgo })
             ] })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("button", { className: "p-2 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-full transition-colors", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("svg", { className: "w-5 h-5 text-slate-500", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" }) }) })
+          /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("button", { className: "p-2 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-full transition-colors", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("svg", { className: "w-5 h-5 text-slate-500", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" }) }) })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)(
+        /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)(
           "div",
           {
             className: "relative bg-slate-900 overflow-hidden",
@@ -6115,12 +6075,12 @@ function CoacheeFeed() {
             onTouchMove: handleTouchMove,
             onTouchEnd: () => handleTouchEnd(post, post.images.length),
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(
+              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
                 "div",
                 {
                   className: "flex transition-transform duration-300 ease-out",
                   style: { transform: `translateX(-${currentSlide * 100}%)` },
-                  children: post.images.map((image2, imageIndex) => /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "w-full flex-shrink-0 aspect-square", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(
+                  children: post.images.map((image2, imageIndex) => /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-full flex-shrink-0 aspect-square", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
                     "img",
                     {
                       src: image2,
@@ -6130,78 +6090,78 @@ function CoacheeFeed() {
                   ) }, `${post.id}-${imageIndex}`))
                 }
               ),
-              post.images.length > 1 && /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "absolute top-4 right-4 flex gap-1", children: post.images.map((_, index2) => /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(
+              post.images.length > 1 && /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "absolute top-4 right-4 flex gap-1", children: post.images.map((_, index2) => /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
                 "div",
                 {
                   className: `w-2 h-2 rounded-full transition-all duration-300 ${index2 === currentSlide ? "bg-white" : "bg-white/50"}`
                 },
                 `${post.id}-dot-${index2}`
               )) }),
-              post.images.length > 1 && /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)(import_jsx_runtime52.Fragment, { children: [
-                currentSlide > 0 && /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(
+              post.images.length > 1 && /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)(import_jsx_runtime50.Fragment, { children: [
+                currentSlide > 0 && /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
                   "button",
                   {
                     className: "absolute left-4 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-all duration-200",
                     onClick: () => setCurrentSlide((prev) => prev - 1),
-                    children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("svg", { className: "w-4 h-4", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M15 19l-7-7 7-7" }) })
+                    children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("svg", { className: "w-4 h-4", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M15 19l-7-7 7-7" }) })
                   }
                 ),
-                currentSlide < post.images.length - 1 && /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(
+                currentSlide < post.images.length - 1 && /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
                   "button",
                   {
                     className: "absolute right-4 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-black/50 hover:bg-black/70 rounded-full flex items-center justify-center text-white transition-all duration-200",
                     onClick: () => setCurrentSlide((prev) => prev + 1),
-                    children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("svg", { className: "w-4 h-4", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 5l7 7-7 7" }) })
+                    children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("svg", { className: "w-4 h-4", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 5l7 7-7 7" }) })
                   }
                 )
               ] })
             ]
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "p-4", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "flex items-center justify-between mb-3", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "flex items-center gap-4", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "p-4", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex items-center justify-between mb-3", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex items-center gap-4", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
                 "button",
                 {
                   onClick: () => toggleLike(post.id),
                   className: `p-2 rounded-full transition-all duration-200 ${post.isLiked ? "text-red-500 bg-red-50 dark:bg-red-900/20" : "hover:bg-slate-100 dark:hover:bg-slate-700"}`,
-                  children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("svg", { className: "w-6 h-6", fill: post.isLiked ? "currentColor" : "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" }) })
+                  children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("svg", { className: "w-6 h-6", fill: post.isLiked ? "currentColor" : "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" }) })
                 }
               ),
-              /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("button", { className: "p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("svg", { className: "w-6 h-6", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" }) }) }),
-              /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("button", { className: "p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("svg", { className: "w-6 h-6", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" }) }) })
+              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("button", { className: "p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("svg", { className: "w-6 h-6", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" }) }) }),
+              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("button", { className: "p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("svg", { className: "w-6 h-6", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" }) }) })
             ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(
+            /* @__PURE__ */ (0, import_jsx_runtime50.jsx)(
               "button",
               {
                 onClick: () => toggleBookmark(post.id),
                 className: `p-2 rounded-full transition-all duration-200 ${post.isBookmarked ? "text-blue-500 bg-blue-50 dark:bg-blue-900/20" : "hover:bg-slate-100 dark:hover:bg-slate-700"}`,
-                children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("svg", { className: "w-6 h-6", fill: post.isBookmarked ? "currentColor" : "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" }) })
+                children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("svg", { className: "w-6 h-6", fill: post.isBookmarked ? "currentColor" : "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" }) })
               }
             )
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "space-y-2", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "text-sm font-semibold", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "space-y-2", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "text-sm font-semibold", children: [
               post.likes.toLocaleString(),
               " likes"
             ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("p", { className: "text-sm text-slate-700 dark:text-slate-300 leading-relaxed", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("span", { className: "font-semibold mr-2", children: post.authorName }),
+            /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("p", { className: "text-sm text-slate-700 dark:text-slate-300 leading-relaxed", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("span", { className: "font-semibold mr-2", children: post.authorName }),
               post.caption
             ] }),
-            post.type === "book_recommendation" && /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "mt-3 p-3 bg-slate-50 dark:bg-slate-700/50 rounded-lg", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "flex items-center gap-3", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "w-12 h-16 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-lg flex items-center justify-center shadow-lg", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("span", { className: "text-white font-bold text-xs text-center px-1", children: "\u{1F4DA}" }) }),
-              /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "flex-1", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "font-semibold text-sm", children: post.book.title }),
-                /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("div", { className: "text-xs text-slate-600 dark:text-slate-400", children: [
+            post.type === "book_recommendation" && /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "mt-3 p-3 bg-slate-50 dark:bg-slate-700/50 rounded-lg", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex items-center gap-3", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "w-12 h-16 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-lg flex items-center justify-center shadow-lg", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("span", { className: "text-white font-bold text-xs text-center px-1", children: "\u{1F4DA}" }) }),
+              /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "flex-1", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "font-semibold text-sm", children: post.book.title }),
+                /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("div", { className: "text-xs text-slate-600 dark:text-slate-400", children: [
                   "by ",
                   post.book.author
                 ] }),
-                /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("button", { className: "text-xs text-blue-600 dark:text-blue-400 font-medium mt-1 hover:underline", children: "Learn more" })
+                /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("button", { className: "text-xs text-blue-600 dark:text-blue-400 font-medium mt-1 hover:underline", children: "Learn more" })
               ] })
             ] }) }),
-            /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("button", { className: "text-sm text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300 transition-colors", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)("button", { className: "text-sm text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300 transition-colors", children: [
               "View all ",
               post.comments,
               " comments"
@@ -6210,20 +6170,20 @@ function CoacheeFeed() {
         ] })
       ] }, post.id)) })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("nav", { className: "fixed bottom-0 left-0 right-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 sm:hidden", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("div", { className: "max-w-2xl mx-auto px-6 flex items-center justify-between py-3", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("nav", { className: "fixed bottom-0 left-0 right-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 sm:hidden", children: /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("div", { className: "max-w-2xl mx-auto px-6 flex items-center justify-between py-3", children: [
       { icon: "\u{1F3E0}", label: "Home", href: "/" },
       { icon: "\u{1F50D}", label: "Search", href: "/search" },
       { icon: "\u2795", label: "Create", href: "/create" },
       { icon: "\u{1F4AC}", label: "Messages", href: "/messages" },
       { icon: "\u{1F464}", label: "Profile", href: "/profile" }
-    ].map((item) => /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)(
+    ].map((item) => /* @__PURE__ */ (0, import_jsx_runtime50.jsxs)(
       import_react51.Link,
       {
         to: item.href,
         className: "flex flex-col items-center gap-1 text-xs transition-all duration-200 hover:scale-110",
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("span", { className: "text-xl", children: item.icon }),
-          /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("span", { className: "text-xs text-slate-600 dark:text-slate-400", children: item.label })
+          /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("span", { className: "text-xl", children: item.icon }),
+          /* @__PURE__ */ (0, import_jsx_runtime50.jsx)("span", { className: "text-xs text-slate-600 dark:text-slate-400", children: item.label })
         ]
       },
       item.href
@@ -6234,12 +6194,12 @@ function CoacheeFeed() {
 // app/routes/mentees.tsx
 var mentees_exports = {};
 __export(mentees_exports, {
-  default: () => Route17,
+  default: () => Route15,
   loader: () => loader18,
-  meta: () => meta6
+  meta: () => meta4
 });
 var import_node22 = require("@remix-run/node"), import_react52 = require("@remix-run/react");
-var import_jsx_runtime53 = require("react/jsx-runtime"), meta6 = ({ data }) => {
+var import_jsx_runtime51 = require("react/jsx-runtime"), meta4 = ({ data }) => {
   let query7 = data == null ? void 0 : data.query, count2 = data == null ? void 0 : data.count;
   return query7 ? [
     { title: formatTitle(`Keyword "${query7}" found ${count2} mentees`) },
@@ -6290,27 +6250,27 @@ var import_jsx_runtime53 = require("react/jsx-runtime"), meta6 = ({ data }) => {
   });
   return (0, import_node22.json)({ query: query7, count: mentees.length, mentees });
 };
-function Route17() {
+function Route15() {
   let { query: query7, count: count2, mentees } = (0, import_react52.useLoaderData)();
-  return /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)(Layout, { withPadding: !0, className: "max-w-7xl space-y-8", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("header", { className: "space-y-4", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("h1", { className: "flex items-center gap-2 text-4xl text-brand", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("img", { src: "/images/bear-smile.png", alt: "Bear", className: "h-10" }),
-        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("span", { children: "Mentees" })
+  return /* @__PURE__ */ (0, import_jsx_runtime51.jsxs)(Layout, { withPadding: !0, className: "max-w-7xl space-y-8", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime51.jsxs)("header", { className: "space-y-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime51.jsxs)("h1", { className: "flex items-center gap-2 text-4xl text-brand", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("img", { src: "/images/bear-smile.png", alt: "Bear", className: "h-10" }),
+        /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("span", { children: "Mentees" })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("p", { className: "text-muted-foreground", children: "Coachee is a person who is mentored, advised, trained, counseled, or taught by a Coach. Like a student or trainee." }),
-      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(SearchForm, { action: "/mentees", placeholder: "Search for mentees" })
+      /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("p", { className: "text-muted-foreground", children: "Coachee is a person who is mentored, advised, trained, counseled, or taught by a Coach. Like a student or trainee." }),
+      /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(SearchForm, { action: "/mentees", placeholder: "Search for mentees" })
     ] }),
-    count2 > 0 && /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("section", { className: "space-y-2", children: [
-      !query7 && /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("p", { children: formatPluralItems("mentee", count2) }),
-      query7 && /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("p", { className: "text-muted-foreground", children: [
+    count2 > 0 && /* @__PURE__ */ (0, import_jsx_runtime51.jsxs)("section", { className: "space-y-2", children: [
+      !query7 && /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("p", { children: formatPluralItems("mentee", count2) }),
+      query7 && /* @__PURE__ */ (0, import_jsx_runtime51.jsxs)("p", { className: "text-muted-foreground", children: [
         "Found ",
         formatPluralItems("mentee", count2),
         ' with keyword "',
         query7,
         '"'
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("ul", { className: "grid grid-cols-1 gap-4 md:grid-cols-2", children: mentees.map((user) => /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("li", { className: "w-full", children: /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(import_react52.Link, { to: `/${user.username}`, children: /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(UserCard, { user }) }) }, user.id)) })
+      /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("ul", { className: "grid grid-cols-1 gap-4 md:grid-cols-2", children: mentees.map((user) => /* @__PURE__ */ (0, import_jsx_runtime51.jsx)("li", { className: "w-full", children: /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(import_react52.Link, { to: `/${user.username}`, children: /* @__PURE__ */ (0, import_jsx_runtime51.jsx)(UserCard, { user }) }) }, user.id)) })
     ] })
   ] });
 }
@@ -6318,12 +6278,12 @@ function Route17() {
 // app/routes/mentors.tsx
 var mentors_exports = {};
 __export(mentors_exports, {
-  default: () => Route18,
+  default: () => Route16,
   loader: () => loader19,
-  meta: () => meta7
+  meta: () => meta5
 });
 var import_node23 = require("@remix-run/node"), import_react53 = require("@remix-run/react");
-var import_jsx_runtime54 = require("react/jsx-runtime"), meta7 = ({ data }) => {
+var import_jsx_runtime52 = require("react/jsx-runtime"), meta5 = ({ data }) => {
   let query7 = data == null ? void 0 : data.query, count2 = data == null ? void 0 : data.count;
   return query7 ? [
     { title: formatTitle(`Keyword "${query7}" found ${count2} mentors`) },
@@ -6374,27 +6334,98 @@ var import_jsx_runtime54 = require("react/jsx-runtime"), meta7 = ({ data }) => {
   });
   return (0, import_node23.json)({ query: query7, count: mentors.length, mentors });
 };
-function Route18() {
+function Route16() {
   let { query: query7, count: count2, mentors } = (0, import_react53.useLoaderData)();
-  return /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)(Layout, { withPadding: !0, className: "max-w-7xl space-y-8", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("header", { className: "space-y-4", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("h1", { className: "flex items-center gap-2 text-4xl text-brand", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("img", { src: "/images/bear-sunglasses.png", alt: "Bear", className: "h-10" }),
-        /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("span", { children: "Mentors" })
+  return /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)(Layout, { withPadding: !0, className: "max-w-7xl space-y-8", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("header", { className: "space-y-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("h1", { className: "flex items-center gap-2 text-4xl text-brand", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("img", { src: "/images/bear-sunglasses.png", alt: "Bear", className: "h-10" }),
+        /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("span", { children: "Mentors" })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("p", { className: "text-muted-foreground", children: "Mentor is a person who can guide, advise, train, or teach a mentee or several mentees. Like a teacher or trainer." }),
-      /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(SearchForm, { action: "/mentors", placeholder: "Search for mentors" })
+      /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("p", { className: "text-muted-foreground", children: "Mentor is a person who can guide, advise, train, or teach a mentee or several mentees. Like a teacher or trainer." }),
+      /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(SearchForm, { action: "/mentors", placeholder: "Search for mentors" })
     ] }),
-    count2 > 0 && /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("section", { className: "space-y-2", children: [
-      !query7 && /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("p", { children: formatPluralItems("mentor", count2) }),
-      query7 && /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("p", { className: "text-muted-foreground", children: [
+    count2 > 0 && /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("section", { className: "space-y-2", children: [
+      !query7 && /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("p", { children: formatPluralItems("mentor", count2) }),
+      query7 && /* @__PURE__ */ (0, import_jsx_runtime52.jsxs)("p", { className: "text-muted-foreground", children: [
         "Found ",
         formatPluralItems("mentor", count2),
         ' with keyword "',
         query7,
         '"'
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("ul", { className: "grid grid-cols-1 gap-4 md:grid-cols-2", children: mentors.map((user) => /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("li", { className: "w-full", children: /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(import_react53.Link, { to: `/${user.username}`, children: /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(UserCard, { user }) }) }, user.id)) })
+      /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("ul", { className: "grid grid-cols-1 gap-4 md:grid-cols-2", children: mentors.map((user) => /* @__PURE__ */ (0, import_jsx_runtime52.jsx)("li", { className: "w-full", children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(import_react53.Link, { to: `/${user.username}`, children: /* @__PURE__ */ (0, import_jsx_runtime52.jsx)(UserCard, { user }) }) }, user.id)) })
+    ] })
+  ] });
+}
+
+// app/routes/privacy.tsx
+var privacy_exports = {};
+__export(privacy_exports, {
+  default: () => PrivacyPolicy
+});
+var import_react54 = require("@remix-run/react"), import_jsx_runtime53 = require("react/jsx-runtime");
+function PrivacyPolicy() {
+  return /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("main", { className: "max-w-4xl mx-auto p-8", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("h1", { className: "text-3xl font-bold mb-4", children: "Privacy Policy" }),
+    /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("p", { className: "mb-4", children: "Effective date: November 16, 2025" }),
+    /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("section", { className: "mb-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("h2", { className: "text-xl font-semibold", children: "Introduction" }),
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("p", { children: "Coachify is a student-led, open-source web application prototype for leadership and coaching. This Privacy Policy explains what information we collect, how we use it, and the choices you have." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("section", { className: "mb-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("h2", { className: "text-xl font-semibold", children: "Data We Collect" }),
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("ul", { className: "list-disc ml-6", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("li", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("strong", { children: "Account Information:" }),
+          " email, name, profile type (coach or coachee)."
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("li", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("strong", { children: "User Content:" }),
+          " messages with the AI Coach and posts/interactions in the community forum."
+        ] }),
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("li", { children: [
+          /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("strong", { children: "Technical Data:" }),
+          " IP address, browser type, usage and analytics data."
+        ] })
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("section", { className: "mb-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("h2", { className: "text-xl font-semibold", children: "How We Use Data" }),
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("p", { children: "We use data to provide and maintain the service, to facilitate AI conversations and community features, to communicate with users, and to improve the platform using anonymized analyses where possible." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("section", { className: "mb-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("h2", { className: "text-xl font-semibold", children: "AI-Specific Information" }),
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("p", { children: `The "AI Coach" is an artificial intelligence tool and not a human. It does not provide professional, medical, or psychological advice. In the current prototype, AI conversations are processed in real-time by a third-party API and are not permanently stored on Coachify's servers. If we change this behavior, we will notify users.` }),
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("p", { children: "The AI may produce inaccurate or biased information; use it as a reflection tool and not as a sole source of guidance." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("section", { className: "mb-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("h2", { className: "text-xl font-semibold", children: "Data Sharing" }),
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("p", { children: "We do not sell personal data. We may share information with:" }),
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("ul", { className: "list-disc ml-6", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("li", { children: "Service providers (including the third-party AI API provider)." }),
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("li", { children: "Human coaches you choose to book sessions with (necessary information only)." }),
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("li", { children: "Authorities when required by law." })
+      ] })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("section", { className: "mb-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("h2", { className: "text-xl font-semibold", children: "User Rights & Security" }),
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("p", { children: "You may request access to, correction of, or deletion of your personal data. We implement reasonable security measures, but no online service is 100% secure. As a prototype, certain features may be experimental." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("section", { className: "mb-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("h2", { className: "text-xl font-semibold", children: "International Transfers" }),
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("p", { children: "Your data may be processed in various countries as part of an open-source project with global reach." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("section", { className: "mb-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("h2", { className: "text-xl font-semibold", children: "Changes" }),
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("p", { children: "We reserve the right to update this policy. Material changes will be communicated to users." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("section", { className: "mt-8", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsxs)("p", { children: [
+        "Contact: ",
+        /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("a", { href: "mailto:kwitondafelix6@gmail.com", className: "text-blue-600", children: "kwitondafelix6@gmail.com" })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime53.jsx)("p", { className: "mt-4", children: /* @__PURE__ */ (0, import_jsx_runtime53.jsx)(import_react54.Link, { to: "/", children: "Back to Home" }) })
     ] })
   ] });
 }
@@ -6413,12 +6444,12 @@ async function loader20({ request }) {
 // app/routes/search.tsx
 var search_exports = {};
 __export(search_exports, {
-  default: () => Route19,
+  default: () => Route17,
   loader: () => loader21,
-  meta: () => meta8
+  meta: () => meta6
 });
-var import_node25 = require("@remix-run/node"), import_react54 = require("@remix-run/react");
-var import_jsx_runtime55 = require("react/jsx-runtime"), meta8 = ({ data }) => {
+var import_node25 = require("@remix-run/node"), import_react55 = require("@remix-run/react");
+var import_jsx_runtime54 = require("react/jsx-runtime"), meta6 = ({ data }) => {
   let query7 = (data == null ? void 0 : data.query) ?? "", count2 = (data == null ? void 0 : data.count) || 0;
   return !query7 && !count2 ? [
     { title: formatTitle("Search anything") },
@@ -6475,42 +6506,42 @@ var import_jsx_runtime55 = require("react/jsx-runtime"), meta8 = ({ data }) => {
   ]), usersCount = users.length, broadcastsCount = broadcasts.length, count2 = usersCount + broadcastsCount;
   return (0, import_node25.json)({ query: query7, count: count2, users, broadcasts });
 };
-function Route19() {
-  let { query: query7, count: count2, users, broadcasts } = (0, import_react54.useLoaderData)();
-  return /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)(Layout, { withPadding: !0, className: "max-w-7xl space-y-8", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("header", { className: "space-y-4", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("h1", { className: "flex items-center gap-2 text-4xl text-brand", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("img", { src: "/images/bear-monocle.png", alt: "Bear", className: "h-10" }),
-        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("span", { children: "Search" })
+function Route17() {
+  let { query: query7, count: count2, users, broadcasts } = (0, import_react55.useLoaderData)();
+  return /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)(Layout, { withPadding: !0, className: "max-w-7xl space-y-8", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("header", { className: "space-y-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("h1", { className: "flex items-center gap-2 text-4xl text-brand", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("img", { src: "/images/bear-monocle.png", alt: "Bear", className: "h-10" }),
+        /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("span", { children: "Search" })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("p", { className: "text-muted-foreground", children: "Find anyone and anything." }),
-      /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(SearchForm, {})
+      /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("p", { className: "text-muted-foreground", children: "Find anyone and anything." }),
+      /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(SearchForm, {})
     ] }),
-    !query7 && /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("section", { children: /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("p", { children: "Enter your search keyword above" }) }),
-    count2 <= 0 && query7 && /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("section", { children: /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("p", { children: [
+    !query7 && /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("section", { children: /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("p", { children: "Enter your search keyword above" }) }),
+    count2 <= 0 && query7 && /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("section", { children: /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("p", { children: [
       'No result found for keyword "',
       query7,
       '"'
     ] }) }),
-    users.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("section", { className: "space-y-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("h2", { className: "text-emerald-700", children: "Users" }),
-      /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("p", { className: "text-muted-foreground", children: [
+    users.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("section", { className: "space-y-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("h2", { className: "text-emerald-700", children: "Users" }),
+      /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("p", { className: "text-muted-foreground", children: [
         "Found ",
         formatPluralItems("user", users.length),
         ' with keyword "',
         query7,
         '"'
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("ul", { className: "grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3", children: users.map((user) => /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)(
-        import_react54.Link,
+      /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("ul", { className: "grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3", children: users.map((user) => /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)(
+        import_react55.Link,
         {
           to: `/${user.username}`,
           className: "hover-opacity flex gap-2 py-1",
           children: [
-            /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(AvatarAuto, { className: "h-14 w-14", user }),
-            /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("div", { children: [
-              /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("h3", { className: "text-lg", children: user.name }),
-              /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("p", { className: "text-muted-foreground", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(AvatarAuto, { className: "h-14 w-14", user }),
+            /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("div", { children: [
+              /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("h3", { className: "text-lg", children: user.name }),
+              /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("p", { className: "text-muted-foreground", children: [
                 "@",
                 user.username
               ] })
@@ -6519,31 +6550,31 @@ function Route19() {
         }
       ) }, user.id)) })
     ] }),
-    broadcasts.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("section", { className: "space-y-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("h2", { className: "text-emerald-700", children: "Broadcasts" }),
-      /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("p", { className: "text-muted-foreground", children: [
+    broadcasts.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("section", { className: "space-y-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("h2", { className: "text-emerald-700", children: "Broadcasts" }),
+      /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("p", { className: "text-muted-foreground", children: [
         "Found ",
         formatPluralItems("broadcast", broadcasts.length),
         ' with keyword "',
         query7,
         '"'
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("ul", { className: "grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3", children: broadcasts.map((broadcast) => /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(
-        import_react54.Link,
+      /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("ul", { className: "grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3", children: broadcasts.map((broadcast) => /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("li", { className: "", children: /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(
+        import_react55.Link,
         {
           to: `/${broadcast.user.username}/broadcasts/${broadcast.id}`,
           className: "hover-opacity flex gap-2 py-1",
-          children: /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)(Card, { className: "hover-opacity flex w-full flex-col gap-2 p-2", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("div", { children: [
-              /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("h3", { className: "text-lg", children: broadcast.title }),
-              /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("p", { className: "text-muted-foreground", children: broadcast.description })
+          children: /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)(Card, { className: "hover-opacity flex w-full flex-col gap-2 p-2", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("div", { children: [
+              /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("h3", { className: "text-lg", children: broadcast.title }),
+              /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("p", { className: "text-muted-foreground", children: broadcast.description })
             ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("div", { className: "flex-[1]" }),
-            /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("div", { className: "flex items-center gap-2", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(AvatarAuto, { className: "h-5 w-5", user: broadcast.user }),
-              /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("p", { className: "text-sm font-bold", children: broadcast.user.name })
+            /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("div", { className: "flex-[1]" }),
+            /* @__PURE__ */ (0, import_jsx_runtime54.jsxs)("div", { className: "flex items-center gap-2", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(AvatarAuto, { className: "h-5 w-5", user: broadcast.user }),
+              /* @__PURE__ */ (0, import_jsx_runtime54.jsx)("p", { className: "text-sm font-bold", children: broadcast.user.name })
             ] }),
-            /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(Time, { children: broadcast.updatedAt })
+            /* @__PURE__ */ (0, import_jsx_runtime54.jsx)(Time, { children: broadcast.updatedAt })
           ] })
         }
       ) }, broadcast.id)) })
@@ -6556,39 +6587,39 @@ var signin_exports = {};
 __export(signin_exports, {
   default: () => SignInPage
 });
-var import_react55 = require("react"), import_react56 = require("@remix-run/react");
-var import_jsx_runtime56 = require("react/jsx-runtime");
+var import_react56 = require("react"), import_react57 = require("@remix-run/react");
+var import_jsx_runtime55 = require("react/jsx-runtime");
 function SignInPage() {
-  let [message, setMessage] = (0, import_react55.useState)(null), [searchParams] = (0, import_react56.useSearchParams)(), redirectTo2 = searchParams.get("redirectTo") || "/";
+  let [message, setMessage] = (0, import_react56.useState)(null), [searchParams] = (0, import_react57.useSearchParams)(), redirectTo2 = searchParams.get("redirectTo") || "/";
   function handleSubmit(e) {
     e.preventDefault(), setMessage("Sign in is not yet implemented in this demo. Please create an account or use the /signup flow.");
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "min-h-screen flex items-center justify-center bg-gradient-to-b from-stone-50 to-white dark:from-stone-900 dark:to-stone-800 py-12 px-4", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "w-full max-w-2xl bg-white dark:bg-stone-900 rounded-2xl shadow-lg p-8", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("header", { className: "flex items-center justify-between mb-4", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { children: [
-        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("h1", { className: "text-2xl font-extrabold", children: "Sign In" }),
-        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("p", { className: "text-sm text-stone-500 dark:text-stone-400", children: "Welcome back \u2014 enter your email to continue." })
+  return /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("div", { className: "min-h-screen flex items-center justify-center bg-gradient-to-b from-stone-50 to-white dark:from-stone-900 dark:to-stone-800 py-12 px-4", children: /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("div", { className: "w-full max-w-2xl bg-white dark:bg-stone-900 rounded-2xl shadow-lg p-8", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("header", { className: "flex items-center justify-between mb-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("div", { children: [
+        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("h1", { className: "text-2xl font-extrabold", children: "Sign In" }),
+        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("p", { className: "text-sm text-stone-500 dark:text-stone-400", children: "Welcome back \u2014 enter your email to continue." })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(ThemeSwitcher, {})
+      /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(ThemeSwitcher, {})
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("form", { onSubmit: handleSubmit, className: "grid grid-cols-1 gap-4", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("label", { className: "text-sm", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "mb-1", children: "Email" }),
-        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("input", { type: "email", required: !0, className: "w-full rounded-md border border-stone-200 dark:border-stone-700 p-2 bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-50" })
+    /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("form", { onSubmit: handleSubmit, className: "grid grid-cols-1 gap-4", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("label", { className: "text-sm", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("div", { className: "mb-1", children: "Email" }),
+        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("input", { type: "email", required: !0, className: "w-full rounded-md border border-stone-200 dark:border-stone-700 p-2 bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-50" })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("label", { className: "text-sm", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "mb-1", children: "Password" }),
-        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("input", { type: "password", required: !0, className: "w-full rounded-md border border-stone-200 dark:border-stone-700 p-2 bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-50" })
+      /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("label", { className: "text-sm", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("div", { className: "mb-1", children: "Password" }),
+        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("input", { type: "password", required: !0, className: "w-full rounded-md border border-stone-200 dark:border-stone-700 p-2 bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-50" })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "flex items-center justify-between", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("button", { type: "submit", className: "inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white shadow", children: "Sign In" }),
-        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(import_react56.Link, { to: `/signup?redirectTo=${encodeURIComponent(redirectTo2)}`, className: "text-sm text-emerald-600 dark:text-emerald-400", children: "Create an account" })
+      /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("div", { className: "flex items-center justify-between", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("button", { type: "submit", className: "inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white shadow", children: "Sign In" }),
+        /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(import_react57.Link, { to: `/signup?redirectTo=${encodeURIComponent(redirectTo2)}`, className: "text-sm text-emerald-600 dark:text-emerald-400", children: "Create an account" })
       ] })
     ] }),
-    message && /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "mt-4 text-sm text-stone-600 dark:text-stone-300", children: message }),
-    /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("footer", { className: "mt-6 text-sm text-stone-500 dark:text-stone-400", children: [
+    message && /* @__PURE__ */ (0, import_jsx_runtime55.jsx)("div", { className: "mt-4 text-sm text-stone-600 dark:text-stone-300", children: message }),
+    /* @__PURE__ */ (0, import_jsx_runtime55.jsxs)("footer", { className: "mt-6 text-sm text-stone-500 dark:text-stone-400", children: [
       "Need help? ",
-      /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(import_react56.Link, { to: "/help", className: "text-emerald-600 dark:text-emerald-400", children: "Contact support" })
+      /* @__PURE__ */ (0, import_jsx_runtime55.jsx)(import_react57.Link, { to: "/help", className: "text-emerald-600 dark:text-emerald-400", children: "Contact support" })
     ] })
   ] }) });
 }
@@ -6610,7 +6641,7 @@ __export(index_exports, {
   default: () => Index,
   loader: () => loader22
 });
-var import_node26 = require("@remix-run/node"), import_react57 = require("@remix-run/react");
+var import_node26 = require("@remix-run/node"), import_react58 = require("@remix-run/react");
 
 // node_modules/.pnpm/array-shuffle@3.0.0/node_modules/array-shuffle/index.js
 function arrayShuffle(array) {
@@ -6625,7 +6656,7 @@ function arrayShuffle(array) {
 }
 
 // app/routes/_index.tsx
-var import_react58 = __toESM(require("react")), import_jsx_runtime57 = require("react/jsx-runtime");
+var import_react59 = __toESM(require("react")), import_jsx_runtime56 = require("react/jsx-runtime");
 async function loader22({ request }) {
   let mentors = await prisma.user.findMany({
     take: 12,
@@ -6662,29 +6693,29 @@ async function loader22({ request }) {
   );
 }
 function Index() {
-  let [showIntro, setShowIntro] = (0, import_react58.useState)(!0), [introPhase, setIntroPhase] = (0, import_react58.useState)(0);
-  return (0, import_react58.useEffect)(() => {
+  let [showIntro, setShowIntro] = (0, import_react59.useState)(!0), [introPhase, setIntroPhase] = (0, import_react59.useState)(0);
+  return (0, import_react59.useEffect)(() => {
     let timer1 = setTimeout(() => setIntroPhase(1), 800), timer2 = setTimeout(() => setIntroPhase(2), 1600), timer3 = setTimeout(() => setShowIntro(!1), 2800);
     return () => {
       clearTimeout(timer1), clearTimeout(timer2), clearTimeout(timer3);
     };
-  }, []), showIntro ? /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(IntroSplash, { phase: introPhase }) : /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)(Layout, { className: "min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-emerald-50/30 dark:from-slate-900 dark:via-blue-900/10 dark:to-emerald-900/10 pb-16", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "fixed top-6 right-6 z-40", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(ThemeSwitcher, {}) }),
-    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(LandingHero, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(LandingMentors, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(LandingMentees, {})
+  }, []), showIntro ? /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(IntroSplash, { phase: introPhase }) : /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)(Layout, { className: "min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-emerald-50/30 dark:from-slate-900 dark:via-blue-900/10 dark:to-emerald-900/10 pb-16", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "fixed top-6 right-6 z-40", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(ThemeSwitcher, {}) }),
+    /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(LandingHero, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(LandingMentors, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(LandingMentees, {})
   ] });
 }
 function IntroSplash({ phase }) {
-  return /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: `fixed inset-0 z-50 flex flex-col items-center justify-center bg-gradient-to-br from-blue-900 via-slate-900 to-emerald-900 transition-all duration-1000 ${phase === 2 ? "opacity-0 scale-110" : "opacity-100 scale-100"}`, children: [
-    /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "absolute inset-0 overflow-hidden", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-blue-600/20 to-transparent" }),
-      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-400/10 via-slate-900/80 to-blue-900/90" }),
-      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "absolute inset-0", children: import_react58.default.useMemo(() => Array.from({ length: 20 }).map(() => {
+  return /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: `fixed inset-0 z-50 flex flex-col items-center justify-center bg-gradient-to-br from-blue-900 via-slate-900 to-emerald-900 transition-all duration-1000 ${phase === 2 ? "opacity-0 scale-110" : "opacity-100 scale-100"}`, children: [
+    /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "absolute inset-0 overflow-hidden", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-blue-600/20 to-transparent" }),
+      /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-400/10 via-slate-900/80 to-blue-900/90" }),
+      /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "absolute inset-0", children: import_react59.default.useMemo(() => Array.from({ length: 20 }).map(() => {
         let left = `${Math.random() * 100}%`, width = `${Math.random() * 20 + 5}px`, height = `${Math.random() * 20 + 5}px`, delay2 = `${Math.random() * 5}s`, duration = `${Math.random() * 10 + 10}s`;
         return { id: `bubble-${Math.random().toString(36).slice(2, 9)}`, left, width, height, delay: delay2, duration };
       }).map(
-        (b) => /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
+        (b) => /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "div",
           {
             className: "absolute rounded-full bg-white/10 animate-float",
@@ -6694,9 +6725,9 @@ function IntroSplash({ phase }) {
         )
       ), []) })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: `relative z-10 flex flex-col items-center justify-center text-center text-white transition-all duration-1000 ${phase === 1 ? "scale-110" : "scale-100"}`, children: [
-      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: `relative mb-8 transition-all duration-1000 ${phase === 1 ? "scale-110 rotate-12" : "scale-100"}`, children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "relative", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: `relative z-10 flex flex-col items-center justify-center text-center text-white transition-all duration-1000 ${phase === 1 ? "scale-110" : "scale-100"}`, children: [
+      /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: `relative mb-8 transition-all duration-1000 ${phase === 1 ? "scale-110 rotate-12" : "scale-100"}`, children: /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "relative", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "img",
           {
             src: "/images/dolphin-leaping.png",
@@ -6711,32 +6742,32 @@ function IntroSplash({ phase }) {
             className: `w-32 h-32 transition-all duration-1000 ${phase === 1 ? "animate-bounce" : "animate-pulse"}`
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: `absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-8 bg-blue-400/30 blur-xl rounded-full transition-all duration-1000 ${phase === 1 ? "scale-150 opacity-50" : "scale-100 opacity-30"}` })
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: `absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-24 h-8 bg-blue-400/30 blur-xl rounded-full transition-all duration-1000 ${phase === 1 ? "scale-150 opacity-50" : "scale-100 opacity-30"}` })
       ] }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "space-y-4", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("h1", { className: `text-6xl font-black bg-gradient-to-r from-white via-blue-100 to-emerald-100 bg-clip-text text-transparent transition-all duration-1000 delay-300 ${phase === 1 ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`, children: "COACHIFY" }),
-        /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: `transition-all duration-1000 delay-500 ${phase === 1 ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`, children: [
-          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-xl font-light tracking-widest text-blue-200 mb-2", children: "Real Talk, Real Growth" }),
-          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-sm font-extralight tracking-wide text-blue-300 max-w-xs mx-auto leading-relaxed", children: "Real conversations Real growth  Coaching that helps you move ahead." })
+      /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "space-y-4", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("h1", { className: `text-6xl font-black bg-gradient-to-r from-white via-blue-100 to-emerald-100 bg-clip-text text-transparent transition-all duration-1000 delay-300 ${phase === 1 ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`, children: "COACHIFY" }),
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: `transition-all duration-1000 delay-500 ${phase === 1 ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"}`, children: [
+          /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("p", { className: "text-xl font-light tracking-widest text-blue-200 mb-2", children: "Real Talk, Real Growth" }),
+          /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("p", { className: "text-sm font-extralight tracking-wide text-blue-300 max-w-xs mx-auto leading-relaxed", children: "Real conversations Real growth  Coaching that helps you move ahead." })
         ] })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: `mt-12 w-64 transition-all duration-1000 delay-700 ${phase === 1 ? "opacity-100" : "opacity-0"}`, children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "w-full h-1 bg-white/20 rounded-full overflow-hidden", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "h-full bg-gradient-to-r from-blue-400 to-emerald-400 rounded-full animate-loading-bar" }) }) })
+      /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: `mt-12 w-64 transition-all duration-1000 delay-700 ${phase === 1 ? "opacity-100" : "opacity-0"}`, children: /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "w-full h-1 bg-white/20 rounded-full overflow-hidden", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "h-full bg-gradient-to-r from-blue-400 to-emerald-400 rounded-full animate-loading-bar" }) }) })
     ] })
   ] });
 }
 function LandingHero() {
   let { userSession } = useRootLoaderData();
-  return /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("section", { className: "min-h-screen flex items-center justify-center relative overflow-hidden", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "absolute inset-0", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "absolute top-20 left-10 w-72 h-72 bg-blue-200/10 rounded-full blur-3xl animate-float-slow" }),
-      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "absolute bottom-20 right-10 w-96 h-96 bg-emerald-200/10 rounded-full blur-3xl animate-float-slower" }),
-      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-200/5 rounded-full blur-3xl" })
+  return /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("section", { className: "min-h-screen flex items-center justify-center relative overflow-hidden", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "absolute inset-0", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "absolute top-20 left-10 w-72 h-72 bg-blue-200/10 rounded-full blur-3xl animate-float-slow" }),
+      /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "absolute bottom-20 right-10 w-96 h-96 bg-emerald-200/10 rounded-full blur-3xl animate-float-slower" }),
+      /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-200/5 rounded-full blur-3xl" })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "grid lg:grid-cols-2 gap-16 items-center", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "space-y-8 text-center lg:text-left", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "space-y-6", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex items-center justify-center lg:justify-start gap-4 mb-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "relative", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "grid lg:grid-cols-2 gap-16 items-center", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "space-y-8 text-center lg:text-left", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "space-y-6", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "flex items-center justify-center lg:justify-start gap-4 mb-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "relative", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
               "img",
               {
                 src: "/images/dolphin-leaping.png",
@@ -6751,48 +6782,48 @@ function LandingHero() {
                 className: "w-20 h-20 animate-float"
               }
             ),
-            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "absolute -bottom-2 -right-2 w-6 h-6 bg-emerald-500 rounded-full border-4 border-white dark:border-slate-900 shadow-lg" })
+            /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "absolute -bottom-2 -right-2 w-6 h-6 bg-emerald-500 rounded-full border-4 border-white dark:border-slate-900 shadow-lg" })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("h1", { className: "text-5xl lg:text-6xl xl:text-7xl font-black bg-gradient-to-r from-slate-900 via-blue-900 to-emerald-900 dark:from-slate-100 dark:via-blue-100 dark:to-emerald-100 bg-clip-text text-transparent leading-tight", children: "Coachify AI" }),
-            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-lg text-slate-600 dark:text-slate-400 mt-2", children: "MindGram Rise Higher" })
+          /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("h1", { className: "text-5xl lg:text-6xl xl:text-7xl font-black bg-gradient-to-r from-slate-900 via-blue-900 to-emerald-900 dark:from-slate-100 dark:via-blue-100 dark:to-emerald-100 bg-clip-text text-transparent leading-tight", children: "Coachify AI" }),
+            /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("p", { className: "text-lg text-slate-600 dark:text-slate-400 mt-2", children: "MindGram Rise Higher" })
           ] })
         ] }),
-        !userSession && /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)(
-            import_react57.Link,
+        !userSession && /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)(
+            import_react58.Link,
             {
               to: "/felix",
               className: "group inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 text-white font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300",
               children: [
-                /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("span", { className: "text-lg", children: "Chat With AI Coach" }),
-                /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("svg", { className: "w-5 h-5 group-hover:translate-x-1 transition-transform", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 7l5 5m0 0l-5 5m5-5H6" }) })
+                /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("span", { className: "text-lg", children: "Chat With AI Coach" }),
+                /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("svg", { className: "w-5 h-5 group-hover:translate-x-1 transition-transform", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 7l5 5m0 0l-5 5m5-5H6" }) })
               ]
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)(
-            import_react57.Link,
+          /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)(
+            import_react58.Link,
             {
               to: "/signup",
               className: "group inline-flex items-center justify-center gap-3 px-8 py-4 rounded-2xl border-2 border-blue-600 text-blue-600 dark:text-blue-400 dark:border-blue-400 bg-white/80 dark:bg-slate-800/60 font-semibold hover:bg-blue-50 dark:hover:bg-slate-700/60 hover:shadow-lg transition-all duration-300",
               children: [
-                /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("span", { className: "text-lg", children: "Browse Human Coaches" }),
-                /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("svg", { className: "w-5 h-5 group-hover:scale-110 transition-transform", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 6v6m0 0v6m0-6h6m-6 0H6" }) })
+                /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("span", { className: "text-lg", children: "Browse Human Coaches" }),
+                /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("svg", { className: "w-5 h-5 group-hover:scale-110 transition-transform", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 6v6m0 0v6m0-6h6m-6 0H6" }) })
               ]
             }
           )
         ] }),
-        userSession && /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex flex-wrap justify-center lg:justify-start gap-4 pt-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
-            import_react57.Link,
+        userSession && /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "flex flex-wrap justify-center lg:justify-start gap-4 pt-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
+            import_react58.Link,
             {
               to: "/mentors",
               className: "px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-emerald-600 text-white font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300",
               children: "Browse Human Coaches"
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
-            import_react57.Link,
+          /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
+            import_react58.Link,
             {
               to: "/community",
               className: "px-8 py-4 rounded-2xl border-2 border-blue-600 text-blue-600 dark:text-blue-400 bg-white/80 dark:bg-slate-800/60 font-semibold hover:bg-blue-50 dark:hover:bg-slate-700/60 transition-all duration-300",
@@ -6801,8 +6832,8 @@ function LandingHero() {
           )
         ] })
       ] }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "relative hidden lg:block", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "relative", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "relative hidden lg:block", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "relative", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(
           "img",
           {
             src: "/images/dolphin-swimming.png",
@@ -6817,51 +6848,51 @@ function LandingHero() {
             className: "w-full max-w-2xl animate-float-slow"
           }
         ),
-        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "absolute top-10 -left-10 w-24 h-24 bg-blue-100/20 rounded-full blur-xl animate-pulse" }),
-        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "absolute bottom-20 -right-10 w-32 h-32 bg-emerald-100/20 rounded-full blur-xl animate-pulse delay-1000" })
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "absolute top-10 -left-10 w-24 h-24 bg-blue-100/20 rounded-full blur-xl animate-pulse" }),
+        /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "absolute bottom-20 -right-10 w-32 h-32 bg-emerald-100/20 rounded-full blur-xl animate-pulse delay-1000" })
       ] }) })
     ] }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "w-6 h-10 border-2 border-slate-400 dark:border-slate-600 rounded-full flex justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "w-1 h-3 bg-slate-400 dark:bg-slate-600 rounded-full mt-2 animate-pulse" }) }) })
+    /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "w-6 h-10 border-2 border-slate-400 dark:border-slate-600 rounded-full flex justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "w-1 h-3 bg-slate-400 dark:bg-slate-600 rounded-full mt-2 animate-pulse" }) }) })
   ] });
 }
 function LandingMentors() {
-  let { mentors } = (0, import_react57.useLoaderData)();
-  return mentors.length <= 0 ? null : /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("section", { className: "py-20 px-6 lg:px-8 relative", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "max-w-7xl mx-auto", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("header", { className: "text-center mb-16", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("h2", { className: "text-4xl lg:text-5xl font-bold bg-gradient-to-r from-slate-900 to-blue-900 dark:from-slate-100 dark:to-blue-100 bg-clip-text text-transparent mb-4", children: "Expert Mentors" }),
-      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto", children: "Connect with verified professionals ready to guide your growth journey" })
+  let { mentors } = (0, import_react58.useLoaderData)();
+  return mentors.length <= 0 ? null : /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("section", { className: "py-20 px-6 lg:px-8 relative", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "max-w-7xl mx-auto", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("header", { className: "text-center mb-16", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("h2", { className: "text-4xl lg:text-5xl font-bold bg-gradient-to-r from-slate-900 to-blue-900 dark:from-slate-100 dark:to-blue-100 bg-clip-text text-transparent mb-4", children: "Expert Mentors" }),
+      /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("p", { className: "text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto", children: "Connect with verified professionals ready to guide your growth journey" })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8", children: mentors.map((user) => /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "group", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(import_react57.Link, { to: `/${user.username}`, className: "block", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-6 border border-slate-200/50 dark:border-slate-700/50 hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-xl hover:scale-105 transition-all duration-300", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(UserCard, { user }) }) }) }, user.id)) }),
-    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "text-center mt-12", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)(
-      import_react57.Link,
+    /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8", children: mentors.map((user) => /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "group", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(import_react58.Link, { to: `/${user.username}`, className: "block", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-6 border border-slate-200/50 dark:border-slate-700/50 hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-xl hover:scale-105 transition-all duration-300", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(UserCard, { user }) }) }) }, user.id)) }),
+    /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "text-center mt-12", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)(
+      import_react58.Link,
       {
         to: "/mentors",
         className: "inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 font-semibold hover:bg-slate-800 dark:hover:bg-slate-200 transition-colors duration-300",
         children: [
           "View All Mentors",
-          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("svg", { className: "w-4 h-4", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 5l7 7-7 7" }) })
+          /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("svg", { className: "w-4 h-4", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 5l7 7-7 7" }) })
         ]
       }
     ) })
   ] }) });
 }
 function LandingMentees() {
-  let { mentees } = (0, import_react57.useLoaderData)();
-  return mentees.length <= 0 ? null : /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("section", { className: "py-20 px-6 lg:px-8 bg-white/50 dark:bg-slate-800/30 relative", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "max-w-7xl mx-auto", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("header", { className: "text-center mb-16", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("h2", { className: "text-4xl lg:text-5xl font-bold bg-gradient-to-r from-slate-900 to-emerald-900 dark:from-slate-100 dark:to-emerald-100 bg-clip-text text-transparent mb-4", children: "Growing Community" }),
-      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto", children: "Join thousands of learners and professionals transforming their lives" })
+  let { mentees } = (0, import_react58.useLoaderData)();
+  return mentees.length <= 0 ? null : /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("section", { className: "py-20 px-6 lg:px-8 bg-white/50 dark:bg-slate-800/30 relative", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "max-w-7xl mx-auto", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("header", { className: "text-center mb-16", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("h2", { className: "text-4xl lg:text-5xl font-bold bg-gradient-to-r from-slate-900 to-emerald-900 dark:from-slate-100 dark:to-emerald-100 bg-clip-text text-transparent mb-4", children: "Growing Community" }),
+      /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("p", { className: "text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto", children: "Join thousands of learners and professionals transforming their lives" })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6", children: mentees.map((user) => /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "group", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)(
-      import_react57.Link,
+    /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6", children: mentees.map((user) => /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("div", { className: "group", children: /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)(
+      import_react58.Link,
       {
         to: `/${user.username}`,
         className: "flex items-center gap-4 p-4 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm rounded-xl border border-slate-200/50 dark:border-slate-700/50 hover:border-emerald-300 dark:hover:border-emerald-600 hover:shadow-lg hover:scale-105 transition-all duration-300",
         children: [
-          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(AvatarAuto, { className: "h-14 w-14", user }),
-          /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex-1 min-w-0", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("h3", { className: "font-semibold text-slate-900 dark:text-white truncate", children: user.name }),
-            /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("p", { className: "text-sm text-slate-600 dark:text-slate-400 truncate", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime56.jsx)(AvatarAuto, { className: "h-14 w-14", user }),
+          /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("div", { className: "flex-1 min-w-0", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime56.jsx)("h3", { className: "font-semibold text-slate-900 dark:text-white truncate", children: user.name }),
+            /* @__PURE__ */ (0, import_jsx_runtime56.jsxs)("p", { className: "text-sm text-slate-600 dark:text-slate-400 truncate", children: [
               "@",
               user.username
             ] })
@@ -6877,8 +6908,8 @@ var coach_exports = {};
 __export(coach_exports, {
   default: () => CoachDashboard2
 });
-var import_react59 = require("react"), import_react60 = require("@remix-run/react"), import_icons_react10 = require("@tabler/icons-react");
-var import_jsx_runtime58 = require("react/jsx-runtime"), COACHING_SYSTEM_PROMPT2 = `You are FelixGPT, a professional life coach specializing in personal growth, leadership development, and career advancement.
+var import_react60 = require("react"), import_react61 = require("@remix-run/react"), import_icons_react10 = require("@tabler/icons-react");
+var import_jsx_runtime57 = require("react/jsx-runtime"), COACHING_SYSTEM_PROMPT2 = `You are FelixGPT, a professional life coach specializing in personal growth, leadership development, and career advancement.
 
 CORE PRINCIPLES:
 1. Help clients gain awareness and responsibility through reflection
@@ -6912,36 +6943,36 @@ function Icon2({ name: name2, className = "w-5 h-5" }) {
   };
   switch (name2) {
     case "feed":
-      return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("svg", { className, viewBox: "0 0 24 24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { ...iconProps, d: "M3 12h18M3 6h18M3 18h18" }) });
+      return /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("svg", { className, viewBox: "0 0 24 24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("path", { ...iconProps, d: "M3 12h18M3 6h18M3 18h18" }) });
     case "manage":
-      return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("svg", { className, viewBox: "0 0 24 24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { ...iconProps, d: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" }) });
+      return /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("svg", { className, viewBox: "0 0 24 24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("path", { ...iconProps, d: "M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" }) });
     case "documents":
-      return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("svg", { className, viewBox: "0 0 24 24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { ...iconProps, d: "M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" }) });
+      return /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("svg", { className, viewBox: "0 0 24 24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("path", { ...iconProps, d: "M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" }) });
     case "profile":
-      return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("svg", { className, viewBox: "0 0 24 24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { ...iconProps, d: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" }) });
+      return /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("svg", { className, viewBox: "0 0 24 24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("path", { ...iconProps, d: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" }) });
     case "tracking":
-      return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("svg", { className, viewBox: "0 0 24 24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { ...iconProps, d: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" }) });
+      return /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("svg", { className, viewBox: "0 0 24 24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("path", { ...iconProps, d: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" }) });
     case "create":
-      return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("svg", { className, viewBox: "0 0 24 24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { ...iconProps, d: "M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" }) });
+      return /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("svg", { className, viewBox: "0 0 24 24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("path", { ...iconProps, d: "M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" }) });
     case "settings":
-      return /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("svg", { className, viewBox: "0 0 24 24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { ...iconProps, d: "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { ...iconProps, d: "M15 12a3 3 0 11-6 0 3 3 0 016 0z" })
+      return /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("svg", { className, viewBox: "0 0 24 24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("path", { ...iconProps, d: "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" }),
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("path", { ...iconProps, d: "M15 12a3 3 0 11-6 0 3 3 0 016 0z" })
       ] });
     case "coaching":
-      return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("svg", { className, viewBox: "0 0 24 24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { ...iconProps, d: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" }) });
+      return /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("svg", { className, viewBox: "0 0 24 24", stroke: "currentColor", xmlns: "http://www.w3.org/2000/svg", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("path", { ...iconProps, d: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7 0c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm3.5 6.5c2.33 0 4.31-1.46 5.11-3.5H6.89c.8 2.04 2.78 3.5 5.11 3.5z" }) });
     default:
-      return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("svg", { className });
+      return /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("svg", { className });
   }
 }
 function CoachingChat2() {
-  let fetcher = (0, import_react60.useFetcher)(), STORAGE_KEY = "felixgpt_chat_v1", [messages, setMessages] = (0, import_react59.useState)([
+  let fetcher = (0, import_react61.useFetcher)(), STORAGE_KEY = "felixgpt_chat_v1", [messages, setMessages] = (0, import_react60.useState)([
     {
       role: "system",
       content: COACHING_SYSTEM_PROMPT2
     }
-  ]), [input, setInput] = (0, import_react59.useState)(""), [loading, setLoading] = (0, import_react59.useState)(!1), messagesEndRef = (0, import_react59.useRef)(null);
-  (0, import_react59.useEffect)(() => {
+  ]), [input, setInput] = (0, import_react60.useState)(""), [loading, setLoading] = (0, import_react60.useState)(!1), messagesEndRef = (0, import_react60.useRef)(null);
+  (0, import_react60.useEffect)(() => {
     var _a;
     try {
       if (globalThis.localStorage === void 0)
@@ -6954,7 +6985,7 @@ function CoachingChat2() {
     } catch (err) {
       console.warn("Failed to load saved chat:", err);
     }
-  }, []), (0, import_react59.useEffect)(() => {
+  }, []), (0, import_react60.useEffect)(() => {
     try {
       if (globalThis.localStorage === void 0)
         return;
@@ -6962,10 +6993,10 @@ function CoachingChat2() {
     } catch (err) {
       console.warn("Failed to save chat:", err);
     }
-  }, [messages]), (0, import_react59.useEffect)(() => {
+  }, [messages]), (0, import_react60.useEffect)(() => {
     var _a;
     (_a = messagesEndRef.current) == null || _a.scrollIntoView({ behavior: "smooth" });
-  }, [messages]), (0, import_react59.useEffect)(() => {
+  }, [messages]), (0, import_react60.useEffect)(() => {
     if (fetcher.state === "idle" && fetcher.data) {
       let data = fetcher.data;
       data.reply && setMessages((prev) => [...prev, { role: "assistant", content: data.reply || "" }]), setLoading(!1);
@@ -6986,27 +7017,27 @@ function CoachingChat2() {
       console.warn("Failed to clear saved chat:", err);
     }
   }, displayMessages = messages.filter((m) => m.role !== "system");
-  return /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex flex-col h-full max-h-[70vh] bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex-1 overflow-y-auto p-4 space-y-4", children: [
-      displayMessages.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "text-center text-slate-500 dark:text-slate-400 py-8", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "font-semibold mb-2", children: "Welcome to Coaching Session" }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-sm", children: "Share what's on your mind. I'm here to help you gain clarity and take action." })
-      ] }) : displayMessages.map((msg, idx) => /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: `flex ${msg.role === "user" ? "justify-end" : "justify-start"}`, children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex flex-col h-full max-h-[70vh] bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex-1 overflow-y-auto p-4 space-y-4", children: [
+      displayMessages.length === 0 ? /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "text-center text-slate-500 dark:text-slate-400 py-8", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "font-semibold mb-2", children: "Welcome to Coaching Session" }),
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-sm", children: "Share what's on your mind. I'm here to help you gain clarity and take action." })
+      ] }) : displayMessages.map((msg, idx) => /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: `flex ${msg.role === "user" ? "justify-end" : "justify-start"}`, children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
         "div",
         {
           className: `max-w-xs lg:max-w-md px-4 py-2 rounded-lg ${msg.role === "user" ? "bg-blue-600 text-white rounded-br-none" : "bg-slate-100 dark:bg-slate-700 text-slate-900 dark:text-slate-100 rounded-bl-none"}`,
-          children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-sm leading-relaxed", children: msg.content })
+          children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-sm leading-relaxed", children: msg.content })
         }
       ) }, `message-${idx}-${msg.role}`)),
-      loading && /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "flex justify-start", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 px-4 py-2 rounded-lg rounded-bl-none", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex gap-1", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "w-2 h-2 bg-slate-400 rounded-full animate-bounce" }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "w-2 h-2 bg-slate-400 rounded-full animate-bounce", style: { animationDelay: "0.1s" } }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "w-2 h-2 bg-slate-400 rounded-full animate-bounce", style: { animationDelay: "0.2s" } })
+      loading && /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "flex justify-start", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 px-4 py-2 rounded-lg rounded-bl-none", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex gap-1", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "w-2 h-2 bg-slate-400 rounded-full animate-bounce" }),
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "w-2 h-2 bg-slate-400 rounded-full animate-bounce", style: { animationDelay: "0.1s" } }),
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "w-2 h-2 bg-slate-400 rounded-full animate-bounce", style: { animationDelay: "0.2s" } })
       ] }) }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { ref: messagesEndRef })
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { ref: messagesEndRef })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "border-t border-slate-200 dark:border-slate-700 p-4 bg-slate-50 dark:bg-slate-900", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("form", { onSubmit: handleSendMessage, className: "flex gap-2", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
+    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "border-t border-slate-200 dark:border-slate-700 p-4 bg-slate-50 dark:bg-slate-900", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("form", { onSubmit: handleSendMessage, className: "flex gap-2", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
         "input",
         {
           type: "text",
@@ -7017,7 +7048,7 @@ function CoachingChat2() {
           className: "flex-1 px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 placeholder:text-slate-400 focus:ring-2 focus:ring-blue-500 focus:border-transparent disabled:opacity-50"
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
         "button",
         {
           type: "submit",
@@ -7026,7 +7057,7 @@ function CoachingChat2() {
           children: "Send"
         }
       ),
-      /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
         "button",
         {
           type: "button",
@@ -7040,7 +7071,7 @@ function CoachingChat2() {
 }
 function CoachDashboard2() {
   var _a;
-  let [active, setActive] = (0, import_react59.useState)("feed"), [mobileOpen, setMobileOpen] = (0, import_react59.useState)(!1), tabs = [
+  let [active, setActive] = (0, import_react60.useState)("feed"), [mobileOpen, setMobileOpen] = (0, import_react60.useState)(!1), tabs = [
     { key: "feed", label: "Activity Feed", icon: "feed", badge: 3 },
     { key: "manage", label: "Coaching Management", icon: "manage", badge: 12 },
     { key: "documents", label: "Resources", icon: "documents" },
@@ -7050,23 +7081,23 @@ function CoachDashboard2() {
     { key: "coaching", label: "AI Coaching", icon: "coaching" },
     { key: "settings", label: "Settings", icon: "settings" }
   ];
-  return /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 text-slate-900 dark:text-slate-100", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(HeaderNavigation4, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("header", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-700 sticky top-0 z-30", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex items-center justify-between h-16", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "flex items-center gap-3", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)(import_react60.Link, { to: "/", className: "inline-flex items-center gap-3 hover:opacity-80 transition-opacity", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "relative", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("img", { src: "/images/dolphin.svg", alt: "Coachify", className: "w-10 h-10 rounded-xl shadow-lg" }),
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white dark:border-slate-800" })
+  return /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800 text-slate-900 dark:text-slate-100", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(HeaderNavigation4, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("header", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-700 sticky top-0 z-30", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex items-center justify-between h-16", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "flex items-center gap-3", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)(import_react61.Link, { to: "/", className: "inline-flex items-center gap-3 hover:opacity-80 transition-opacity", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "relative", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("img", { src: "/images/dolphin.svg", alt: "Coachify", className: "w-10 h-10 rounded-xl shadow-lg" }),
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white dark:border-slate-800" })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex flex-col", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: "font-bold text-xl bg-gradient-to-r from-slate-800 to-slate-600 dark:from-slate-100 dark:to-slate-300 bg-clip-text text-transparent", children: "Coachify Pro" }),
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: "text-xs text-slate-500 dark:text-slate-400 -mt-1", children: "Professional Dashboard" })
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex flex-col", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("span", { className: "font-bold text-xl bg-gradient-to-r from-slate-800 to-slate-600 dark:from-slate-100 dark:to-slate-300 bg-clip-text text-transparent", children: "Coachify Pro" }),
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("span", { className: "text-xs text-slate-500 dark:text-slate-400 -mt-1", children: "Professional Dashboard" })
         ] })
       ] }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex items-center gap-4", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "hidden md:block relative", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("svg", { className: "h-4 w-4 text-slate-400", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" }) }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex items-center gap-4", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "hidden md:block relative", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("svg", { className: "h-4 w-4 text-slate-400", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" }) }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
             "input",
             {
               type: "text",
@@ -7075,41 +7106,41 @@ function CoachDashboard2() {
             }
           )
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "hidden sm:flex items-center gap-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("button", { className: "px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-lg font-medium shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-200", children: "New Session" }),
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("button", { className: "p-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 hover:bg-slate-50 dark:hover:bg-slate-600 transition-colors relative", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("svg", { className: "w-5 h-5 text-slate-600 dark:text-slate-300", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" }) }),
-            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: "absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center font-medium", children: "5" })
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "hidden sm:flex items-center gap-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("button", { className: "px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-lg font-medium shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-200", children: "New Session" }),
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("button", { className: "p-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 hover:bg-slate-50 dark:hover:bg-slate-600 transition-colors relative", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("svg", { className: "w-5 h-5 text-slate-600 dark:text-slate-300", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("span", { className: "absolute -top-1 -right-1 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center font-medium", children: "5" })
           ] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
           "button",
           {
             className: "sm:hidden p-2 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700",
             onClick: () => setMobileOpen((v) => !v),
             "aria-label": "Open menu",
-            children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("svg", { className: "w-5 h-5", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M4 6h16M4 12h16M4 18h16" }) })
+            children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("svg", { className: "w-5 h-5", viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M4 6h16M4 12h16M4 18h16" }) })
           }
         )
       ] })
     ] }) }) }),
-    /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "grid grid-cols-1 lg:grid-cols-12 gap-6", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("aside", { className: "hidden lg:block lg:col-span-3 xl:col-span-2", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg border border-slate-200 dark:border-slate-700 sticky top-24", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("nav", { className: "space-y-1", children: tabs.map((tab) => /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)(
+    /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "grid grid-cols-1 lg:grid-cols-12 gap-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("aside", { className: "hidden lg:block lg:col-span-3 xl:col-span-2", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg border border-slate-200 dark:border-slate-700 sticky top-24", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("nav", { className: "space-y-1", children: tabs.map((tab) => /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)(
           "button",
           {
             onClick: () => setActive(tab.key),
             className: `w-full flex items-center gap-3 px-4 py-3 rounded-xl text-left transition-all duration-200 group ${active === tab.key ? "bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 border border-blue-200 dark:border-blue-700 shadow-sm" : "hover:bg-slate-50 dark:hover:bg-slate-700/50"}`,
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: `p-2 rounded-lg transition-colors ${active === tab.key ? "bg-blue-500 text-white" : "bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 group-hover:bg-blue-100 group-hover:text-blue-600 dark:group-hover:bg-blue-900/30"}`, children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(Icon2, { name: tab.icon, className: "w-4 h-4" }) }),
-              /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "flex-1 min-w-0", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: `font-medium text-sm ${active === tab.key ? "text-blue-700 dark:text-blue-300" : "text-slate-700 dark:text-slate-200"}`, children: tab.label }) }),
-              tab.badge && /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: `px-2 py-1 rounded-full text-xs font-medium ${active === tab.key ? "bg-blue-500 text-white" : "bg-slate-200 dark:bg-slate-600 text-slate-600 dark:text-slate-300"}`, children: tab.badge })
+              /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: `p-2 rounded-lg transition-colors ${active === tab.key ? "bg-blue-500 text-white" : "bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 group-hover:bg-blue-100 group-hover:text-blue-600 dark:group-hover:bg-blue-900/30"}`, children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(Icon2, { name: tab.icon, className: "w-4 h-4" }) }),
+              /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "flex-1 min-w-0", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("span", { className: `font-medium text-sm ${active === tab.key ? "text-blue-700 dark:text-blue-300" : "text-slate-700 dark:text-slate-200"}`, children: tab.label }) }),
+              tab.badge && /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("span", { className: `px-2 py-1 rounded-full text-xs font-medium ${active === tab.key ? "bg-blue-500 text-white" : "bg-slate-200 dark:bg-slate-600 text-slate-600 dark:text-slate-300"}`, children: tab.badge })
             ]
           },
           tab.key
         )) }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "mt-8 pt-6 border-t border-slate-200 dark:border-slate-700", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex items-center gap-3 p-3 rounded-lg bg-slate-50 dark:bg-slate-700/50", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "mt-8 pt-6 border-t border-slate-200 dark:border-slate-700", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex items-center gap-3 p-3 rounded-lg bg-slate-50 dark:bg-slate-700/50", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
             "img",
             {
               src: "/images/avatar-placeholder.png",
@@ -7117,25 +7148,25 @@ function CoachDashboard2() {
               className: "w-10 h-10 rounded-full border-2 border-white dark:border-slate-600 shadow-sm"
             }
           ),
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex-1 min-w-0", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-sm font-medium text-slate-900 dark:text-white truncate", children: "Dr. Sarah Johnson" }),
-            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-xs text-slate-500 dark:text-slate-400", children: "Executive Coach" })
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex-1 min-w-0", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-sm font-medium text-slate-900 dark:text-white truncate", children: "Dr. Sarah Johnson" }),
+            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-xs text-slate-500 dark:text-slate-400", children: "Executive Coach" })
           ] })
         ] }) })
       ] }) }),
-      mobileOpen && /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "lg:hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-sm", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "absolute right-0 top-0 h-full w-80 bg-white dark:bg-slate-800 shadow-2xl border-l border-slate-200 dark:border-slate-700", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "p-6", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex items-center justify-between mb-6", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("h3", { className: "font-bold text-lg", children: "Navigation" }),
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
+      mobileOpen && /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "lg:hidden fixed inset-0 z-50 bg-black/50 backdrop-blur-sm", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "absolute right-0 top-0 h-full w-80 bg-white dark:bg-slate-800 shadow-2xl border-l border-slate-200 dark:border-slate-700", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "p-6", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex items-center justify-between mb-6", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("h3", { className: "font-bold text-lg", children: "Navigation" }),
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
             "button",
             {
               onClick: () => setMobileOpen(!1),
               className: "p-2 hover:bg-slate-100 dark:hover:bg-slate-700 rounded-lg transition-colors",
-              children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("svg", { className: "w-5 h-5", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M6 18L18 6M6 6l12 12" }) })
+              children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("svg", { className: "w-5 h-5", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M6 18L18 6M6 6l12 12" }) })
             }
           )
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("nav", { className: "space-y-1", children: tabs.map((tab) => /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)(
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("nav", { className: "space-y-1", children: tabs.map((tab) => /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)(
           "button",
           {
             onClick: () => {
@@ -7143,19 +7174,19 @@ function CoachDashboard2() {
             },
             className: `w-full flex items-center gap-3 px-4 py-3 rounded-xl text-left transition-all ${active === tab.key ? "bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-700" : "hover:bg-slate-50 dark:hover:bg-slate-700"}`,
             children: [
-              /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(Icon2, { name: tab.icon, className: `w-5 h-5 ${active === tab.key ? "text-blue-600" : "text-slate-500"}` }),
-              /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: `font-medium ${active === tab.key ? "text-blue-700" : "text-slate-700 dark:text-slate-200"}`, children: tab.label }),
-              tab.badge && /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: `ml-auto px-2 py-1 rounded-full text-xs ${active === tab.key ? "bg-blue-500 text-white" : "bg-slate-200 text-slate-600"}`, children: tab.badge })
+              /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(Icon2, { name: tab.icon, className: `w-5 h-5 ${active === tab.key ? "text-blue-600" : "text-slate-500"}` }),
+              /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("span", { className: `font-medium ${active === tab.key ? "text-blue-700" : "text-slate-700 dark:text-slate-200"}`, children: tab.label }),
+              tab.badge && /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("span", { className: `ml-auto px-2 py-1 rounded-full text-xs ${active === tab.key ? "bg-blue-500 text-white" : "bg-slate-200 text-slate-600"}`, children: tab.badge })
             ]
           },
           tab.key
         )) })
       ] }) }) }),
-      /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("main", { className: "lg:col-span-9 xl:col-span-10", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "border-b border-slate-200 dark:border-slate-700 bg-gradient-to-r from-slate-50 to-white dark:from-slate-800 dark:to-slate-700/50 px-6 py-4", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("h1", { className: "text-2xl font-bold text-slate-900 dark:text-white", children: (_a = tabs.find((t) => t.key === active)) == null ? void 0 : _a.label }),
-            /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("p", { className: "text-slate-600 dark:text-slate-400 mt-1", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("main", { className: "lg:col-span-9 xl:col-span-10", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "bg-white dark:bg-slate-800 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700 overflow-hidden", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "border-b border-slate-200 dark:border-slate-700 bg-gradient-to-r from-slate-50 to-white dark:from-slate-800 dark:to-slate-700/50 px-6 py-4", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("h1", { className: "text-2xl font-bold text-slate-900 dark:text-white", children: (_a = tabs.find((t) => t.key === active)) == null ? void 0 : _a.label }),
+            /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("p", { className: "text-slate-600 dark:text-slate-400 mt-1", children: [
               active === "feed" && "Latest updates and activities from your coaching network",
               active === "manage" && "Manage your clients, sessions, and coaching relationships",
               active === "documents" && "Your coaching resources, templates, and materials",
@@ -7166,118 +7197,118 @@ function CoachDashboard2() {
               active === "settings" && "Configure your account and preferences"
             ] })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "flex items-center gap-3", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "hidden sm:flex items-center gap-2", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("button", { className: "px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors font-medium", children: "Export" }),
-            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("button", { className: "px-4 py-2 bg-slate-900 dark:bg-slate-700 text-white rounded-lg hover:bg-slate-800 dark:hover:bg-slate-600 transition-colors font-medium", children: "New Item" })
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "flex items-center gap-3", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "hidden sm:flex items-center gap-2", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("button", { className: "px-4 py-2 border border-slate-300 dark:border-slate-600 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors font-medium", children: "Export" }),
+            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("button", { className: "px-4 py-2 bg-slate-900 dark:bg-slate-700 text-white rounded-lg hover:bg-slate-800 dark:hover:bg-slate-600 transition-colors font-medium", children: "New Item" })
           ] }) })
         ] }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "p-6", children: [
-          active === "feed" && /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(ActivityFeedContent2, {}),
-          active === "manage" && /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(ManagementContent2, {}),
-          active === "documents" && /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(DocumentsContent2, {}),
-          active === "profile" && /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(ProfileContent2, {}),
-          active === "tracking" && /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(TrackingContent2, {}),
-          active === "create" && /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(CreateContent2, {}),
-          active === "coaching" && /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(CoachingChat2, {}),
-          active === "settings" && /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(SettingsContent2, {})
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "p-6", children: [
+          active === "feed" && /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(ActivityFeedContent2, {}),
+          active === "manage" && /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(ManagementContent2, {}),
+          active === "documents" && /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(DocumentsContent2, {}),
+          active === "profile" && /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(ProfileContent2, {}),
+          active === "tracking" && /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(TrackingContent2, {}),
+          active === "create" && /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(CreateContent2, {}),
+          active === "coaching" && /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(CoachingChat2, {}),
+          active === "settings" && /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(SettingsContent2, {})
         ] })
       ] }) })
     ] }) })
   ] });
 }
 function ActivityFeedContent2() {
-  return /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "space-y-6", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "grid md:grid-cols-2 lg:grid-cols-3 gap-6", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 border border-blue-200 dark:border-blue-700 rounded-2xl p-6", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex items-center gap-3 mb-4", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "p-2 bg-blue-500 rounded-lg", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(Icon2, { name: "manage", className: "w-5 h-5 text-white" }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("h3", { className: "font-semibold text-slate-900 dark:text-white", children: "New Sessions" }),
-            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-2xl font-bold text-blue-600 dark:text-blue-400", children: "12" })
+  return /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "space-y-6", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "grid md:grid-cols-2 lg:grid-cols-3 gap-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 border border-blue-200 dark:border-blue-700 rounded-2xl p-6", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex items-center gap-3 mb-4", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "p-2 bg-blue-500 rounded-lg", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(Icon2, { name: "manage", className: "w-5 h-5 text-white" }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("h3", { className: "font-semibold text-slate-900 dark:text-white", children: "New Sessions" }),
+            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-2xl font-bold text-blue-600 dark:text-blue-400", children: "12" })
           ] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-sm text-slate-600 dark:text-slate-400", children: "Scheduled for this week" })
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-sm text-slate-600 dark:text-slate-400", children: "Scheduled for this week" })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 border border-green-200 dark:border-green-700 rounded-2xl p-6", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex items-center gap-3 mb-4", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "p-2 bg-green-500 rounded-lg", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(Icon2, { name: "tracking", className: "w-5 h-5 text-white" }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("h3", { className: "font-semibold text-slate-900 dark:text-white", children: "Progress Rate" }),
-            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-2xl font-bold text-green-600 dark:text-green-400", children: "87%" })
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 border border-green-200 dark:border-green-700 rounded-2xl p-6", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex items-center gap-3 mb-4", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "p-2 bg-green-500 rounded-lg", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(Icon2, { name: "tracking", className: "w-5 h-5 text-white" }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("h3", { className: "font-semibold text-slate-900 dark:text-white", children: "Progress Rate" }),
+            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-2xl font-bold text-green-600 dark:text-green-400", children: "87%" })
           ] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-sm text-slate-600 dark:text-slate-400", children: "Client goal achievement" })
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-sm text-slate-600 dark:text-slate-400", children: "Client goal achievement" })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 border border-purple-200 dark:border-purple-700 rounded-2xl p-6", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex items-center gap-3 mb-4", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "p-2 bg-purple-500 rounded-lg", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(Icon2, { name: "documents", className: "w-5 h-5 text-white" }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("h3", { className: "font-semibold text-slate-900 dark:text-white", children: "Resources" }),
-            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-2xl font-bold text-purple-600 dark:text-purple-400", children: "24" })
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 border border-purple-200 dark:border-purple-700 rounded-2xl p-6", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex items-center gap-3 mb-4", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "p-2 bg-purple-500 rounded-lg", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(Icon2, { name: "documents", className: "w-5 h-5 text-white" }) }),
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("h3", { className: "font-semibold text-slate-900 dark:text-white", children: "Resources" }),
+            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-2xl font-bold text-purple-600 dark:text-purple-400", children: "24" })
           ] })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-sm text-slate-600 dark:text-slate-400", children: "Available materials" })
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-sm text-slate-600 dark:text-slate-400", children: "Available materials" })
       ] })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "bg-white dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 p-6", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("h3", { className: "font-semibold text-lg mb-4", children: "Recent Activity" }),
-      /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "space-y-4", children: [1, 2, 3].map((i) => /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex items-start gap-4 p-4 hover:bg-slate-50 dark:hover:bg-slate-600/50 rounded-lg transition-colors", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(Icon2, { name: "profile", className: "w-5 h-5 text-blue-600 dark:text-blue-400" }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex-1 min-w-0", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("p", { className: "text-slate-900 dark:text-white", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: "font-medium", children: "Michael Chen" }),
+    /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "bg-white dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 p-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("h3", { className: "font-semibold text-lg mb-4", children: "Recent Activity" }),
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "space-y-4", children: [1, 2, 3].map((i) => /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex items-start gap-4 p-4 hover:bg-slate-50 dark:hover:bg-slate-600/50 rounded-lg transition-colors", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center flex-shrink-0", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(Icon2, { name: "profile", className: "w-5 h-5 text-blue-600 dark:text-blue-400" }) }),
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex-1 min-w-0", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("p", { className: "text-slate-900 dark:text-white", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("span", { className: "font-medium", children: "Michael Chen" }),
             " completed their leadership assessment"
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-sm text-slate-500 dark:text-slate-400 mt-1", children: "2 hours ago" })
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-sm text-slate-500 dark:text-slate-400 mt-1", children: "2 hours ago" })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("button", { className: "px-3 py-1 text-sm bg-slate-100 dark:bg-slate-600 hover:bg-slate-200 dark:hover:bg-slate-500 rounded-lg transition-colors", children: "View" })
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("button", { className: "px-3 py-1 text-sm bg-slate-100 dark:bg-slate-600 hover:bg-slate-200 dark:hover:bg-slate-500 rounded-lg transition-colors", children: "View" })
       ] }, `activity-${i}`)) })
     ] })
   ] });
 }
 function ManagementContent2() {
-  return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "space-y-6", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "grid md:grid-cols-2 gap-6", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "bg-white dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 p-6", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("h3", { className: "font-semibold text-lg mb-4", children: "Active Clients" }),
-      /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "space-y-3", children: ["Sarah Wilson", "James Rodriguez", "Emma Thompson", "Alex Kim"].map((name2) => /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex items-center gap-3 p-3 hover:bg-slate-50 dark:hover:bg-slate-600/50 rounded-lg transition-colors", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white text-xs font-medium", children: name2.split(" ").map((n) => n[0]).join("") }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex-1", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "font-medium text-slate-900 dark:text-white", children: name2 }),
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-sm text-slate-500 dark:text-slate-400", children: "Next session: Tomorrow" })
+  return /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "space-y-6", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "grid md:grid-cols-2 gap-6", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "bg-white dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 p-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("h3", { className: "font-semibold text-lg mb-4", children: "Active Clients" }),
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "space-y-3", children: ["Sarah Wilson", "James Rodriguez", "Emma Thompson", "Alex Kim"].map((name2) => /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex items-center gap-3 p-3 hover:bg-slate-50 dark:hover:bg-slate-600/50 rounded-lg transition-colors", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white text-xs font-medium", children: name2.split(" ").map((n) => n[0]).join("") }),
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex-1", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "font-medium text-slate-900 dark:text-white", children: name2 }),
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-sm text-slate-500 dark:text-slate-400", children: "Next session: Tomorrow" })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "w-2 h-2 bg-green-500 rounded-full" })
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "w-2 h-2 bg-green-500 rounded-full" })
       ] }, name2)) })
     ] }),
-    /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "bg-white dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 p-6", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("h3", { className: "font-semibold text-lg mb-4", children: "Upcoming Sessions" }),
-      /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "space-y-4", children: [1, 2, 3].map((i) => /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "p-4 border border-slate-200 dark:border-slate-600 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-600/50 transition-colors", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex items-center justify-between mb-2", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: "font-medium text-slate-900 dark:text-white", children: "Strategy Session" }),
-          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: "text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded", children: "1h" })
+    /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "bg-white dark:bg-slate-700 rounded-xl border border-slate-200 dark:border-slate-600 p-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("h3", { className: "font-semibold text-lg mb-4", children: "Upcoming Sessions" }),
+      /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "space-y-4", children: [1, 2, 3].map((i) => /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "p-4 border border-slate-200 dark:border-slate-600 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-600/50 transition-colors", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("div", { className: "flex items-center justify-between mb-2", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("span", { className: "font-medium text-slate-900 dark:text-white", children: "Strategy Session" }),
+          /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("span", { className: "text-sm bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 px-2 py-1 rounded", children: "1h" })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-sm text-slate-600 dark:text-slate-400 mb-2", children: "With Sarah Wilson" }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-xs text-slate-500 dark:text-slate-400", children: "Today, 2:00 PM \u2022 Video Call" })
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-sm text-slate-600 dark:text-slate-400 mb-2", children: "With Sarah Wilson" }),
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("p", { className: "text-xs text-slate-500 dark:text-slate-400", children: "Today, 2:00 PM \u2022 Video Call" })
       ] }, i)) })
     ] })
   ] }) });
 }
 function DocumentsContent2() {
-  return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "text-center py-12 text-slate-500 dark:text-slate-400", children: "Documents management interface" });
+  return /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "text-center py-12 text-slate-500 dark:text-slate-400", children: "Documents management interface" });
 }
 function ProfileContent2() {
-  return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "text-center py-12 text-slate-500 dark:text-slate-400", children: "Profile management interface" });
+  return /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "text-center py-12 text-slate-500 dark:text-slate-400", children: "Profile management interface" });
 }
 function TrackingContent2() {
-  return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "text-center py-12 text-slate-500 dark:text-slate-400", children: "Progress tracking dashboard" });
+  return /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "text-center py-12 text-slate-500 dark:text-slate-400", children: "Progress tracking dashboard" });
 }
 function CreateContent2() {
-  return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "text-center py-12 text-slate-500 dark:text-slate-400", children: "Content creation workspace" });
+  return /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "text-center py-12 text-slate-500 dark:text-slate-400", children: "Content creation workspace" });
 }
 function SettingsContent2() {
-  return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "text-center py-12 text-slate-500 dark:text-slate-400", children: "Settings configuration panel" });
+  return /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("div", { className: "text-center py-12 text-slate-500 dark:text-slate-400", children: "Settings configuration panel" });
 }
 function HeaderNavigation4() {
-  let navigate = (0, import_react60.useNavigate)(), handleFeedback = () => {
+  let navigate = (0, import_react61.useNavigate)(), handleFeedback = () => {
     window.open("/feedback", "_blank", "width=600,height=700");
   }, handleQuit = () => {
     typeof window < "u" && (window.location.href = "about:blank", window.close(), setTimeout(() => navigate("/"), 100));
@@ -7285,38 +7316,38 @@ function HeaderNavigation4() {
     {
       to: "/",
       text: "Dashboard",
-      icon: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(import_icons_react10.IconDashboard, { className: "icon" })
+      icon: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(import_icons_react10.IconDashboard, { className: "icon" })
     },
     {
       to: "/felix",
       text: "Chat with AI Coach",
-      icon: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(import_icons_react10.IconRobot, { className: "icon" })
+      icon: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(import_icons_react10.IconRobot, { className: "icon" })
     },
     {
       to: "/search",
       text: "Search",
-      icon: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(import_icons_react10.IconSearch, { className: "icon" })
+      icon: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(import_icons_react10.IconSearch, { className: "icon" })
     },
     {
       to: "/signup-choice",
       text: "Continue to Coachify Platform",
-      icon: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(import_icons_react10.IconArrowRight, { className: "icon" })
+      icon: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(import_icons_react10.IconArrowRight, { className: "icon" })
     }
   ], actionItems = [
     {
       to: "#",
       text: "Feedback",
-      icon: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(import_icons_react10.IconMessage, { className: "icon" }),
+      icon: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(import_icons_react10.IconMessage, { className: "icon" }),
       action: handleFeedback
     },
     {
       to: "#",
       text: "Quit",
-      icon: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(import_icons_react10.IconLogout, { className: "icon" }),
+      icon: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(import_icons_react10.IconLogout, { className: "icon" }),
       action: handleQuit
     }
   ];
-  return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
     "header",
     {
       className: cn(
@@ -7325,22 +7356,22 @@ function HeaderNavigation4() {
         "fixed bottom-0 left-0 flex w-full items-center justify-center border-t-2",
         "lg:top-0 lg:h-screen lg:w-16 lg:border-r-2 lg:border-t-0"
       ),
-      children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("nav", { className: "w-full max-w-sm", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(TooltipProvider, { delayDuration: 500, children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("ul", { className: "flex justify-between gap-0 p-2 sm:gap-2 lg:flex-col", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(NavigationList4, { navItems: navMainItems2 }),
-        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(NavigationList4, { navItems: actionItems })
+      children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("nav", { className: "w-full max-w-sm", children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(TooltipProvider, { delayDuration: 500, children: /* @__PURE__ */ (0, import_jsx_runtime57.jsxs)("ul", { className: "flex justify-between gap-0 p-2 sm:gap-2 lg:flex-col", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(NavigationList4, { navItems: navMainItems2 }),
+        /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(NavigationList4, { navItems: actionItems })
       ] }) }) })
     }
   );
 }
 function NavigationList4({ navItems }) {
   let isScreenLarge = useScreenLarge();
-  return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(import_jsx_runtime58.Fragment, { children: navItems.map((navItem) => /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(import_jsx_runtime57.Fragment, { children: navItems.map((navItem) => /* @__PURE__ */ (0, import_jsx_runtime57.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
     TooltipAuto,
     {
       content: navItem.text,
       className: "hidden lg:block",
       side: isScreenLarge ? "right" : "top",
-      children: navItem.action ? /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
+      children: navItem.action ? /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
         "button",
         {
           onClick: navItem.action,
@@ -7353,8 +7384,8 @@ function NavigationList4({ navItems }) {
           ),
           children: navItem.icon
         }
-      ) : /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
-        import_react60.NavLink,
+      ) : /* @__PURE__ */ (0, import_jsx_runtime57.jsx)(
+        import_react61.NavLink,
         {
           to: navItem.to,
           className: ({ isActive }) => cn(
@@ -7376,8 +7407,8 @@ __export(felix_exports, {
   action: () => action14,
   default: () => Felix
 });
-var import_react61 = require("react"), import_promises = require("fs/promises"), import_node27 = require("@remix-run/node"), import_react62 = require("@remix-run/react"), import_icons_react11 = require("@tabler/icons-react"), import_groq_sdk = __toESM(require("groq-sdk"));
-var import_jsx_runtime59 = require("react/jsx-runtime"), LIFE_COACHING_SYSTEM_PROMPT = `You are FelixGPT, an expert life coach and leadership mentor with 15+ years of experience. Your specialty is helping people achieve personal growth, career advancement, and leadership excellence.
+var import_react62 = require("react"), import_promises = require("fs/promises"), import_node27 = require("@remix-run/node"), import_react63 = require("@remix-run/react"), import_icons_react11 = require("@tabler/icons-react"), import_groq_sdk = __toESM(require("groq-sdk"));
+var import_jsx_runtime58 = require("react/jsx-runtime"), LIFE_COACHING_SYSTEM_PROMPT = `You are FelixGPT, an expert life coach and leadership mentor with 15+ years of experience. Your specialty is helping people achieve personal growth, career advancement, and leadership excellence.
 
 CORE PRINCIPLES:
 1. Always be empathetic, encouraging, and solution-focused
@@ -7506,7 +7537,7 @@ async function action14({ request }) {
       console.log("felix: GROQ_API_KEY not set, will fall back to demo mode if OpenAI fails");
     console.warn("felix: using DEMO MODE for response", { message }), await writeRemoteLog({ type: "demo_mode_response", message });
     let lowerMsg = message.toLowerCase(), demoReply = "";
-    return lowerMsg.includes("hello") || lowerMsg.includes("hi") || lowerMsg.includes("hey") ? demoReply = `\u{1F30A} Welcome! I'm FelixGPT, your AI life coach and leadership mentor. 
+    return lowerMsg.includes("hello") || lowerMsg.includes("hi") || lowerMsg.includes("hey") ? demoReply = `Welcome! I'm FelixGPT, your AI life coach and leadership mentor. 
 
 I'm here to help you navigate life's challenges 
 
@@ -7597,10 +7628,10 @@ var COACHING_TOPICS = [
   }
 ];
 function Felix() {
-  let fetcher = (0, import_react62.useFetcher)(), [messages, setMessages] = (0, import_react61.useState)([]), [input, setInput] = (0, import_react61.useState)(""), [loading, setLoading] = (0, import_react61.useState)(!1), [showTopics, setShowTopics] = (0, import_react61.useState)(!0), [showTopicsDropdown, setShowTopicsDropdown] = (0, import_react61.useState)(!1), endRef = (0, import_react61.useRef)(null), textareaRef = (0, import_react61.useRef)(null);
-  (0, import_react61.useEffect)(() => {
+  let fetcher = (0, import_react63.useFetcher)(), [messages, setMessages] = (0, import_react62.useState)([]), [input, setInput] = (0, import_react62.useState)(""), [loading, setLoading] = (0, import_react62.useState)(!1), [showTopics, setShowTopics] = (0, import_react62.useState)(!0), [showTopicsDropdown, setShowTopicsDropdown] = (0, import_react62.useState)(!1), endRef = (0, import_react62.useRef)(null), textareaRef = (0, import_react62.useRef)(null);
+  (0, import_react62.useEffect)(() => {
     textareaRef.current && (textareaRef.current.style.height = "auto", textareaRef.current.style.height = textareaRef.current.scrollHeight + "px");
-  }, [input]), (0, import_react61.useEffect)(() => {
+  }, [input]), (0, import_react62.useEffect)(() => {
     if (fetcher.state === "idle" && fetcher.data) {
       let d = fetcher.data, makeId = () => `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`, replyText = typeof d.reply == "string" ? d.reply : void 0, errorText = typeof d.error == "string" ? d.error : void 0;
       replyText ? setMessages((prev) => [...prev, { id: makeId(), role: "assistant", text: replyText }]) : errorText && setMessages((prev) => [...prev, { id: makeId(), role: "assistant", text: "I apologize, but I'm experiencing technical difficulties. Please try again in a moment." }]), setLoading(!1), setTimeout(() => {
@@ -7608,7 +7639,7 @@ function Felix() {
         return (_a = endRef.current) == null ? void 0 : _a.scrollIntoView({ behavior: "smooth" });
       }, 100);
     }
-  }, [fetcher.state, fetcher.data]), (0, import_react61.useEffect)(() => {
+  }, [fetcher.state, fetcher.data]), (0, import_react62.useEffect)(() => {
     messages.length > 0 && setShowTopics(!1);
   }, [messages.length]);
   function handleSubmit(e) {
@@ -7629,112 +7660,112 @@ function Felix() {
   function handleKeyDown(e) {
     e.key === "Enter" && !e.shiftKey && (e.preventDefault(), handleSubmit());
   }
-  return /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "min-h-screen bg-gradient-to-br from-blue-50/30 via-slate-50 to-emerald-50/30 dark:from-slate-900 dark:via-blue-900/10 dark:to-emerald-900/10 py-8 px-0 sm:px-6 lg:px-8", children: [
-    /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(HeaderNavigation5, {}),
-    /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "w-full sm:max-w-4xl sm:mx-auto", children: [
-      /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex items-center justify-between mb-8", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "flex items-center gap-4", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex items-center gap-3", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "relative", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "w-12 h-12 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-2xl flex items-center justify-center shadow-lg", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { className: "text-white font-bold text-lg", children: "F" }) }),
-            /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white dark:border-slate-900" })
+  return /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "min-h-screen bg-gradient-to-br from-blue-50/30 via-slate-50 to-emerald-50/30 dark:from-slate-900 dark:via-blue-900/10 dark:to-emerald-900/10 py-8 px-0 sm:px-6 lg:px-8", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(HeaderNavigation5, {}),
+    /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "w-full sm:max-w-4xl sm:mx-auto", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex items-center justify-between mb-8", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "flex items-center gap-4", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex items-center gap-3", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "relative", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "w-12 h-12 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-2xl flex items-center justify-center shadow-lg", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: "text-white font-bold text-lg", children: "F" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white dark:border-slate-900" })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("h1", { className: "text-2xl sm:text-3xl font-black bg-gradient-to-r from-slate-900 to-blue-900 dark:from-slate-100 dark:to-blue-100 bg-clip-text text-transparent", children: "FelixGPT" }),
-            /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { className: "text-sm text-slate-600 dark:text-slate-400", children: "Your AI Life Coach & Leadership Mentor" })
+          /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("h1", { className: "text-2xl sm:text-3xl font-black bg-gradient-to-r from-slate-900 to-blue-900 dark:from-slate-100 dark:to-blue-100 bg-clip-text text-transparent", children: "FelixGPT" }),
+            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-sm text-slate-600 dark:text-slate-400", children: "Your AI Life Coach & Leadership Mentor" })
           ] })
         ] }) }),
-        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "flex items-center gap-2", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(ThemeSwitcher, {}) })
+        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "flex items-center gap-2", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(ThemeSwitcher, {}) })
       ] }),
-      /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm rounded-none sm:rounded-3xl shadow-lg sm:shadow-2xl border-0 sm:border border-slate-200/50 dark:border-slate-700/50 overflow-hidden", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "border-b border-slate-200/50 dark:border-slate-700/50 bg-gradient-to-r from-slate-50 to-blue-50/30 dark:from-slate-800 dark:to-blue-900/20 px-4 sm:px-6 py-4", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex items-center justify-between", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { children: [
-            /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("h2", { className: "font-semibold text-slate-900 dark:text-white", children: "Life Coaching Session" }),
-            /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { className: "text-sm text-slate-600 dark:text-slate-400", children: messages.length === 0 ? "Ready to transform your life?" : `${messages.length / 2} messages exchanged` })
+      /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm rounded-none sm:rounded-3xl shadow-lg sm:shadow-2xl border-0 sm:border border-slate-200/50 dark:border-slate-700/50 overflow-hidden", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "border-b border-slate-200/50 dark:border-slate-700/50 bg-gradient-to-r from-slate-50 to-blue-50/30 dark:from-slate-800 dark:to-blue-900/20 px-4 sm:px-6 py-4", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex items-center justify-between", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { children: [
+            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("h2", { className: "font-semibold text-slate-900 dark:text-white", children: "Life Coaching Session" }),
+            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-sm text-slate-600 dark:text-slate-400", children: messages.length === 0 ? "Ready to transform your life?" : `${messages.length / 2} messages exchanged` })
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: `w-2 h-2 rounded-full ${loading ? "bg-yellow-500 animate-pulse" : "bg-green-500"}` }),
+          /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: `w-2 h-2 rounded-full ${loading ? "bg-yellow-500 animate-pulse" : "bg-green-500"}` }),
             loading ? "Thinking..." : "Online"
           ] })
         ] }) }),
-        messages.length === 0 && showTopics && /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "sm:hidden border-b border-slate-200/50 dark:border-slate-700/50 px-4 py-3 bg-slate-50/30 dark:bg-slate-800/20", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)(
+        messages.length === 0 && showTopics && /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "sm:hidden border-b border-slate-200/50 dark:border-slate-700/50 px-4 py-3 bg-slate-50/30 dark:bg-slate-800/20", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)(
             "button",
             {
               onClick: () => setShowTopicsDropdown(!showTopicsDropdown),
               className: "w-full flex items-center justify-between px-4 py-2 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-md transition-all duration-200 text-slate-900 dark:text-white font-medium",
               children: [
-                /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex items-center gap-2", children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("svg", { className: "w-5 h-5 text-blue-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5h.01" }) }),
-                  /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { children: "Coaching Topics" })
+                /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex items-center gap-2", children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("svg", { className: "w-5 h-5 text-blue-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5h.01" }) }),
+                  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { children: "Coaching Topics" })
                 ] }),
-                /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("svg", { className: `w-5 h-5 transition-transform duration-300 ${showTopicsDropdown ? "rotate-180" : ""}`, fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M19 14l-7 7m0 0l-7-7m7 7V3" }) })
+                /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("svg", { className: `w-5 h-5 transition-transform duration-300 ${showTopicsDropdown ? "rotate-180" : ""}`, fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M19 14l-7 7m0 0l-7-7m7 7V3" }) })
               ]
             }
           ),
-          showTopicsDropdown && /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "mt-3 grid grid-cols-1 gap-2 animate-in fade-in slide-in-from-top-2 duration-200", children: COACHING_TOPICS.map((topic, index) => /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(
+          showTopicsDropdown && /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "mt-3 grid grid-cols-1 gap-2 animate-in fade-in slide-in-from-top-2 duration-200", children: COACHING_TOPICS.map((topic, index) => /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
             "button",
             {
               onClick: () => {
                 handleTopicClick(topic.question), setShowTopicsDropdown(!1);
               },
               className: "group text-left p-3 rounded-lg bg-white/70 dark:bg-slate-800/70 border border-slate-200/50 dark:border-slate-700/50 hover:border-blue-300 dark:hover:border-blue-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-200",
-              children: /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex items-center gap-3", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { className: "text-lg", children: topic.emoji }),
-                /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex-1 text-left", children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("h4", { className: "font-semibold text-slate-900 dark:text-white text-sm", children: topic.title }),
-                  /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { className: "text-xs text-slate-600 dark:text-slate-400 line-clamp-1", children: topic.question })
+              children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex items-center gap-3", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: "text-lg", children: topic.emoji }),
+                /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex-1 text-left", children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("h4", { className: "font-semibold text-slate-900 dark:text-white text-sm", children: topic.title }),
+                  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-xs text-slate-600 dark:text-slate-400 line-clamp-1", children: topic.question })
                 ] })
               ] })
             },
             index
           )) })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex flex-col gap-6 max-h-[60vh] overflow-auto px-4 sm:px-6 py-6 scrollbar-thin scrollbar-thumb-slate-300 dark:scrollbar-thumb-slate-600", children: [
-          messages.length === 0 && showTopics && /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "space-y-6", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "flex flex-col items-start", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "max-w-[85%] bg-gradient-to-r from-blue-50 to-emerald-50 dark:from-blue-900/20 dark:to-emerald-900/20 border border-blue-200/50 dark:border-blue-700/50 rounded-2xl rounded-bl-none px-6 py-4", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex items-center gap-3 mb-3", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "w-8 h-8 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { className: "text-white font-bold text-sm", children: "F" }) }),
-                /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("h3", { className: "font-semibold text-slate-900 dark:text-white", children: "Welcome to FelixGPT! \u{1F30A}" }),
-                  /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { className: "text-sm text-slate-600 dark:text-slate-400", children: "Your AI Life Coach" })
+        /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex flex-col gap-6 max-h-[60vh] overflow-auto px-4 sm:px-6 py-6 scrollbar-thin scrollbar-thumb-slate-300 dark:scrollbar-thumb-slate-600", children: [
+          messages.length === 0 && showTopics && /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "space-y-6", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "flex flex-col items-start", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "max-w-[85%] bg-gradient-to-r from-blue-50 to-emerald-50 dark:from-blue-900/20 dark:to-emerald-900/20 border border-blue-200/50 dark:border-blue-700/50 rounded-2xl rounded-bl-none px-6 py-4", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex items-center gap-3 mb-3", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "w-8 h-8 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: "text-white font-bold text-sm", children: "F" }) }),
+                /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("h3", { className: "font-semibold text-slate-900 dark:text-white", children: "Welcome to FelixGPT! \u{1F30A}" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-sm text-slate-600 dark:text-slate-400", children: "Your AI Life Coach" })
                 ] })
               ] }),
-              /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { className: "text-slate-700 dark:text-slate-300 leading-relaxed", children: "I'm ready to support your journey." })
+              /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-slate-700 dark:text-slate-300 leading-relaxed", children: "I'm ready to support your journey." })
             ] }) }),
-            /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3", children: COACHING_TOPICS.map((topic, index) => /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)(
+            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "hidden sm:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3", children: COACHING_TOPICS.map((topic, index) => /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)(
               "button",
               {
                 onClick: () => handleTopicClick(topic.question),
                 className: "group text-left p-4 rounded-xl bg-white/50 dark:bg-slate-800/50 border border-slate-200/50 dark:border-slate-700/50 hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-lg hover:scale-105 transition-all duration-300",
                 children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "text-2xl mb-2 group-hover:scale-110 transition-transform duration-300", children: topic.emoji }),
-                  /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("h4", { className: "font-semibold text-slate-900 dark:text-white mb-1", children: topic.title }),
-                  /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { className: "text-sm text-slate-600 dark:text-slate-400 line-clamp-2", children: topic.question })
+                  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "text-2xl mb-2 group-hover:scale-110 transition-transform duration-300", children: topic.emoji }),
+                  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("h4", { className: "font-semibold text-slate-900 dark:text-white mb-1", children: topic.title }),
+                  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-sm text-slate-600 dark:text-slate-400 line-clamp-2", children: topic.question })
                 ]
               },
               index
             )) })
           ] }),
-          messages.map((m) => /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: `flex ${m.role === "user" ? "justify-end" : "justify-start"}`, children: /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: `max-w-[85%] flex gap-3 ${m.role === "user" ? "flex-row-reverse" : "flex-row"}`, children: [
-            /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: `flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${m.role === "user" ? "bg-gradient-to-br from-emerald-500 to-teal-600" : "bg-gradient-to-br from-blue-500 to-emerald-500"}`, children: m.role === "user" ? /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { className: "text-white font-bold text-sm", children: "Y" }) : /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { className: "text-white font-bold text-sm", children: "F" }) }),
-            /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: `flex-1 min-w-0 ${m.role === "user" ? "bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-2xl rounded-br-none" : "bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-2xl rounded-bl-none border border-slate-200/50 dark:border-slate-700/50"} px-4 py-3 shadow-sm`, children: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "whitespace-pre-wrap leading-relaxed", children: m.text }) })
+          messages.map((m) => /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: `flex ${m.role === "user" ? "justify-end" : "justify-start"}`, children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: `max-w-[85%] flex gap-3 ${m.role === "user" ? "flex-row-reverse" : "flex-row"}`, children: [
+            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: `flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${m.role === "user" ? "bg-gradient-to-br from-emerald-500 to-teal-600" : "bg-gradient-to-br from-blue-500 to-emerald-500"}`, children: m.role === "user" ? /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: "text-white font-bold text-sm", children: "Y" }) : /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: "text-white font-bold text-sm", children: "F" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: `flex-1 min-w-0 ${m.role === "user" ? "bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-2xl rounded-br-none" : "bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-2xl rounded-bl-none border border-slate-200/50 dark:border-slate-700/50"} px-4 py-3 shadow-sm`, children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "whitespace-pre-wrap leading-relaxed", children: m.text }) })
           ] }) }, m.id)),
-          loading && /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "flex justify-start", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "max-w-[85%] flex gap-3", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { className: "text-white font-bold text-sm", children: "F" }) }),
-            /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "bg-slate-100 dark:bg-slate-800 rounded-2xl rounded-bl-none px-4 py-3 border border-slate-200/50 dark:border-slate-700/50", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex items-center gap-2 text-slate-600 dark:text-slate-400", children: [
-              /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "flex gap-1", children: [
-                /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "w-2 h-2 bg-slate-400 rounded-full animate-bounce" }),
-                /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "w-2 h-2 bg-slate-400 rounded-full animate-bounce", style: { animationDelay: "0.1s" } }),
-                /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "w-2 h-2 bg-slate-400 rounded-full animate-bounce", style: { animationDelay: "0.2s" } })
+          loading && /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "flex justify-start", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "max-w-[85%] flex gap-3", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "flex-shrink-0 w-8 h-8 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-full flex items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: "text-white font-bold text-sm", children: "F" }) }),
+            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "bg-slate-100 dark:bg-slate-800 rounded-2xl rounded-bl-none px-4 py-3 border border-slate-200/50 dark:border-slate-700/50", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex items-center gap-2 text-slate-600 dark:text-slate-400", children: [
+              /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "flex gap-1", children: [
+                /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "w-2 h-2 bg-slate-400 rounded-full animate-bounce" }),
+                /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "w-2 h-2 bg-slate-400 rounded-full animate-bounce", style: { animationDelay: "0.1s" } }),
+                /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "w-2 h-2 bg-slate-400 rounded-full animate-bounce", style: { animationDelay: "0.2s" } })
               ] }),
-              /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { className: "text-sm", children: "Thinking deeply about your situation..." })
+              /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: "text-sm", children: "Thinking deeply about your situation..." })
             ] }) })
           ] }) }),
-          /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { ref: endRef })
+          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { ref: endRef })
         ] }),
-        /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("div", { className: "border-t border-slate-200/50 dark:border-slate-700/50 px-4 sm:px-6 py-4 bg-slate-50/50 dark:bg-slate-800/30", children: [
-          /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("form", { onSubmit: handleSubmit, className: "flex gap-3 items-end", children: [
-            /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "flex-1 relative", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(
+        /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("div", { className: "border-t border-slate-200/50 dark:border-slate-700/50 px-4 sm:px-6 py-4 bg-slate-50/50 dark:bg-slate-800/30", children: [
+          /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("form", { onSubmit: handleSubmit, className: "flex gap-3 items-end", children: [
+            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "flex-1 relative", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
               "textarea",
               {
                 ref: textareaRef,
@@ -7747,30 +7778,30 @@ function Felix() {
                 rows: 1
               }
             ) }),
-            /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(
+            /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
               "button",
               {
                 type: "submit",
                 disabled: loading || !input.trim(),
                 className: "flex items-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed px-6 py-3 text-white font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 group",
-                children: loading ? /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)(import_jsx_runtime59.Fragment, { children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" }),
-                  /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { className: "text-sm", children: "Thinking" })
-                ] }) : /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)(import_jsx_runtime59.Fragment, { children: [
-                  /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("svg", { className: "w-5 h-5 group-hover:translate-x-1 transition-transform", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 5l7 7-7 7M5 5l7 7-7 7" }) }),
-                  /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("span", { className: "text-sm", children: "Send" })
+                children: loading ? /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)(import_jsx_runtime58.Fragment, { children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" }),
+                  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: "text-sm", children: "Thinking" })
+                ] }) : /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)(import_jsx_runtime58.Fragment, { children: [
+                  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("svg", { className: "w-5 h-5 group-hover:translate-x-1 transition-transform", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 5l7 7-7 7M5 5l7 7-7 7" }) }),
+                  /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("span", { className: "text-sm", children: "Send" })
                 ] })
               }
             )
           ] }),
-          /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("div", { className: "mt-3 text-center", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { className: "text-xs text-slate-500 dark:text-slate-400", children: "FelixGPT may makes mistakes." }) })
+          /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("div", { className: "mt-3 text-center", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("p", { className: "text-xs text-slate-500 dark:text-slate-400", children: "FelixGPT may makes mistakes." }) })
         ] })
       ] })
     ] })
   ] });
 }
 function HeaderNavigation5() {
-  let navigate = (0, import_react62.useNavigate)(), handleFeedback = () => {
+  let navigate = (0, import_react63.useNavigate)(), handleFeedback = () => {
     window.open("/feedback", "_blank", "width=600,height=700");
   }, handleQuit = () => {
     typeof window < "u" && (window.location.href = "about:blank", window.close(), setTimeout(() => navigate("/"), 100));
@@ -7778,33 +7809,33 @@ function HeaderNavigation5() {
     {
       to: "/",
       text: "Dashboard",
-      icon: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(import_icons_react11.IconDashboard, { className: "icon" })
+      icon: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(import_icons_react11.IconDashboard, { className: "icon" })
     },
     {
       to: "/felix",
       text: "Chat with AI Coach",
-      icon: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(import_icons_react11.IconRobot, { className: "icon" })
+      icon: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(import_icons_react11.IconRobot, { className: "icon" })
     },
     {
       to: "/signup-choice",
       text: "Continue to Coachify Platform",
-      icon: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(import_icons_react11.IconArrowRight, { className: "icon" })
+      icon: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(import_icons_react11.IconArrowRight, { className: "icon" })
     }
   ], actionItems = [
     {
       to: "#",
       text: "Feedback",
-      icon: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(import_icons_react11.IconMessage, { className: "icon" }),
+      icon: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(import_icons_react11.IconMessage, { className: "icon" }),
       action: handleFeedback
     },
     {
       to: "#",
       text: "Quit",
-      icon: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(import_icons_react11.IconLogout, { className: "icon" }),
+      icon: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(import_icons_react11.IconLogout, { className: "icon" }),
       action: handleQuit
     }
   ];
-  return /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
     "header",
     {
       className: cn(
@@ -7813,22 +7844,22 @@ function HeaderNavigation5() {
         "fixed bottom-0 left-0 flex w-full items-center justify-center border-t-2",
         "lg:top-0 lg:h-screen lg:w-16 lg:border-r-2 lg:border-t-0"
       ),
-      children: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("nav", { className: "w-full max-w-sm", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(TooltipProvider, { delayDuration: 500, children: /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("ul", { className: "flex justify-between gap-0 p-2 sm:gap-2 lg:flex-col", children: [
-        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(NavigationList5, { navItems: navMainItems2 }),
-        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(NavigationList5, { navItems: actionItems })
+      children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("nav", { className: "w-full max-w-sm", children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(TooltipProvider, { delayDuration: 500, children: /* @__PURE__ */ (0, import_jsx_runtime58.jsxs)("ul", { className: "flex justify-between gap-0 p-2 sm:gap-2 lg:flex-col", children: [
+        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(NavigationList5, { navItems: navMainItems2 }),
+        /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(NavigationList5, { navItems: actionItems })
       ] }) }) })
     }
   );
 }
 function NavigationList5({ navItems }) {
   let isScreenLarge = useScreenLarge();
-  return /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(import_jsx_runtime59.Fragment, { children: navItems.map((navItem) => /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(
+  return /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(import_jsx_runtime58.Fragment, { children: navItems.map((navItem) => /* @__PURE__ */ (0, import_jsx_runtime58.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
     TooltipAuto,
     {
       content: navItem.text,
       className: "hidden lg:block",
       side: isScreenLarge ? "right" : "top",
-      children: navItem.action ? /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(
+      children: navItem.action ? /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
         "button",
         {
           onClick: navItem.action,
@@ -7841,8 +7872,8 @@ function NavigationList5({ navItems }) {
           ),
           children: navItem.icon
         }
-      ) : /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(
-        import_react62.NavLink,
+      ) : /* @__PURE__ */ (0, import_jsx_runtime58.jsx)(
+        import_react63.NavLink,
         {
           to: navItem.to,
           className: ({ isActive }) => cn(
@@ -7856,6 +7887,63 @@ function NavigationList5({ navItems }) {
       )
     }
   ) }, navItem.text)) });
+}
+
+// app/routes/terms.tsx
+var terms_exports = {};
+__export(terms_exports, {
+  default: () => TermsOfUse
+});
+var import_react64 = require("@remix-run/react"), import_jsx_runtime59 = require("react/jsx-runtime");
+function TermsOfUse() {
+  return /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("main", { className: "max-w-4xl mx-auto p-8", children: [
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("h1", { className: "text-3xl font-bold mb-4", children: "Terms of Use" }),
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { className: "mb-4", children: "Effective date: November 16, 2025" }),
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("section", { className: "mb-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("h2", { className: "text-xl font-semibold", children: "Acceptance" }),
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { children: "By accessing or using Coachify, you agree to these Terms of Use." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("section", { className: "mb-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("h2", { className: "text-xl font-semibold", children: "Eligibility" }),
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { children: "Users must be old enough to form a binding contract in their jurisdiction, or have parental consent." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("section", { className: "mb-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("h2", { className: "text-xl font-semibold", children: "Account Responsibility" }),
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { children: "Users are responsible for maintaining the confidentiality of their account credentials and for all activity that occurs under their accounts." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("section", { className: "mb-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("h2", { className: "text-xl font-semibold", children: "Acceptable Use" }),
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { children: "Prohibited activities include illegal acts, harassment, abusive content, spamming, and attempts to break or interfere with the system." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("section", { className: "mb-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("h2", { className: "text-xl font-semibold", children: "Intellectual Property" }),
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { children: "Coachify's code is open-source. Users retain ownership of content they create (posts, AI conversations) but grant Coachify a license to host and display that content." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("section", { className: "mb-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("h2", { className: "text-xl font-semibold", children: "Disclaimers & Limitation of Liability" }),
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { children: 'The service is provided "as is" and is a prototype. There are no warranties regarding reliability or continuity. The AI Coach and community are for informational purposes only and do not replace professional advice.' }),
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { children: "To the fullest extent permitted by law, Coachify and its creator are not liable for any direct, indirect, incidental, or consequential damages arising from use of the service." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("section", { className: "mb-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("h2", { className: "text-xl font-semibold", children: "Indemnification" }),
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { children: "Users agree to indemnify Coachify against claims resulting from misuse or violation of these terms." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("section", { className: "mb-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("h2", { className: "text-xl font-semibold", children: "Termination" }),
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { children: "Coachify may terminate or suspend access for violations of these terms." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("section", { className: "mb-6", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("h2", { className: "text-xl font-semibold", children: "Governing Law" }),
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { children: "These terms are governed by the laws of Belgium." })
+    ] }),
+    /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("section", { className: "mt-8", children: [
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsxs)("p", { children: [
+        "Contact: ",
+        /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("a", { href: "mailto:kwitondafelix6@gmail.com", className: "text-blue-600", children: "kwitondafelix6@gmail.com" })
+      ] }),
+      /* @__PURE__ */ (0, import_jsx_runtime59.jsx)("p", { className: "mt-4", children: /* @__PURE__ */ (0, import_jsx_runtime59.jsx)(import_react64.Link, { to: "/", children: "Back to Home" }) })
+    ] })
+  ] });
 }
 
 // app/routes/ping.tsx
@@ -7872,7 +7960,7 @@ function loader23() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-CYFVJXGH.js", imports: ["/build/_shared/chunk-KBLCOIOC.js", "/build/_shared/chunk-3RBGSDJQ.js", "/build/_shared/chunk-P6WDVL5F.js", "/build/_shared/chunk-OCZ35EVD.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-EQ5J4RU3.js", imports: ["/build/_shared/chunk-TFBYCRFC.js", "/build/_shared/chunk-F37WXFTH.js", "/build/_shared/chunk-U5A2LGJS.js", "/build/_shared/chunk-AP3S46ME.js", "/build/_shared/chunk-RHFQS5OV.js", "/build/_shared/chunk-X2FHOKEC.js", "/build/_shared/chunk-DEIQMVTL.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/$username._index": { id: "routes/$username._index", parentId: "root", path: ":username", index: !0, caseSensitive: void 0, module: "/build/routes/$username._index-LWJ4ZFJ3.js", imports: ["/build/_shared/chunk-KQBCBTL6.js", "/build/_shared/chunk-C3TBRFRM.js", "/build/_shared/chunk-OVSG33BC.js", "/build/_shared/chunk-ETRA5BF5.js", "/build/_shared/chunk-JOUSK4XN.js", "/build/_shared/chunk-6D54HQ37.js", "/build/_shared/chunk-XZCQ7J6O.js", "/build/_shared/chunk-FPNUDR2Q.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$username.broadcasts.$id._index": { id: "routes/$username.broadcasts.$id._index", parentId: "root", path: ":username/broadcasts/:id", index: !0, caseSensitive: void 0, module: "/build/routes/$username.broadcasts.$id._index-2RJ3IKID.js", imports: ["/build/_shared/chunk-C3TBRFRM.js", "/build/_shared/chunk-ETRA5BF5.js", "/build/_shared/chunk-JOUSK4XN.js", "/build/_shared/chunk-6D54HQ37.js", "/build/_shared/chunk-E7Z5WAE3.js", "/build/_shared/chunk-XZCQ7J6O.js", "/build/_shared/chunk-AWA5B7DL.js", "/build/_shared/chunk-R75FSW43.js", "/build/_shared/chunk-FPNUDR2Q.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$username.broadcasts.$id.edit._index": { id: "routes/$username.broadcasts.$id.edit._index", parentId: "root", path: ":username/broadcasts/:id/edit", index: !0, caseSensitive: void 0, module: "/build/routes/$username.broadcasts.$id.edit._index-SK4POKMM.js", imports: ["/build/_shared/chunk-C3TBRFRM.js", "/build/_shared/chunk-NLFEGUKO.js", "/build/_shared/chunk-SPLSO47S.js", "/build/_shared/chunk-DST4YPNY.js", "/build/_shared/chunk-E7Z5WAE3.js", "/build/_shared/chunk-XZCQ7J6O.js", "/build/_shared/chunk-AWA5B7DL.js", "/build/_shared/chunk-R75FSW43.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-FPNUDR2Q.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_example.pagination": { id: "routes/_example.pagination", parentId: "root", path: "pagination", index: void 0, caseSensitive: void 0, module: "/build/routes/_example.pagination-7UTCHGXX.js", imports: ["/build/_shared/chunk-HOHX5CWX.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-FPNUDR2Q.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-HMPRB63F.js", imports: ["/build/_shared/chunk-SZSOKLAT.js", "/build/_shared/chunk-OVSG33BC.js", "/build/_shared/chunk-JOUSK4XN.js", "/build/_shared/chunk-6D54HQ37.js", "/build/_shared/chunk-XZCQ7J6O.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_page.privacy": { id: "routes/_page.privacy", parentId: "root", path: "privacy", index: void 0, caseSensitive: void 0, module: "/build/routes/_page.privacy-KHSMB5LT.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_page.terms": { id: "routes/_page.terms", parentId: "root", path: "terms", index: void 0, caseSensitive: void 0, module: "/build/routes/_page.terms-7BDAVVRJ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/api.coaching": { id: "routes/api.coaching", parentId: "root", path: "api/coaching", index: void 0, caseSensitive: void 0, module: "/build/routes/api.coaching-EHLUJ5XG.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/api.user-tags": { id: "routes/api.user-tags", parentId: "root", path: "api/user-tags", index: void 0, caseSensitive: void 0, module: "/build/routes/api.user-tags-NOCZTTSK.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/api.usernames": { id: "routes/api.usernames", parentId: "root", path: "api/usernames", index: void 0, caseSensitive: void 0, module: "/build/routes/api.usernames-ARHV6YLL.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/api.users": { id: "routes/api.users", parentId: "root", path: "api/users", index: void 0, caseSensitive: void 0, module: "/build/routes/api.users-BAQUG5AJ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/broadcasts": { id: "routes/broadcasts", parentId: "root", path: "broadcasts", index: void 0, caseSensitive: void 0, module: "/build/routes/broadcasts-FX26G6QX.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/broadcasts._index": { id: "routes/broadcasts._index", parentId: "routes/broadcasts", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/broadcasts._index-E5BNK6ZF.js", imports: ["/build/_shared/chunk-OVSG33BC.js", "/build/_shared/chunk-NLFEGUKO.js", "/build/_shared/chunk-SPLSO47S.js", "/build/_shared/chunk-DST4YPNY.js", "/build/_shared/chunk-ETRA5BF5.js", "/build/_shared/chunk-JOUSK4XN.js", "/build/_shared/chunk-6D54HQ37.js", "/build/_shared/chunk-E7Z5WAE3.js", "/build/_shared/chunk-XZCQ7J6O.js", "/build/_shared/chunk-AWA5B7DL.js", "/build/_shared/chunk-R75FSW43.js", "/build/_shared/chunk-HOHX5CWX.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-U5A2LGJS.js", "/build/_shared/chunk-FPNUDR2Q.js", "/build/_shared/chunk-AP3S46ME.js", "/build/_shared/chunk-RHFQS5OV.js", "/build/_shared/chunk-X2FHOKEC.js", "/build/_shared/chunk-DEIQMVTL.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/coach": { id: "routes/coach", parentId: "root", path: "coach", index: void 0, caseSensitive: void 0, module: "/build/routes/coach-LAJOHD5A.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/coach-updated": { id: "routes/coach-updated", parentId: "root", path: "coach-updated", index: void 0, caseSensitive: void 0, module: "/build/routes/coach-updated-ZFGBP2NE.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/coachee": { id: "routes/coachee", parentId: "root", path: "coachee", index: void 0, caseSensitive: void 0, module: "/build/routes/coachee-XXSR5YVH.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/feedback": { id: "routes/feedback", parentId: "root", path: "feedback", index: void 0, caseSensitive: void 0, module: "/build/routes/feedback-XLK5VLS4.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/felix": { id: "routes/felix", parentId: "root", path: "felix", index: void 0, caseSensitive: void 0, module: "/build/routes/felix-I7VIKP3K.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/healthcheck": { id: "routes/healthcheck", parentId: "root", path: "healthcheck", index: void 0, caseSensitive: void 0, module: "/build/routes/healthcheck-HUZD34C3.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/mentees": { id: "routes/mentees", parentId: "root", path: "mentees", index: void 0, caseSensitive: void 0, module: "/build/routes/mentees-ZVH5QWIU.js", imports: ["/build/_shared/chunk-SZSOKLAT.js", "/build/_shared/chunk-OVSG33BC.js", "/build/_shared/chunk-JOUSK4XN.js", "/build/_shared/chunk-6D54HQ37.js", "/build/_shared/chunk-HOHX5CWX.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-FPNUDR2Q.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/mentors": { id: "routes/mentors", parentId: "root", path: "mentors", index: void 0, caseSensitive: void 0, module: "/build/routes/mentors-6RGCYZXC.js", imports: ["/build/_shared/chunk-SZSOKLAT.js", "/build/_shared/chunk-OVSG33BC.js", "/build/_shared/chunk-JOUSK4XN.js", "/build/_shared/chunk-6D54HQ37.js", "/build/_shared/chunk-HOHX5CWX.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-FPNUDR2Q.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/ping": { id: "routes/ping", parentId: "root", path: "ping", index: void 0, caseSensitive: void 0, module: "/build/routes/ping-KJJ5KIYI.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/profile": { id: "routes/profile", parentId: "root", path: "profile", index: void 0, caseSensitive: void 0, module: "/build/routes/profile-Y4PL25WW.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/search": { id: "routes/search", parentId: "root", path: "search", index: void 0, caseSensitive: void 0, module: "/build/routes/search-5AJU4SGJ.js", imports: ["/build/_shared/chunk-OVSG33BC.js", "/build/_shared/chunk-ETRA5BF5.js", "/build/_shared/chunk-6D54HQ37.js", "/build/_shared/chunk-HOHX5CWX.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-FPNUDR2Q.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings": { id: "routes/settings", parentId: "root", path: "settings", index: void 0, caseSensitive: void 0, module: "/build/routes/settings-N3K6VBZJ.js", imports: ["/build/_shared/chunk-FPNUDR2Q.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings._index": { id: "routes/settings._index", parentId: "routes/settings", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/settings._index-RQJOAKB5.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings.account": { id: "routes/settings.account", parentId: "routes/settings", path: "account", index: void 0, caseSensitive: void 0, module: "/build/routes/settings.account-CRBMH437.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings.appearance": { id: "routes/settings.appearance", parentId: "routes/settings", path: "appearance", index: void 0, caseSensitive: void 0, module: "/build/routes/settings.appearance-5HS25VQX.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings.danger": { id: "routes/settings.danger", parentId: "routes/settings", path: "danger", index: void 0, caseSensitive: void 0, module: "/build/routes/settings.danger-3SW4FH4R.js", imports: ["/build/_shared/chunk-SPLSO47S.js", "/build/_shared/chunk-DST4YPNY.js", "/build/_shared/chunk-XZCQ7J6O.js", "/build/_shared/chunk-R75FSW43.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-X2FHOKEC.js", "/build/_shared/chunk-DEIQMVTL.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings.email": { id: "routes/settings.email", parentId: "routes/settings", path: "email", index: void 0, caseSensitive: void 0, module: "/build/routes/settings.email-OY3UIPD5.js", imports: ["/build/_shared/chunk-5BLUTFRR.js", "/build/_shared/chunk-SPLSO47S.js", "/build/_shared/chunk-DST4YPNY.js", "/build/_shared/chunk-AWA5B7DL.js", "/build/_shared/chunk-R75FSW43.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-U5A2LGJS.js", "/build/_shared/chunk-DEIQMVTL.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings.general": { id: "routes/settings.general", parentId: "routes/settings", path: "general", index: void 0, caseSensitive: void 0, module: "/build/routes/settings.general-RPNVU3GW.js", imports: ["/build/_shared/chunk-5BLUTFRR.js", "/build/_shared/chunk-SPLSO47S.js", "/build/_shared/chunk-DST4YPNY.js", "/build/_shared/chunk-AWA5B7DL.js", "/build/_shared/chunk-R75FSW43.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-U5A2LGJS.js", "/build/_shared/chunk-DEIQMVTL.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings.notifications": { id: "routes/settings.notifications", parentId: "routes/settings", path: "notifications", index: void 0, caseSensitive: void 0, module: "/build/routes/settings.notifications-ONH6JIB6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings.password": { id: "routes/settings.password", parentId: "routes/settings", path: "password", index: void 0, caseSensitive: void 0, module: "/build/routes/settings.password-6NOUEIHR.js", imports: ["/build/_shared/chunk-KQBCBTL6.js", "/build/_shared/chunk-5BLUTFRR.js", "/build/_shared/chunk-F37WXFTH.js", "/build/_shared/chunk-SPLSO47S.js", "/build/_shared/chunk-DST4YPNY.js", "/build/_shared/chunk-AWA5B7DL.js", "/build/_shared/chunk-R75FSW43.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-U5A2LGJS.js", "/build/_shared/chunk-DEIQMVTL.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings.profile": { id: "routes/settings.profile", parentId: "routes/settings", path: "profile", index: void 0, caseSensitive: void 0, module: "/build/routes/settings.profile-ICD2R4OH.js", imports: ["/build/_shared/chunk-5BLUTFRR.js", "/build/_shared/chunk-NLFEGUKO.js", "/build/_shared/chunk-SPLSO47S.js", "/build/_shared/chunk-DST4YPNY.js", "/build/_shared/chunk-AWA5B7DL.js", "/build/_shared/chunk-R75FSW43.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-U5A2LGJS.js", "/build/_shared/chunk-DEIQMVTL.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings.tags": { id: "routes/settings.tags", parentId: "routes/settings", path: "tags", index: void 0, caseSensitive: void 0, module: "/build/routes/settings.tags-BBR2VG4N.js", imports: ["/build/_shared/chunk-OVSG33BC.js", "/build/_shared/chunk-DST4YPNY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-DEIQMVTL.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/signin": { id: "routes/signin", parentId: "root", path: "signin", index: void 0, caseSensitive: void 0, module: "/build/routes/signin-JQNIEXIU.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/signup": { id: "routes/signup", parentId: "root", path: "signup", index: void 0, caseSensitive: void 0, module: "/build/routes/signup-REFVRCIY.js", imports: ["/build/_shared/chunk-NU4D7KCL.js", "/build/_shared/chunk-S2DBOKJQ.js", "/build/_shared/chunk-XRGMMVU3.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/signup-choice": { id: "routes/signup-choice", parentId: "root", path: "signup-choice", index: void 0, caseSensitive: void 0, module: "/build/routes/signup-choice-6ZC5JLRP.js", imports: ["/build/_shared/chunk-NU4D7KCL.js", "/build/_shared/chunk-S2DBOKJQ.js", "/build/_shared/chunk-XRGMMVU3.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/signup.coach": { id: "routes/signup.coach", parentId: "routes/signup", path: "coach", index: void 0, caseSensitive: void 0, module: "/build/routes/signup.coach-2GT3OPCY.js", imports: ["/build/_shared/chunk-TFBYCRFC.js", "/build/_shared/chunk-RHFQS5OV.js", "/build/_shared/chunk-X2FHOKEC.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/signup.user": { id: "routes/signup.user", parentId: "routes/signup", path: "user", index: void 0, caseSensitive: void 0, module: "/build/routes/signup.user-GUSA4G4Z.js", imports: ["/build/_shared/chunk-TFBYCRFC.js", "/build/_shared/chunk-RHFQS5OV.js", "/build/_shared/chunk-X2FHOKEC.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "ddb3ad7b", hmr: void 0, url: "/build/manifest-DDB3AD7B.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-CYFVJXGH.js", imports: ["/build/_shared/chunk-KBLCOIOC.js", "/build/_shared/chunk-3RBGSDJQ.js", "/build/_shared/chunk-P6WDVL5F.js", "/build/_shared/chunk-OCZ35EVD.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-J3FBYB27.js", imports: ["/build/_shared/chunk-TFBYCRFC.js", "/build/_shared/chunk-F37WXFTH.js", "/build/_shared/chunk-U5A2LGJS.js", "/build/_shared/chunk-R2MH3O2W.js", "/build/_shared/chunk-RHFQS5OV.js", "/build/_shared/chunk-X2FHOKEC.js", "/build/_shared/chunk-DEIQMVTL.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/$username._index": { id: "routes/$username._index", parentId: "root", path: ":username", index: !0, caseSensitive: void 0, module: "/build/routes/$username._index-GVQLQXJM.js", imports: ["/build/_shared/chunk-KQBCBTL6.js", "/build/_shared/chunk-C3TBRFRM.js", "/build/_shared/chunk-OVSG33BC.js", "/build/_shared/chunk-ETRA5BF5.js", "/build/_shared/chunk-JOUSK4XN.js", "/build/_shared/chunk-6D54HQ37.js", "/build/_shared/chunk-XZCQ7J6O.js", "/build/_shared/chunk-FPNUDR2Q.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$username.broadcasts.$id._index": { id: "routes/$username.broadcasts.$id._index", parentId: "root", path: ":username/broadcasts/:id", index: !0, caseSensitive: void 0, module: "/build/routes/$username.broadcasts.$id._index-OCKNSY2X.js", imports: ["/build/_shared/chunk-C3TBRFRM.js", "/build/_shared/chunk-ETRA5BF5.js", "/build/_shared/chunk-JOUSK4XN.js", "/build/_shared/chunk-6D54HQ37.js", "/build/_shared/chunk-E7Z5WAE3.js", "/build/_shared/chunk-XZCQ7J6O.js", "/build/_shared/chunk-AWA5B7DL.js", "/build/_shared/chunk-R75FSW43.js", "/build/_shared/chunk-FPNUDR2Q.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/$username.broadcasts.$id.edit._index": { id: "routes/$username.broadcasts.$id.edit._index", parentId: "root", path: ":username/broadcasts/:id/edit", index: !0, caseSensitive: void 0, module: "/build/routes/$username.broadcasts.$id.edit._index-XL2OSV4B.js", imports: ["/build/_shared/chunk-C3TBRFRM.js", "/build/_shared/chunk-NLFEGUKO.js", "/build/_shared/chunk-SPLSO47S.js", "/build/_shared/chunk-DST4YPNY.js", "/build/_shared/chunk-E7Z5WAE3.js", "/build/_shared/chunk-XZCQ7J6O.js", "/build/_shared/chunk-AWA5B7DL.js", "/build/_shared/chunk-R75FSW43.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-FPNUDR2Q.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_example.pagination": { id: "routes/_example.pagination", parentId: "root", path: "pagination", index: void 0, caseSensitive: void 0, module: "/build/routes/_example.pagination-WJZO74PN.js", imports: ["/build/_shared/chunk-HOHX5CWX.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-FPNUDR2Q.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-QSEICNLE.js", imports: ["/build/_shared/chunk-SZSOKLAT.js", "/build/_shared/chunk-OVSG33BC.js", "/build/_shared/chunk-JOUSK4XN.js", "/build/_shared/chunk-6D54HQ37.js", "/build/_shared/chunk-XZCQ7J6O.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/api.coaching": { id: "routes/api.coaching", parentId: "root", path: "api/coaching", index: void 0, caseSensitive: void 0, module: "/build/routes/api.coaching-EHLUJ5XG.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/api.user-tags": { id: "routes/api.user-tags", parentId: "root", path: "api/user-tags", index: void 0, caseSensitive: void 0, module: "/build/routes/api.user-tags-NOCZTTSK.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/api.usernames": { id: "routes/api.usernames", parentId: "root", path: "api/usernames", index: void 0, caseSensitive: void 0, module: "/build/routes/api.usernames-ARHV6YLL.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/api.users": { id: "routes/api.users", parentId: "root", path: "api/users", index: void 0, caseSensitive: void 0, module: "/build/routes/api.users-BAQUG5AJ.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/broadcasts": { id: "routes/broadcasts", parentId: "root", path: "broadcasts", index: void 0, caseSensitive: void 0, module: "/build/routes/broadcasts-FX26G6QX.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/broadcasts._index": { id: "routes/broadcasts._index", parentId: "routes/broadcasts", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/broadcasts._index-DTFFCJFT.js", imports: ["/build/_shared/chunk-OVSG33BC.js", "/build/_shared/chunk-NLFEGUKO.js", "/build/_shared/chunk-SPLSO47S.js", "/build/_shared/chunk-DST4YPNY.js", "/build/_shared/chunk-ETRA5BF5.js", "/build/_shared/chunk-JOUSK4XN.js", "/build/_shared/chunk-6D54HQ37.js", "/build/_shared/chunk-E7Z5WAE3.js", "/build/_shared/chunk-XZCQ7J6O.js", "/build/_shared/chunk-AWA5B7DL.js", "/build/_shared/chunk-R75FSW43.js", "/build/_shared/chunk-HOHX5CWX.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-U5A2LGJS.js", "/build/_shared/chunk-FPNUDR2Q.js", "/build/_shared/chunk-R2MH3O2W.js", "/build/_shared/chunk-RHFQS5OV.js", "/build/_shared/chunk-X2FHOKEC.js", "/build/_shared/chunk-DEIQMVTL.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/coach": { id: "routes/coach", parentId: "root", path: "coach", index: void 0, caseSensitive: void 0, module: "/build/routes/coach-LAJOHD5A.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/coach-updated": { id: "routes/coach-updated", parentId: "root", path: "coach-updated", index: void 0, caseSensitive: void 0, module: "/build/routes/coach-updated-ZFGBP2NE.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/coachee": { id: "routes/coachee", parentId: "root", path: "coachee", index: void 0, caseSensitive: void 0, module: "/build/routes/coachee-XXSR5YVH.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/feedback": { id: "routes/feedback", parentId: "root", path: "feedback", index: void 0, caseSensitive: void 0, module: "/build/routes/feedback-XLK5VLS4.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/felix": { id: "routes/felix", parentId: "root", path: "felix", index: void 0, caseSensitive: void 0, module: "/build/routes/felix-I7VIKP3K.js", imports: void 0, hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/healthcheck": { id: "routes/healthcheck", parentId: "root", path: "healthcheck", index: void 0, caseSensitive: void 0, module: "/build/routes/healthcheck-HUZD34C3.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/mentees": { id: "routes/mentees", parentId: "root", path: "mentees", index: void 0, caseSensitive: void 0, module: "/build/routes/mentees-IKRX4KFZ.js", imports: ["/build/_shared/chunk-SZSOKLAT.js", "/build/_shared/chunk-OVSG33BC.js", "/build/_shared/chunk-JOUSK4XN.js", "/build/_shared/chunk-6D54HQ37.js", "/build/_shared/chunk-HOHX5CWX.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-FPNUDR2Q.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/mentors": { id: "routes/mentors", parentId: "root", path: "mentors", index: void 0, caseSensitive: void 0, module: "/build/routes/mentors-MWP6S4IF.js", imports: ["/build/_shared/chunk-SZSOKLAT.js", "/build/_shared/chunk-OVSG33BC.js", "/build/_shared/chunk-JOUSK4XN.js", "/build/_shared/chunk-6D54HQ37.js", "/build/_shared/chunk-HOHX5CWX.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-FPNUDR2Q.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/ping": { id: "routes/ping", parentId: "root", path: "ping", index: void 0, caseSensitive: void 0, module: "/build/routes/ping-KJJ5KIYI.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/privacy": { id: "routes/privacy", parentId: "root", path: "privacy", index: void 0, caseSensitive: void 0, module: "/build/routes/privacy-SDPQ3I7M.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/profile": { id: "routes/profile", parentId: "root", path: "profile", index: void 0, caseSensitive: void 0, module: "/build/routes/profile-Y4PL25WW.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/search": { id: "routes/search", parentId: "root", path: "search", index: void 0, caseSensitive: void 0, module: "/build/routes/search-3SUIHKQC.js", imports: ["/build/_shared/chunk-OVSG33BC.js", "/build/_shared/chunk-ETRA5BF5.js", "/build/_shared/chunk-6D54HQ37.js", "/build/_shared/chunk-HOHX5CWX.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-FPNUDR2Q.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings": { id: "routes/settings", parentId: "root", path: "settings", index: void 0, caseSensitive: void 0, module: "/build/routes/settings-V56SCBML.js", imports: ["/build/_shared/chunk-FPNUDR2Q.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings._index": { id: "routes/settings._index", parentId: "routes/settings", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/settings._index-RQJOAKB5.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings.account": { id: "routes/settings.account", parentId: "routes/settings", path: "account", index: void 0, caseSensitive: void 0, module: "/build/routes/settings.account-CRBMH437.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings.appearance": { id: "routes/settings.appearance", parentId: "routes/settings", path: "appearance", index: void 0, caseSensitive: void 0, module: "/build/routes/settings.appearance-5HS25VQX.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings.danger": { id: "routes/settings.danger", parentId: "routes/settings", path: "danger", index: void 0, caseSensitive: void 0, module: "/build/routes/settings.danger-3SW4FH4R.js", imports: ["/build/_shared/chunk-SPLSO47S.js", "/build/_shared/chunk-DST4YPNY.js", "/build/_shared/chunk-XZCQ7J6O.js", "/build/_shared/chunk-R75FSW43.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-X2FHOKEC.js", "/build/_shared/chunk-DEIQMVTL.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings.email": { id: "routes/settings.email", parentId: "routes/settings", path: "email", index: void 0, caseSensitive: void 0, module: "/build/routes/settings.email-OY3UIPD5.js", imports: ["/build/_shared/chunk-5BLUTFRR.js", "/build/_shared/chunk-SPLSO47S.js", "/build/_shared/chunk-DST4YPNY.js", "/build/_shared/chunk-AWA5B7DL.js", "/build/_shared/chunk-R75FSW43.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-U5A2LGJS.js", "/build/_shared/chunk-DEIQMVTL.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings.general": { id: "routes/settings.general", parentId: "routes/settings", path: "general", index: void 0, caseSensitive: void 0, module: "/build/routes/settings.general-RPNVU3GW.js", imports: ["/build/_shared/chunk-5BLUTFRR.js", "/build/_shared/chunk-SPLSO47S.js", "/build/_shared/chunk-DST4YPNY.js", "/build/_shared/chunk-AWA5B7DL.js", "/build/_shared/chunk-R75FSW43.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-U5A2LGJS.js", "/build/_shared/chunk-DEIQMVTL.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings.notifications": { id: "routes/settings.notifications", parentId: "routes/settings", path: "notifications", index: void 0, caseSensitive: void 0, module: "/build/routes/settings.notifications-ONH6JIB6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings.password": { id: "routes/settings.password", parentId: "routes/settings", path: "password", index: void 0, caseSensitive: void 0, module: "/build/routes/settings.password-6NOUEIHR.js", imports: ["/build/_shared/chunk-KQBCBTL6.js", "/build/_shared/chunk-5BLUTFRR.js", "/build/_shared/chunk-F37WXFTH.js", "/build/_shared/chunk-SPLSO47S.js", "/build/_shared/chunk-DST4YPNY.js", "/build/_shared/chunk-AWA5B7DL.js", "/build/_shared/chunk-R75FSW43.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-U5A2LGJS.js", "/build/_shared/chunk-DEIQMVTL.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings.profile": { id: "routes/settings.profile", parentId: "routes/settings", path: "profile", index: void 0, caseSensitive: void 0, module: "/build/routes/settings.profile-ICD2R4OH.js", imports: ["/build/_shared/chunk-5BLUTFRR.js", "/build/_shared/chunk-NLFEGUKO.js", "/build/_shared/chunk-SPLSO47S.js", "/build/_shared/chunk-DST4YPNY.js", "/build/_shared/chunk-AWA5B7DL.js", "/build/_shared/chunk-R75FSW43.js", "/build/_shared/chunk-NZHOKTLY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-U5A2LGJS.js", "/build/_shared/chunk-DEIQMVTL.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/settings.tags": { id: "routes/settings.tags", parentId: "routes/settings", path: "tags", index: void 0, caseSensitive: void 0, module: "/build/routes/settings.tags-BBR2VG4N.js", imports: ["/build/_shared/chunk-OVSG33BC.js", "/build/_shared/chunk-DST4YPNY.js", "/build/_shared/chunk-NNKWUMIG.js", "/build/_shared/chunk-DEIQMVTL.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/signin": { id: "routes/signin", parentId: "root", path: "signin", index: void 0, caseSensitive: void 0, module: "/build/routes/signin-JQNIEXIU.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/signup": { id: "routes/signup", parentId: "root", path: "signup", index: void 0, caseSensitive: void 0, module: "/build/routes/signup-REFVRCIY.js", imports: ["/build/_shared/chunk-NU4D7KCL.js", "/build/_shared/chunk-S2DBOKJQ.js", "/build/_shared/chunk-XRGMMVU3.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/signup-choice": { id: "routes/signup-choice", parentId: "root", path: "signup-choice", index: void 0, caseSensitive: void 0, module: "/build/routes/signup-choice-6ZC5JLRP.js", imports: ["/build/_shared/chunk-NU4D7KCL.js", "/build/_shared/chunk-S2DBOKJQ.js", "/build/_shared/chunk-XRGMMVU3.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/signup.coach": { id: "routes/signup.coach", parentId: "routes/signup", path: "coach", index: void 0, caseSensitive: void 0, module: "/build/routes/signup.coach-2GT3OPCY.js", imports: ["/build/_shared/chunk-TFBYCRFC.js", "/build/_shared/chunk-RHFQS5OV.js", "/build/_shared/chunk-X2FHOKEC.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/signup.user": { id: "routes/signup.user", parentId: "routes/signup", path: "user", index: void 0, caseSensitive: void 0, module: "/build/routes/signup.user-GUSA4G4Z.js", imports: ["/build/_shared/chunk-TFBYCRFC.js", "/build/_shared/chunk-RHFQS5OV.js", "/build/_shared/chunk-X2FHOKEC.js", "/build/_shared/chunk-OF7SY753.js", "/build/_shared/chunk-2DTYBHFU.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/terms": { id: "routes/terms", parentId: "root", path: "terms", index: void 0, caseSensitive: void 0, module: "/build/routes/terms-YNKVAKDX.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "6839ecca", hmr: void 0, url: "/build/manifest-6839ECCA.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !0, v2_headers: !0, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !0 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
@@ -8036,21 +8124,13 @@ var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postc
     caseSensitive: void 0,
     module: signup_choice_exports
   },
-  "routes/_page.privacy": {
-    id: "routes/_page.privacy",
-    parentId: "root",
-    path: "privacy",
-    index: void 0,
-    caseSensitive: void 0,
-    module: page_privacy_exports
-  },
   "routes/api.coaching": {
     id: "routes/api.coaching",
     parentId: "root",
     path: "api/coaching",
     index: void 0,
     caseSensitive: void 0,
-    module: route21
+    module: route20
   },
   "routes/signup.coach": {
     id: "routes/signup.coach",
@@ -8075,14 +8155,6 @@ var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postc
     index: void 0,
     caseSensitive: void 0,
     module: signup_user_exports
-  },
-  "routes/_page.terms": {
-    id: "routes/_page.terms",
-    parentId: "root",
-    path: "terms",
-    index: void 0,
-    caseSensitive: void 0,
-    module: page_terms_exports
   },
   "routes/broadcasts": {
     id: "routes/broadcasts",
@@ -8140,6 +8212,14 @@ var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postc
     caseSensitive: void 0,
     module: mentors_exports
   },
+  "routes/privacy": {
+    id: "routes/privacy",
+    parentId: "root",
+    path: "privacy",
+    index: void 0,
+    caseSensitive: void 0,
+    module: privacy_exports
+  },
   "routes/profile": {
     id: "routes/profile",
     parentId: "root",
@@ -8196,6 +8276,14 @@ var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postc
     caseSensitive: void 0,
     module: felix_exports
   },
+  "routes/terms": {
+    id: "routes/terms",
+    parentId: "root",
+    path: "terms",
+    index: void 0,
+    caseSensitive: void 0,
+    module: terms_exports
+  },
   "routes/ping": {
     id: "routes/ping",
     parentId: "root",
@@ -8209,7 +8297,7 @@ var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postc
 // server.ts
 var import_node29 = require("@remix-run/node"), import_node30 = require("@remix-run/node"), import_node_http = __toESM(require("node:http"));
 (0, import_node29.installGlobals)();
-var handler = (0, import_node30.createRequestHandler)({ build: server_build_exports, mode: "production" }), PORT = process.env.PORT || 3e3, server = import_node_http.default.createServer((req, res) => {
+var handler = (0, import_node30.createRequestHandler)(server_build_exports, "production"), PORT = process.env.PORT || 3e3, server = import_node_http.default.createServer((req, res) => {
   try {
     let maybePromise = handler(req, res);
     maybePromise && typeof maybePromise.then == "function" && maybePromise.catch((err) => {
