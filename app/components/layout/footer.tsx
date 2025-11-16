@@ -3,7 +3,8 @@ import { cn } from "~/utils"
 import { Anchor } from "~/components"
 
 const footerNavItems = [
-  { to: "search", text: "Search" },
+  { to: "/privacy", text: "Privacy Policy" },
+  { to: "/terms", text: "Terms of Use" },
   { to: "signin", text: "Sign In" },
 ]
 
