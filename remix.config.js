@@ -7,12 +7,12 @@ module.exports = {
   serverModuleFormat: "cjs",
   ignoredRouteFiles: ["**/.*"],
 
-  // Use Remix default server (built-in)
-  // server: NODE_ENV === "development" ? undefined : "./server.ts",
-  // serverBuildPath: "dist/index.js",
-  // appDirectory: "app",
-  // assetsBuildDirectory: "public/build",
-  // publicPath: "/build/",
+  // Netlify Functions build expects server at dist/index.js
+  server: NODE_ENV === "development" ? undefined : "./server.ts",
+  serverBuildPath: "dist/index.js",
+  appDirectory: "app",
+  assetsBuildDirectory: "public/build",
+  publicPath: "/build/",
 
   serverDependenciesToBundle: ["nanoid", "array-shuffle"],
 
