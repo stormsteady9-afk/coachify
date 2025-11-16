@@ -8288,7 +8288,7 @@ var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postc
 };
 
 // server.ts
-var import_node29 = require("@remix-run/node"), import_node_http = __toESM(require("node:http")), import_node_fs = __toESM(require("node:fs")), import_node_path = __toESM(require("node:path")), import_node_url = require("node:url"), import_meta = {}, __dirname = import_node_path.default.dirname((0, import_node_url.fileURLToPath)(import_meta.url));
+var import_node29 = require("@remix-run/node"), import_node_http = __toESM(require("node:http")), import_node_fs = __toESM(require("node:fs")), import_node_path = __toESM(require("node:path")), __dirname = process.cwd();
 (0, import_node29.installGlobals)();
 var handler = (0, import_node29.createRequestHandler)(server_build_exports, "production"), PORT = process.env.PORT || 3e3, server = import_node_http.default.createServer(async (req, res) => {
   var _a;
