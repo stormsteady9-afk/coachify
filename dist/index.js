@@ -8295,14 +8295,17 @@ var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postc
 };
 
 // server.ts
-var import_node29 = require("@remix-run/node"), import_node30 = require("@remix-run/node"), import_node_http = __toESM(require("node:http"));
+var import_node29 = require("@remix-run/node"), import_node_http = __toESM(require("node:http"));
 (0, import_node29.installGlobals)();
-var handler = (0, import_node30.createRequestHandler)(server_build_exports, "production"), PORT = process.env.PORT || 3e3, server = import_node_http.default.createServer((req, res) => {
+var handler = (0, import_node29.createRequestHandler)(server_build_exports, "production"), PORT = process.env.PORT || 3e3, server = import_node_http.default.createServer(async (req, res) => {
+  var _a;
   try {
-    let maybePromise = handler(req, res);
-    maybePromise && typeof maybePromise.then == "function" && maybePromise.catch((err) => {
-      console.error(err), res.headersSent || (res.statusCode = 500, res.end("Internal Server Error"));
-    });
+    let host = req.headers.host || `localhost:${PORT}`, url = `${req.headers["x-forwarded-proto"] || "http"}://${host}${req.url}`, request = new Request(url, {
+      method: req.method,
+      headers: req.headers,
+      body: ["GET", "HEAD"].includes(((_a = req.method) == null ? void 0 : _a.toUpperCase()) || "") ? void 0 : req
+    }), response = await handler(request);
+    res.writeHead(response.status, Object.fromEntries(response.headers)), res.end(await response.text());
   } catch (err) {
     console.error(err), res.headersSent || (res.statusCode = 500, res.end("Internal Server Error"));
   }
