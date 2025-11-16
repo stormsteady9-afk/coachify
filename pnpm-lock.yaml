@@ -86,6 +86,9 @@ importers:
       '@remix-run/vercel':
         specifier: ^1.19.3
         version: 1.19.3(@vercel/node@2.15.10(encoding@0.1.13))
+      '@remix-run/web-stream':
+        specifier: ^1.1.0
+        version: 1.1.0
       '@tabler/icons-react':
         specifier: ^2.46.0
         version: 2.46.0(react@18.3.1)
