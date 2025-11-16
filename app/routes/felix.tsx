@@ -189,7 +189,7 @@ export async function action({ request }: ActionArgs) {
     let demoReply = ""
     
     if (lowerMsg.includes("hello") || lowerMsg.includes("hi") || lowerMsg.includes("hey")) {
-      demoReply = `🌊 Welcome! I'm FelixGPT, your AI life coach and leadership mentor. 
+      demoReply = `Welcome! I'm FelixGPT, your AI life coach and leadership mentor. 
 
 I'm here to help you navigate life's challenges 
 
