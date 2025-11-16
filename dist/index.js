@@ -23,7 +23,7 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
   // "default" to the CommonJS "module.exports" for node compatibility.
   isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: !0 }) : target,
   mod
-)), __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: !0 }), mod);
+));
 
 // app/routes/api.coaching.tsx
 var require_api_coaching = __commonJS({
@@ -31,13 +31,6 @@ var require_api_coaching = __commonJS({
     "use strict";
   }
 });
-
-// server.ts
-var server_exports = {};
-__export(server_exports, {
-  default: () => server_default
-});
-module.exports = __toCommonJS(server_exports);
 
 // server-entry-module:@remix-run/dev/server-build
 var server_build_exports = {};
@@ -4678,15 +4671,15 @@ var import_jsx_runtime44 = require("react/jsx-runtime");
 async function processDiplomaFile(file) {
   if (!file || typeof file != "object" || typeof file.arrayBuffer != "function")
     return { savedPath: null };
-  let { writeFile, mkdir: mkdir2 } = require("node:fs/promises"), path = require("node:path"), allowed = ["application/pdf", "image/jpeg", "image/jpg"], mime = file.type || "";
+  let { writeFile, mkdir: mkdir2 } = require("node:fs/promises"), path2 = require("node:path"), allowed = ["application/pdf", "image/jpeg", "image/jpg"], mime = file.type || "";
   if (!allowed.includes(mime))
     throw new Error("Diploma must be a PDF or JPG/JPEG");
   let buffer = Buffer.from(await file.arrayBuffer());
   if (buffer.length > 8 * 1024 * 1024)
     throw new Error("Diploma must be smaller than 8MB");
-  let uploadsDir = path.join(process.cwd(), "logs", "diplomas");
+  let uploadsDir = path2.join(process.cwd(), "logs", "diplomas");
   await mkdir2(uploadsDir, { recursive: !0 });
-  let ext = mime === "application/pdf" ? "pdf" : "jpg", fileName = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}.${ext}`, outPath = path.join(uploadsDir, fileName);
+  let ext = mime === "application/pdf" ? "pdf" : "jpg", fileName = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}.${ext}`, outPath = path2.join(uploadsDir, fileName);
   return await writeFile(outPath, buffer), { savedPath: outPath, fileName, email: "" };
 }
 async function sendEmailNotification(email2, fileName, filePath) {
@@ -5495,9 +5488,9 @@ async function action12({ request }) {
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email2))
       return (0, import_node21.json)({ ok: !1, error: "Please enter a valid email address" }, { status: 400 });
     try {
-      let { writeFile, mkdir: mkdir2 } = require("node:fs/promises"), path = require("node:path"), feedbackDir = path.join(process.cwd(), "logs", "feedback");
+      let { writeFile, mkdir: mkdir2 } = require("node:fs/promises"), path2 = require("node:path"), feedbackDir = path2.join(process.cwd(), "logs", "feedback");
       await mkdir2(feedbackDir, { recursive: !0 });
-      let timestamp = (/* @__PURE__ */ new Date()).toISOString(), fileName = `feedback-${Date.now()}.json`, filePath = path.join(feedbackDir, fileName);
+      let timestamp = (/* @__PURE__ */ new Date()).toISOString(), fileName = `feedback-${Date.now()}.json`, filePath = path2.join(feedbackDir, fileName);
       return await writeFile(filePath, JSON.stringify({
         timestamp,
         name: name2,
@@ -7441,9 +7434,9 @@ async function action14({ request }) {
     try {
       let dir = `${process.cwd()}/logs`;
       await (0, import_promises.mkdir)(dir, { recursive: !0 });
-      let path = `${dir}/felix-remote-errors.log`, entry2 = JSON.stringify({ ts: (/* @__PURE__ */ new Date()).toISOString(), ...obj }) + `
+      let path2 = `${dir}/felix-remote-errors.log`, entry2 = JSON.stringify({ ts: (/* @__PURE__ */ new Date()).toISOString(), ...obj }) + `
 `;
-      await (0, import_promises.appendFile)(path, entry2, { encoding: "utf8" });
+      await (0, import_promises.appendFile)(path2, entry2, { encoding: "utf8" });
     } catch (e) {
       console.error("felix: failed to write remote log", e);
     }
@@ -8295,11 +8288,17 @@ var assetsBuildDirectory = "public/build", future = { v2_dev: !0, unstable_postc
 };
 
 // server.ts
-var import_node29 = require("@remix-run/node"), import_node_http = __toESM(require("node:http"));
+var import_node29 = require("@remix-run/node"), import_node_http = __toESM(require("node:http")), import_node_fs = __toESM(require("node:fs")), import_node_path = __toESM(require("node:path")), import_node_url = require("node:url"), import_meta = {}, __dirname = import_node_path.default.dirname((0, import_node_url.fileURLToPath)(import_meta.url));
 (0, import_node29.installGlobals)();
 var handler = (0, import_node29.createRequestHandler)(server_build_exports, "production"), PORT = process.env.PORT || 3e3, server = import_node_http.default.createServer(async (req, res) => {
   var _a;
   try {
+    let publicPath2 = import_node_path.default.join(__dirname, "public", req.url);
+    if (req.method === "GET" && import_node_fs.default.existsSync(publicPath2) && import_node_fs.default.statSync(publicPath2).isFile()) {
+      let content = import_node_fs.default.readFileSync(publicPath2), contentType = getContentType(publicPath2);
+      res.writeHead(200, { "Content-Type": contentType }), res.end(content);
+      return;
+    }
     let host = req.headers.host || `localhost:${PORT}`, url = `${req.headers["x-forwarded-proto"] || "http"}://${host}${req.url}`, request = new Request(url, {
       method: req.method,
       headers: req.headers,
@@ -8310,9 +8309,24 @@ var handler = (0, import_node29.createRequestHandler)(server_build_exports, "pro
     console.error(err), res.headersSent || (res.statusCode = 500, res.end("Internal Server Error"));
   }
 });
+function getContentType(filePath) {
+  let ext = import_node_path.default.extname(filePath).toLowerCase();
+  return {
+    ".js": "application/javascript",
+    ".css": "text/css",
+    ".html": "text/html",
+    ".json": "application/json",
+    ".png": "image/png",
+    ".jpg": "image/jpeg",
+    ".jpeg": "image/jpeg",
+    ".gif": "image/gif",
+    ".svg": "image/svg+xml",
+    ".woff": "font/woff",
+    ".woff2": "font/woff2",
+    ".ttf": "font/ttf",
+    ".eot": "application/vnd.ms-fontobject"
+  }[ext] || "application/octet-stream";
+}
 server.listen(PORT, () => {
   console.log(`Remix app listening on port ${PORT}`);
 });
-var server_default = server;
-// Annotate the CommonJS export names for ESM import in node:
-0 && (module.exports = {});
